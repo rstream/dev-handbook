@@ -1,6 +1,6 @@
 # Kate for Web development
 
-Set up Kate for web development!  
+Set up Kate for web development.  
 Kate uses LSP to understand languages.
 
 ## Typescript/Javascript
