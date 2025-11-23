@@ -1,5 +1,7 @@
 # General
 
+General setup that will make Kate more user-friendly.
+
 ## 1. Set up color theme
 
 Set up a window color scheme:  
