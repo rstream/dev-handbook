@@ -2,19 +2,15 @@
 
 Set up Kate for C++ development.  
 
-## 1. Install clang and Qt
+## 1. Install Clang and Qt
 
-Clang is required to make Kate understand C++
-```sh
-sudo zypper install clang
-```
-For cross-platform GUI development install Qt package (in this example we install version 6)
+Clang is required to make Kate understand C++ 
 
-### Linux
+> [Install clangd](../../operating%20systems/linux/linux-cpp.md#clang)
 
-```sh
-sudo zypper install libQt6Core6 libQt6Gui6 libQt6Widgets6 qt6-base-devel qt6-widgets-devel qt6-tools qt6-tools-devel qt6-tools-designer
-```
+For cross-platform GUI development install Qt package
+
+> [Install Qt](../../operating%20systems/linux/linux-qt.md)
 
 ## 2. Enable build plugin
 
