@@ -1,0 +1,21 @@
+body #header_wrap .inner {
+    padding: 0;
+}
+#header_wrap header, #footer_wrap footer {
+    max-width: 50%;
+}
+header #forkme_banner {
+    display: none;
+}
+header #project_tagline {
+    margin: 0;
+    font-size: 18px;
+}
+section#main_content {
+    padding-top: 20px;
+    max-width: 50%;
+}
+#main_content > h1 {
+    color: #07c;
+    text-decoration: underline;
+}
