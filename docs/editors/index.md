@@ -2,4 +2,5 @@
 
 Setup and tweaks of popular (my favorite) code editors.
 
-[KATE](kate/index.md) - very cute, but sometimes not obvious code editor
+[KATE](kate/index.md) - very cute, but sometimes not obvious code editor  
+[Visual Studio Code](vscode/index.md) - one of the most popular code editors
