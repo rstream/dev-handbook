@@ -7,7 +7,8 @@ Set up VS Code for building and running C++ apps.
 ## Install compilers
 
 First of all - install C++ compilers:  
-[Instruction for Linux](../../operating-systems/linux/linux-cpp.md)
+[Instruction for Linux](../../operating-systems/linux/linux-cpp.md)  
+[Instruction for Windows](../../operating-systems/windows/windows-cpp.md)
 
 ## Install C/C++ Extension Pack
 
@@ -26,7 +27,7 @@ Search and install `C/C++ Extension Pack`
 Required for **running and debugging** C++ code.
 
 **Navigate:**  
-> `View > Extensions`
+> View > Extensions
 
 or press `Ctrl+Shift+X`  
 
