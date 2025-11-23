@@ -1,6 +1,6 @@
 # Kate for Web development
 
-[← back](../index.md)
+[← back](index.md)
 
 Set up Kate for web development.  
 Kate uses LSP to understand languages.

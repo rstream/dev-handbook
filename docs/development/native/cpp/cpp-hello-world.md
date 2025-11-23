@@ -1,5 +1,7 @@
 # Hello world application in C++
 
+[← back](index.md)
+
 This is a sample "Hello World" application written in C++
 
 ```cpp

@@ -1,6 +1,6 @@
 # C++ compilers for Linux
 
-[← back](../index.md)
+[← back](index.md)
 
 ## GCC/G++ compiler
 

@@ -1,6 +1,6 @@
 # VS Code installation
 
-[← back](../index.md)
+[← back](index.md)
 
 ## Windows
 Download and install VS Code:  

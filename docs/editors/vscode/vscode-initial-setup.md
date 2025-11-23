@@ -1,6 +1,6 @@
 # VS Code initial setup
 
-[← back](../index.md)
+[← back](index.md)
 
 ## 1. Disable Telemetry
 
