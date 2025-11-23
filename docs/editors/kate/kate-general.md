@@ -1,5 +1,7 @@
 # General
 
+[← back](../index.md)
+
 General setup that will make Kate more user-friendly.
 
 ## 1. Set up color theme

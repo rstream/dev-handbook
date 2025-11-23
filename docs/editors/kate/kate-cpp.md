@@ -1,5 +1,7 @@
 # Kate for Web development
 
+[← back](../index.md)
+
 Set up Kate for C++ development.  
 
 ## 1. Install Clang and Qt

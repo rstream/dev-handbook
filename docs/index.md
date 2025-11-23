@@ -6,7 +6,7 @@ That's why i've created this handbook - to keep the knowledge in a place with ea
 Generally it's about:
 * [Development](development/index.md) - development tricks, config, new language specs
 * [Code editors](editors/index.md) - setup and usage of popular code editors
-* [Operating systems](operating%20systems/index.md) Linux (and not only) setup and usage
+* [Operating systems](operating-systems/index.md) Linux (and not only) setup and usage
 
 ...and other things you are not using so often to keep in your RAM :)
 

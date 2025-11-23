@@ -1,5 +1,7 @@
 # VS Code initial setup
 
+[← back](../index.md)
+
 ## 1. Disable Telemetry
 
 **Navigate:**
