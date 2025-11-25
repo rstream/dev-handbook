@@ -1,14 +1,23 @@
-# Kate for Web development
+# Kate setup for C++
 
 [← back](index.md)
 
 Set up Kate for C++ development.  
 
-## 1. Install Clang and Qt
+## 1. Install compilers and Qt library
 
-Clang is required to make Kate understand C++ 
+### GCC
 
-> [Install clangd](../../operating%20systems/linux/linux-cpp.md#clang)
+GCC is usually a part of Linux, but the version may be outdated. Install the new version if you need it:
+> [Install GCC](../../operating-systems/linux/linux-cpp.md)  
+
+### Clang
+
+Clang is required to make Kate understand C++ (even if you are using GCC)
+
+> [Install clang](../../operating%20systems/linux/linux-cpp.md#clang)
+
+### Qt
 
 For cross-platform GUI development install Qt package
 
@@ -41,6 +50,8 @@ If you want to assign `F5` (as in VS Code) - be aware this shortcut would be rem
 
 ## 5. Kate project settings
 
+### General example
+
 Setting up Kate project allows to define custom project level build/run tasks.  
 Create a `.kateproject` file with the following content:
 ```json
@@ -68,7 +79,9 @@ Notes:
 * First target - with separate Build and Run tasks (⚠️ caveat: separate run tasks do not support %n, have to put bin file name)
 * Second target - mixed one, where Build task also contains app launch; looks a bit weird, but helpful for learning (with simple projects, where you have multiple separate C++ files in a single dir)
 
-When project requires additional headers (to include) and libraries (to link) - they should also be put into the build task:
+### Example for Qt
+
+When project requires additional headers (to include) and libraries (to link) - **like Qt** - they should also be put into the build task:
 
 ```json
 {
@@ -118,7 +131,7 @@ Create a `compile_commands.json` file with the content like this, and put to the
 [
 	{
 		"directory": "/data/DevU/C/16 Kate/3 kate-qt1",
-		"command": "g++ -g -std=c++17 -I/usr/include/qt6 -I/usr/include/qt6/QtWidgets -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -o bin/kate-tq1 kate-tq1.cpp -lQt6Widgets -lQt6Gui -lQt6Core",
+		"command": "g++ -g -std=c++17 -I/usr/include/qt6 -I/usr/include/qt6/QtWidgets -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -o bin/kate-c-1 kate-c-1.cpp -lQt6Widgets -lQt6Gui -lQt6Core",
 		"file": "./*.cpp"
 	}
 ]
@@ -134,8 +147,8 @@ There's a way to auto-generate `compile_commands.json` by script:
 ```sh
 #!/bin/bash
 
-SRC="kate-tq1.cpp"
-OUT="bin/kate-tq1"
+SRC="kate-c-1.cpp"
+OUT="bin/kate-c-1"
 CXX="g++"
 CXXFLAGS="-g -std=c++17"
 INCLUDES="-I/usr/include/qt6 -I/usr/include/qt6/QtWidgets -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore"
