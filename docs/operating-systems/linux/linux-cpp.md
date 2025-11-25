@@ -4,6 +4,8 @@
 
 ## GCC/G++ compiler
 
+### Install GCC
+
 Some old version (like 7) may be already installed, but you may have to install the new one.
 
 Check for the available versions:
@@ -18,7 +20,29 @@ sudo zypper install gcc15
 sudo zypper install gcc15-c++
 ```
 
-Create symlinks to use `gcc` and `g++` in the command line (instead of `gcc-15`/`g++-15`):
+### Create symlinks
+
+To use short commands `gcc` and `g++` (instead of `gcc-15`/`g++-15`) - create symlinks for the latest versions.
+
+Good way to create a synlink (via `update-alternatives`):
+```sh
+sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-14 100
+```
+
+Command description:
+
+* `/usr/bin/g++` - path to "common" binary
+* `g++` - group name (for switching between versions)
+* `/usr/bin/g++-14` - path to real binary
+* `100` - priority
+
+To check all versions:  
+
+```
+sudo update-alternatives --display g++
+```
+
+Raw way for symlink creation:
 
 ```sh
 sudo ln -s /usr/bin/gcc-14 /usr/bin/gcc
