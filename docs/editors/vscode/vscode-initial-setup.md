@@ -46,7 +46,11 @@ Go to:
 **Linux Notes**
 * editing key bindings as JSON: `F1` → `Preferences: Open Keyboard Shortcuts JSON`
 * if `Ctrl+/` is not working for non-english keyboard layout (line comment) - bind it to `Ctrl+[Slash]` (using physical key instead - layout independent)
-* if "Ctrl+Shift" is captured for keyboard layout switching, you can bind block comment to `Alt+Shift+[Slash]` 
+* if "Ctrl+Shift" is captured for keyboard layout switching, you can bind block comment to `Alt+Shift+[Slash]`
+
+My key bindings:  
+[for Windows](./assets/keybindings-windows.json)  
+[for Linux](./assets/keybindings-linux.json)
 
 ## 5. Set default path
 
