@@ -49,8 +49,8 @@ Go to:
 * if "Ctrl+Shift" is captured for keyboard layout switching, you can bind block comment to `Alt+Shift+[Slash]`
 
 My key bindings:  
-[for Windows](./assets/keybindings-windows.json)  
-[for Linux](./assets/keybindings-linux.json)
+[for Windows](assets/keybindings-windows.json)  
+[for Linux](assets/keybindings-linux.json)
 
 ## 5. Set default path
 
