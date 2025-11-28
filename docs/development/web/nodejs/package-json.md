@@ -1,5 +1,7 @@
 # package.json
 
+[← back](index.md)
+
 `package.json` file contains node project settings.
 It contains a JSON data with multiple keys.
 
