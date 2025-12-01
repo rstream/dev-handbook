@@ -4,4 +4,5 @@
 
 Development of desktop applications (non-web)
 
-[C++](cpp/index.md) - C++ development (including Qt)
+[C++](cpp/index.md) - C++ development (including Qt)  
+[Java](java/index.md) - Java development
