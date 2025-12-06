@@ -35,6 +35,17 @@ or press `Ctrl+Shift+X`
 
 Search and install `C/C++`
 
+### Install **CodeLLDB** extension
+
+For using LLDB with VS Code as a debugger you need to install this exension.
+
+**Navigate:**  
+> View > Extensions
+
+or press `Ctrl+Shift+X`  
+
+Search and install `CodeLLDB`
+
 ## 3. Set up project settings
 
 To set everything up you need 3 things:
