@@ -11,6 +11,6 @@ This snippet:
 ```html
 <div x-data="app" x-init="init"></div>
 ```
-Will run `app.init()` two time:
+Will run `app.init()` two times:
 * first time because it is referenced in `x-init`
 * second time because of the method naming - `init` (!)
