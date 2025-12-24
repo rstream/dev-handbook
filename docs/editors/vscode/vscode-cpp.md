@@ -154,10 +154,10 @@ example of **tasks.json**:
 			"args": [
 				"-fdiagnostics-color=always",
 				"-g",
-                "-std=c++17",
-                "-Wall",
-                "-Werror",
-                "-pedantic",
+				"-std=c++17",
+				"-Wall",
+				"-Werror",
+				"-pedantic",
 				"${file}",
 				"-o",
 				"${fileDirname}\\_build\\${fileBasenameNoExtension}.exe"
