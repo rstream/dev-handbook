@@ -18,7 +18,7 @@ If you set `module`:
 }
 ```
 
-you should always define the extension of your custm imported module:
+you should always define the extension of your custom imported module:
 ```js
 import myModule from './my-module.js';
 ```
