@@ -15,13 +15,13 @@ GCC is usually a part of Linux, but the version may be outdated. Install the new
 
 Clang is required to make Kate understand C++ (even if you are using GCC)
 
-> [Install clang](../../operating%20systems/linux/linux-cpp.md#clang)
+> [Install clang](../../operating-systems/linux/linux-cpp.md#clang)
 
 ### Qt
 
 For cross-platform GUI development install Qt package
 
-> [Install Qt](../../operating%20systems/linux/linux-qt.md)
+> [Install Qt](../../operating-systems/linux/linux-qt.md)
 
 ## 2. Enable build plugin
 
@@ -101,7 +101,8 @@ When project requires additional headers (to include) and libraries (to link) - 
 
 ## 6. Set up LSP (clang) for external libs
 
-Two ways to make IntelliSense work with external libraries.
+Two ways to make IntelliSense work with external libraries.  
+(the examples below use Qt libraries)
 
 ### 1) .clangd
 

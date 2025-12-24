@@ -130,6 +130,33 @@ Notes:
 * by default the compiler is set to `gcc`; change it to `g++` if you are using C++ (not C)
 * "compilerPath" is short (`/usr/bin/g++`) since we created a symlink for `/usr/bin/g++-14` (check [creating symlinks for GCC](../../operating-systems/linux/linux-cpp.md#create-symlinks))
 
+##### Configuration for Qt:
+
+To make VS Code understand Qt - add Qt library headers to **includePath**:
+
+```json
+{
+  "configurations": [
+    {
+      "name": "Linux",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "/usr/include/qt6",
+        "/usr/include/qt6/QtWidgets",
+        "/usr/include/qt6/QtGui",
+        "/usr/include/qt6/QtCore"
+      ],
+      "defines": [],
+      "compilerPath": "/usr/bin/clang",
+      "cStandard": "c17",
+      "cppStandard": "c++17",
+      "intelliSenseMode": "linux-gcc-x64"
+    }
+  ],
+  "version": 4
+}
+```
+
 ### 2) Configure build task
 
 #### Windows
@@ -188,7 +215,7 @@ Navigate to:
 > Terminal → Configure Default Build Task...
 
 choose `Create tasks.json file from template` > `Others`  
-the create file is:
+the created file is:
 > ./.vscode/tasks.json
 
 **Note:** dummy non-c++ task would be created - replace with the exaple below
@@ -231,6 +258,48 @@ example of `tasks.json`:
             "detail": "Generated task by Debugger."
         }
     ]
+}
+```
+
+##### Build configuration for Qt:
+
+To compile a Qt app you need to include Qt headers and link Qt libraries:
+
+```json
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: g++ build active file",
+			"command": "/usr/bin/g++",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"${file}",
+				"-o",
+				"${fileDirname}/bin/${fileBasenameNoExtension}",
+				"-I/usr/include/qt6",
+				"-I/usr/include/qt6/QtWidgets",
+				"-I/usr/include/qt6/QtGui",
+				"-I/usr/include/qt6/QtCore",
+				"-lQt6Widgets",
+				"-lQt6Gui",
+				"-lQt6Core"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compiler: /usr/bin/g++"
+		}
+	]
 }
 ```
 
