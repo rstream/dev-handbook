@@ -10,4 +10,5 @@
 ## Qt development
 
 [Qt compilation](qt/qt-compilation.md) - how to compile a Qt app  
-[Hello world Qt](qt/qt-hello-world.md) - sample "Hello world" application using Qt
+[Hello world Qt](qt/qt-hello-world.md) - sample "Hello world" application using Qt  
+[Qt Widgets](qt/qt-widgets.md) - creation and usage of Qt widgets (labels, inputs, checkboxes, buttons)
