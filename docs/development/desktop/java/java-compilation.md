@@ -21,12 +21,23 @@ javac MyApp.java Second.java Third.java
 ```
 Will produce several `*.class` files.
 
-**Runing byte-code**
+## Run java apps
+
+### Running source code (*.java) files
+
+Need to use IDE for running *.java files before compilation to byte-code.  
+Also it's possible to do if you have only 1 class:
+```sh
+java MyApp.java
+```
+
+### Running byte-code (*.class) files
 
 To run - pass the main class as a parameter (without extension):
 ```sh
 java MyApp
 ```
+This will execute **MyApp.class** file  
 Need to pass only 1 file (the main one), all dependent classes will be loaded automatically.
 
 ## Create JAR
