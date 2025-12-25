@@ -1,6 +1,6 @@
 # Windows
 
-[← back](../index.md)
+[← back](../../index.md)
 
 Windows settings, tweaks and software installation.
 

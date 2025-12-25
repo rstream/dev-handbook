@@ -1,6 +1,6 @@
 # Visual Studio Code
 
-[← back](../index.md)
+[← back](../../index.md)
 
 Probably one of the most popular code editors.
 

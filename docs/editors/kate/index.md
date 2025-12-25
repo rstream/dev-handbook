@@ -1,6 +1,6 @@
 # KATE
 
-[← back](../index.md)
+[← back](../../index.md)
 
 KDE Advanced Text Editor - setup & tricks.
 

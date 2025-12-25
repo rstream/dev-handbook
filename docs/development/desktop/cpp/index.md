@@ -1,6 +1,6 @@
 # C++ development
 
-[← back](../index.md)
+[← back](../../../index.md)
 
 ## General
 

@@ -1,5 +1,5 @@
 # NodeJS development
 
-[← back](../index.md)
+[← back](../../../index.md)
 
 [package.json](package-json.md) - node project settings (package.json)  

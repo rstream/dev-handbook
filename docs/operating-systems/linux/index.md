@@ -1,6 +1,6 @@
 # Linux
 
-[← back](../index.md)
+[← back](../../index.md)
 
 I'm an openSUSE user, so most information is related to this OS (like usage of `zypper` for package installation)
 
