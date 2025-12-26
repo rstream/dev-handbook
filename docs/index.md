@@ -1,6 +1,6 @@
 # My development and system administration handbook
 
-When you are working in multiple areas - risks of forgetting things that are not used daily is pretty high.  
+When you are working in multiple areas - risks of forgetting things that are not used daily are pretty high.  
 That's why i've created this handbook - to keep the knowledge in a place with easy access, so I can quickly get here if I need something to recall.
 
 Generally it's about:
