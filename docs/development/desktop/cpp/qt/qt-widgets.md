@@ -8,4 +8,5 @@
 [QRadioButton, QButtonGroup](qt-widgets/qradiobutton.md) - radio button + button group  
 [QPlainTextEdit](qt-widgets/qplaintextedit.md) - multi-line plain text box  
 [QTextEdit](qt-widgets/qtextedit.md) - multi-line rich text box  
-[QComboBox](qt-widgets/qcombobox.md) - dropdown
+[QComboBox](qt-widgets/qcombobox.md) - dropdown  
+[QListWidget](qt-widgets/qlistwidget.md) - list with selectable options  
