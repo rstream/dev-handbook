@@ -10,3 +10,4 @@
 [QTextEdit](qt-widgets/qtextedit.md) - multi-line rich text box  
 [QComboBox](qt-widgets/qcombobox.md) - dropdown  
 [QListWidget](qt-widgets/qlistwidget.md) - list with selectable options  
+[QMenuBar, QMenu](qt-widgets/qmenubar.md) - window menu
