@@ -12,3 +12,4 @@
 [QListWidget](qt-widgets/qlistwidget.md) - list with selectable options  
 [QMenuBar, QMenu](qt-widgets/qmenubar.md) - window menu  
 [QDialog](qt-widgets/qdialog.md) - custom dialog window
+[QTabWidget](qt-widgets/qtabwidget.md) - tabs
