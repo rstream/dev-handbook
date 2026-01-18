@@ -13,4 +13,5 @@
 [QMenuBar, QMenu](qt-widgets/qmenubar.md) - window menu  
 [QDialog](qt-widgets/qdialog.md) - custom dialog window
 [QTabWidget](qt-widgets/qtabwidget.md) - tabs  
-[QSpinBox](qt-widgets/qspinbox.md) - spin box
+[QSpinBox](qt-widgets/qspinbox.md) - spin box  
+[QSlider](qt-widgets/qslider.md) - slider
