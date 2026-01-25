@@ -8,4 +8,5 @@
 
 ## Examples
 
-[Basic config](wp-basic.md) - basic config with HTML/CSS/JS and images
+[Basic config](wp-basic.md) - basic config with HTML/CSS/JS and images  
+[Multi-module](wp-multimod.md) - multiples modules processing
