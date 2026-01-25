@@ -35,7 +35,7 @@ export default {
         // default extension for import (if extension is omitted)
         extensions: ['.js', '.jsx'],
     },
-    // entry root folder
+    // start point of all relative paths (entry, modules, resolves, plugins)
     context: path.resolve('src'),
     // entries
     entry: {
