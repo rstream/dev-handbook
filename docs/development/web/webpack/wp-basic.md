@@ -11,14 +11,18 @@ This basic config allows the following:
 * has a dev server
 * this config is for a dev (non-minified) mode
 
-Run webpack in dev-server mode:
-```sh
-npm run dev
-```
+Node dependencies to be installed:
+* webpack
+* webpack-cli
+* webpack-dev-server
+* html-webpack-plugin
+* clean-webpack-plugin
+* css-loader
+* style-loader
 
-Run webpack in build mode mode:
+Run to install:
 ```sh
-npm run build
+npm install -D webpack webpack-cli webpack-dev-server html-webpack-plugin clean-webpack-plugin css-loader style-loader
 ```
 
 ```js

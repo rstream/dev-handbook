@@ -21,7 +21,27 @@ webpack --mode production
 
 ## Watch
 
-Run watch on the local server:
+Run watch & build:
 ```sh
 webpack --watch
+```
+
+## Local server
+
+Run local server (server setting are in `webpack.config.js`):
+```sh
+webpack serve
+```
+
+## Set npm tasks
+
+You can set up shortcuts in `package.json`:
+```json
+{
+  "scripts": {
+    "build": "webpack --mode development",
+    "prod": "webpack --mode production",
+    "dev": "webpack serve"
+  }
+}
 ```
