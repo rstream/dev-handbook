@@ -81,3 +81,23 @@ export default {
     mode: 'development'
 };
 ```
+
+package.json:
+
+```json
+{
+  "scripts": {
+    "build": "webpack --mode development",
+    "dev": "webpack serve"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.5",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.103.0",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.2"
+  }
+}
+```
