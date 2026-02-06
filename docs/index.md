@@ -1,7 +1,7 @@
 # My development and system administration handbook
 
 When you are working in multiple areas - risks of forgetting things that are not used daily are pretty high.  
-That's why i've created this handbook - to keep the knowledge in a place with easy access, so I can quickly get here if I need something to recall.
+That's why I've created this handbook - to keep the knowledge in a place with easy access, so I can quickly get here if I need something to recall.
 
 Generally it's about:
 
@@ -12,7 +12,8 @@ Generally it's about:
 Development of desktop applications (non-web)
 
 [C++](development/desktop/cpp/index.md) - C++ development (including Qt)  
-[Java](development/desktop/java/index.md) - Java development
+[Java](development/desktop/java/index.md) - Java development  
+[Assembler](development/desktop/assembler/index.md) - Assembler development for MS-DOS
 
 ### Web development
 
