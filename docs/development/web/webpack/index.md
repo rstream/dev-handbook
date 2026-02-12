@@ -12,4 +12,5 @@
 
 ## Examples
 
-[Basic config](wp-basic.md) - Full basic config with HTML/CSS/JS and images
+[Basic config](wp-basic.md) - Full basic config with HTML/CSS/JS and images  
+[Preact config](wp-preact-jsx.md) - Config for Preact (JSX)
