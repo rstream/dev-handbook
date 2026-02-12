@@ -33,7 +33,7 @@ import { CleanWebpackPlugin } from "clean-webpack-plugin";
 export default {
     resolve: {
         // default extension for import (if extension is omitted)
-        extensions: ['.js', '.jsx'],
+        extensions: ['.js'],
     },
     // start point of all relative paths (entry, modules, resolves, plugins)
     context: path.resolve('src'),
