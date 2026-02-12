@@ -40,7 +40,7 @@ export default {
                     }
                 }
             },
-            { // DATA - copy as files and to special folder
+            { // DATA - copy as files (to special folder)
                 test: /\.dat$/i,
                 type: 'asset/resource',
                 generator: { // overrides assetModuleFilename !
