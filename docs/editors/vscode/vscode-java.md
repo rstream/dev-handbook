@@ -17,3 +17,6 @@ It includes:
 * Debugger for Java
 * Maven/Gradle Tools
 
+## 3 Run java program
+
+Use `F5` key to execute java files.
