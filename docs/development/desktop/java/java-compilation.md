@@ -55,14 +55,26 @@ Main-Class: MyApp
 
 JAR file is a zip archive - a production representation of a java application.
 
-To create JAR:
+#### Create JAR for a single class file
+
 ```sh
 jar cfm MyApp.jar manifest.txt MyApp.class
 ```
-or for multiple files:
+#### Create JAR for multiple files
+
+Simple way (all files from a current folder)
 ```sh
 jar cfm MyApp.jar manifest.txt *.class
 ```
+
+Flexible & recommended way (all files from a specific folder - recursive)
+```sh
+jar cfm MyApp.jar manifest.txt -C out .
+```
+This will do:
+* change (temporarily) current folder to `./out`
+* take all files in `./out` and all its subfolders
+> Note: this syntax takes all files, not only `*.class` - so make sure there are no non-class files in this folder.
 
 Flags:
 * c = create
