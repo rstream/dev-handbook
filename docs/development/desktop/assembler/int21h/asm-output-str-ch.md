@@ -1,6 +1,6 @@
 # Output strings and chars
 
-[← back](index.md)
+[← back](../index.md)
 
 ## Output a string, terminated by $
 

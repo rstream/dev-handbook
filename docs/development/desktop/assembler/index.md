@@ -6,8 +6,11 @@
 
 [Installation](asm-installation.md) - install assembler    
 [Compilation](asm-compilation.md) - assembler code compilation  
-[Hello world](asm-hello-world.md) - sample "Hello world" application
+[Hello world](asm-hello-world.md) - sample "Hello world" application (DOS)
 
 ## Coding
 
-[Output to console](asm-output-str-ch.md) - output strings and chars to console  
+### int 21h
+
+[Close application](int21h/asm-close-app.md) - close DOS application  
+[Output to console](int21h/asm-output-str-ch.md) - output strings and chars to console  
