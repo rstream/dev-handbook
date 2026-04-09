@@ -8,3 +8,4 @@ Probably one of the most popular code editors.
 [Initial setup](vscode-initial-setup.md) - Basic setup  
 [C++ development](vscode-cpp.md) - Set up editor for C++ development  
 [Java development](vscode-java.md) - Set up editor for Java development  
+[PHP development](vscode-php.md) - Set up editor for PHP development  
