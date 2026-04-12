@@ -20,7 +20,7 @@ Development of desktop applications (non-web)
 Development of web applications (client and server side)
 
 [JavaScript](development/web/javascript/index.md) - JavaScript  
-[NodeJS](development/web/nodejs/index.md) - NodeJS development  
+[Node.js](development/web/nodejs/index.md) - Node.js development  
 [Alpine](development/web/alpine/index.md) - AlpineJS development  
 [Webpack](development/web/webpack/index.md) - Webpack  
 [PHP](development/web/php/index.md) - PHP  

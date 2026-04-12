@@ -1,4 +1,4 @@
-# NodeJS development
+# Node.js development
 
 [← back](../../../index.md)
 
