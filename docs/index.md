@@ -23,7 +23,8 @@ Development of web applications (client and server side)
 [NodeJS](development/web/nodejs/index.md) - NodeJS development  
 [Alpine](development/web/alpine/index.md) - AlpineJS development  
 [Webpack](development/web/webpack/index.md) - Webpack  
-[PHP](development/web/php/index.md) - PHP
+[PHP](development/web/php/index.md) - PHP  
+[Preact](development/web/preact/index.md) - PreactJS
 
 ## Code editors
 
