@@ -26,6 +26,10 @@ Development of web applications (client and server side)
 [PHP](development/web/php/index.md) - PHP  
 [Preact](development/web/preact/index.md) - PreactJS
 
+### Data bases
+
+[SQL](development/databases/sql/index.md) - SQL database
+
 ## Code editors
 
 Setup and tweaks of popular (my favorite) code editors.
