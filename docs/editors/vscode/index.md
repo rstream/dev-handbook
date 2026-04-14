@@ -9,3 +9,4 @@ Probably one of the most popular code editors.
 [C++ development](vscode-cpp.md) - Set up editor for C++ development  
 [Java development](vscode-java.md) - Set up editor for Java development  
 [PHP development](vscode-php.md) - Set up editor for PHP development  
+[SQL](vscode-sql.md) - Extension for working with SQL databases
