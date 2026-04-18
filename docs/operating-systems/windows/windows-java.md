@@ -14,19 +14,26 @@ javac -version
 
 ## Check JAR
 
-Make sure that Java archive tool is present:
+Make sure that Java archive tool is present and available:
 ```sh
 where jar
 ```
-If JAR is not found try to find it in `Program Files` and add that folder to PATH.
+If JAR is not found try to find it in `Program Files` and add that folder to PATH (see below).
 
-## Update path
+### Update path
 
-If some of the above commands are not working - this may be caused by the fact that java folder is not included in the PATH.  
+If **jar** is not found - this may be caused by the fact that java folder is not included into the PATH.  
 Usually the path to java looks like:
 ```
-c:\Program Files\Java\jdk-17.0.5\bin\
+c:\Program Files\Java\jdk-17.0.5\bin
 ```
+
+Create a variable `JAVA_HOME` with the value like:
+```
+c:\Program Files\Java\jdk-17.0.5
+```
+Add this variable to `PATH` as `%JAVA_HOME%\bin`.
+
 
 ## Install JDK
 
