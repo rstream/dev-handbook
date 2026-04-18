@@ -7,4 +7,5 @@
 
 Language basics
 
-[Types](java-types.md) - basic types in Java
+[Types](java-types.md) - basic types in Java  
+[Conditions/loops](java-cond-loops.md) - loop and conditions in Java
