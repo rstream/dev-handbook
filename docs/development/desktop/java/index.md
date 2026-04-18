@@ -10,4 +10,5 @@ Language basics
 [Types](java-types.md) - basic types in Java  
 [Conditions/loops](java-cond-loops.md) - loop and conditions in Java
 
-[Output (console)](java-output-console.md) - write to console
+[Output (console)](java-output-console.md) - write to console  
+[Input (console)](java-input-console.md) - read from keyboard with Scanner
