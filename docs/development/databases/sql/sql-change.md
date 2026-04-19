@@ -42,6 +42,9 @@ UPDATE products
 SET name = 'laptop (i7)', price = 1200
 WHERE name = 'laptop';
 ```
+Notes:
+* no "TABLE" before table name
+* no comma after the last column
 
 ## 3. Delete lines
 
