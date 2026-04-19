@@ -2,7 +2,14 @@
 
 [← back](index.md)
 
-## 1. Add columns
+## 1. Rename Table
+
+```sql
+ALTER TABLE goods
+RENAME TO offers;
+```
+
+## 2. Add columns
 
 Add 2 new columns to the Table
 ```sql
@@ -18,7 +25,7 @@ ADD COLUMN web_url TEXT NOT NULL DEFAULT '';
 ```
 > Note: when adding a mandatory (NOT NULL) column you should specify a default value
 
-## 2. Delete columns
+## 3. Delete columns
 
 Delete a column:
 ```sql
@@ -26,8 +33,23 @@ ALTER TABLE products
 DROP COLUMN web_url;
 ```
 
-Safely delete a column:
+Safely delete a column (only in separate queries):
 ```sql
 ALTER TABLE products
 DROP COLUMN IF EXISTS web_url;
+```
+
+## 4. Rename columns
+
+```sql
+ALTER TABLE offers
+RENAME COLUMN value TO price;
+```
+Rename 2 columns
+```sql
+ALTER TABLE offers
+RENAME COLUMN price TO cost;
+
+ALTER TABLE offers
+RENAME COLUMN description TO "desc"; -- "desc" is a reserved word - so only in quotes
 ```
