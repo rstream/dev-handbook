@@ -2,9 +2,10 @@
 
 [← back](../../../index.md)
 
-## Running PHP server
+## General
 
-Run PHP server in a specific folder:
-```sh
-php -S localhost:8080
-```  
+[Local server](php-server.md) - run local PHP server
+
+## Language basics
+  
+[Conditions/loops](php-cond-loops.md) - loop and conditions in PHP
