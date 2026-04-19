@@ -7,6 +7,10 @@ Generally it's about:
 
 ## Development
 
+### General
+
+[Git](general/git/index.md) - Git documentation
+
 ### Desktop development
 
 Development of desktop applications (non-web)
