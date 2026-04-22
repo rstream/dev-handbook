@@ -2,6 +2,11 @@
 
 [← back](../../../index.md)
 
+## Installation
+
+[Windows](../../../operating-systems/windows/windows-php.md) - Install PHP for Windows  
+[Linux](../../../operating-systems/linux/linux-php.md) - Install PHP for Linux
+
 ## General
 
 [Local server](php-server.md) - run local PHP server
