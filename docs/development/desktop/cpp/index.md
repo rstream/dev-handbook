@@ -13,7 +13,9 @@
 
 [Types](cpp-types.md) - basic and complex types in C++  
 [Type declarations](cpp-type-decl.md) - `typedef` and `using` aliases  
-[Conditions and loops](cpp-cond-loops.md) - conditions, loops, ternary operator, switch
+[Conditions and loops](cpp-cond-loops.md) - conditions, loops, ternary operator, switch  
+[Strings](cpp-strings.md) - working with strings (C-style)  
+[Arrays](cpp-arrays.md) - working with arrays (C-style)
 
 ### Pointers
 
