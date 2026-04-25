@@ -9,7 +9,8 @@
 
 ## Syntax
 
-[Types](cpp-types.md) - basic and complex types in C++
+[Types](cpp-types.md) - basic and complex types in C++  
+[Conditions and loops](cpp-cond-loops.md) - conditions, loops, ternary operator, switch
 
 ## Qt development
 
