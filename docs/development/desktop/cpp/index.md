@@ -20,6 +20,11 @@
 [Pointers](cpp-pointers.md) - working with pointers in C++  
 [Pointers to functions](cpp-pointers-fn.md) - pointers to functions and callbacks
 
+### Dynamic memory
+
+[Dynamic memory (old)](cpp-dynamic-c.md) - C-style dynamic memory usage (malloca/free)  
+[Dynamic memory (new)](cpp-dynamic-cpp.md) - Modern dynamic memory usage (new/delete)
+
 ## Qt development
 
 [Qt compilation](qt/qt-compilation.md) - how to compile a Qt app  
