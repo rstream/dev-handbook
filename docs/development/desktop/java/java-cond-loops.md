@@ -59,7 +59,7 @@ for (int x : arr) {
 Short form of simple if/else expression.
 
 ```java
-int result = (cond) ? a : b;
+int result = cond ? a : b;
 ```
 
 ## switch
