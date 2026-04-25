@@ -5,6 +5,8 @@
 Server-side HTML templates often mix HTML markup with small PHP expressions and control structures.
 Use this section for rendering values, conditionally showing blocks, and repeating markup for collections.
 
+## Sections
+
 - [What inline PHP is](php-inline-overview.md)
 - [Outputting values](php-output.md)
 - [Escaping output](php-escaping.md)

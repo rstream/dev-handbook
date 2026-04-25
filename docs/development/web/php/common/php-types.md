@@ -1,6 +1,6 @@
 # Types in PHP
 
-[← back](./index.md)
+[← back](../index.md)
 
 ## 1. Basic types
 

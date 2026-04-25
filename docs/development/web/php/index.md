@@ -15,8 +15,9 @@
 
 ### Language basics
 
-[Types](php-types.md) - basic and complex types in PHP  
-[Conditions/loops](php-cond-loops.md) - loop and conditions in PHP
+[Types](common/php-types.md) - basic and complex types in PHP  
+[Conditions/loops](common/php-cond-loops.md) - loop and conditions in PHP  
+[Strings](common/php-strings.md) - string basics and common operations  
+[Arrays](common/php-arrays.md) - lists, associative arrays, and template data
 
 [Inline usage](inline/index.md) - inline PHP usage (in HTML templates)
-
