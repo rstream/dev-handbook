@@ -27,6 +27,11 @@
 [Dynamic memory (old)](cpp-dynamic-c.md) - C-style dynamic memory usage (malloca/free)  
 [Dynamic memory (new)](cpp-dynamic-cpp.md) - Modern dynamic memory usage (new/delete)
 
+### Working with files
+
+[Files - C-style](cpp-files-c.md) - working with files (C-style)  
+[Files - streams](cpp-files-cpp.md) - working with files using streams
+
 ## Qt development
 
 [Qt compilation](qt/qt-compilation.md) - how to compile a Qt app  
