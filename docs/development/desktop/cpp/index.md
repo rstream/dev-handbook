@@ -7,6 +7,10 @@
 [Compilation](cpp-compilation.md) - compiling C++ files  
 [Hello world](cpp-hello-world.md) - sample "Hello world" application
 
+## Syntax
+
+[Types](cpp-types.md) - basic and complex types in C++
+
 ## Qt development
 
 [Qt compilation](qt/qt-compilation.md) - how to compile a Qt app  
