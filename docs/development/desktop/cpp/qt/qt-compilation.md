@@ -19,7 +19,7 @@ Link libraries:
 
 Command line example:
 ```sh
-g++ hello-world.cpp -g -o bin/hello-world -I/usr/include/qt6 -I/usr/include/qt6/QtWidgets -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -lQt6Widgets -lQt6Gui -lQt6Cor
+g++ hello-world.cpp -g -o bin/hello-world -I/usr/include/qt6 -I/usr/include/qt6/QtWidgets -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -lQt6Widgets -lQt6Gui -lQt6Core
 ```
 
 ## Setting up editors for Qt app compilation
