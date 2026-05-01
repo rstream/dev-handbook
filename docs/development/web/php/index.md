@@ -34,3 +34,4 @@
 ### PostgreSQL
 
 [Setup](db/php-psql-setup.md) - set up PHP + PostgreSQL  
+[Simple query](db/php-psql-query.md) - simple query to PostgreSQL  
