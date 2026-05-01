@@ -22,7 +22,15 @@
 
 [Inline usage](inline/index.md) - inline PHP usage (in HTML templates)
 
+## Network
+
 ### Requests
 
 [\$_GET](requests/php-req-get.md) - GET request parameters  
 [\$_POST](requests/php-req-post.md) - POST request parameters
+
+## Using PHP with Databases
+
+### PostgreSQL
+
+[Setup](db/php-psql-setup.md) - set up PHP + PostgreSQL  
