@@ -78,7 +78,37 @@ FROM products
 WHERE name = 'laptop' OR name = 'desktop';
 ```
 
-## 5. Join tables
+## 5. Sort rows with ORDER BY
+
+Sort products by price from low to high:
+
+```sql
+SELECT id, name, price
+FROM products
+ORDER BY price;
+```
+
+`ORDER BY` sorts the result. Ascending order is the default, the same as `ORDER BY price ASC`.
+
+Sort products by price from high to low:
+
+```sql
+SELECT id, name, price
+FROM products
+ORDER BY price DESC;
+```
+
+Sort by category first, then by price:
+
+```sql
+SELECT id, name, category_id, price
+FROM products
+ORDER BY category_id ASC, price DESC;
+```
+
+You can sort by one or more columns.
+
+## 6. Join tables
 
 Get users with their role names:
 
@@ -108,7 +138,7 @@ FROM users AS u
 LEFT JOIN roles AS r ON u.role_id = r.id;
 ```
 
-## 6. Arithmetic in SELECT
+## 7. Arithmetic in SELECT
 
 Add 20 to every price:
 
