@@ -1,6 +1,6 @@
-# OpenSUSE - control display brightness
+# Adjust external display brightness
 
-[← back](index.md)
+[← back](../index.md)
 
 ## ddcutil
 
