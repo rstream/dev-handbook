@@ -12,6 +12,10 @@ I'm an openSUSE user, so most information is related to this OS (like usage of `
 [Application .desktop files](general/linux-desktop-files.md) - `.desktop` files for applications   
 [Application icons](general/linux-app-icons.md) - icon files for applications 
 
+## Software on Linux
+
+[VS Code](soft/linux-vscode.md) - VS Code for Linux  
+
 ## Development tools
 
 [C++ compilers](linux-cpp.md) - install C++ compilers for Linux  
