@@ -2,10 +2,10 @@
 
 [← back](../../../index.md)
 
-## Installation
+## Installation & setup
 
-[Windows](../../../operating-systems/windows/windows-sql.md) - Install PostgreSQL on Windows  
-[Linux](../../../operating-systems/linux/linux-sql.md) - Install PostgreSQL on Linux  
+[Windows](../../../operating-systems/windows/windows-sql.md) - PostgreSQL on Windows  
+[Linux](../../../operating-systems/linux/linux-sql.md) - PostgreSQL on Linux  
 
 [VS Code](../../../editors/vscode/vscode-sql.md) - Install SQL extension for VS Code
 
