@@ -9,6 +9,11 @@ Install PostgreSQL on Linux (client and server)
 sudo zypper install postgresql postgresql-server
 ```
 
+If you are planning to use PostgreSQL with PHP, also install
+```sh
+sudo zypper install php8-pgsql
+```
+
 Enable PostgreSQL service at boot (and start now)
 ```sh
 sudo systemctl enable --now postgresql
