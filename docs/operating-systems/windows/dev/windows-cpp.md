@@ -1,6 +1,6 @@
 # C++ compilers for Windows
 
-[← back](index.md)
+[← back](../index.md)
 
 There are 2 popular compilers you can use for C++ development.
 

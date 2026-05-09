@@ -1,6 +1,6 @@
 # SQL for Windows
 
-[← back](index.md)
+[← back](../index.md)
 
 ## PostgreSQL
 

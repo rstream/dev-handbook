@@ -4,7 +4,7 @@
 
 ## Installation & setup
 
-[Windows](../../../operating-systems/windows/windows-sql.md) - PostgreSQL on Windows  
+[Windows](../../../operating-systems/windows/dev/windows-sql.md) - PostgreSQL on Windows  
 [Linux](../../../operating-systems/linux/linux-sql.md) - PostgreSQL on Linux  
 
 [VS Code](../../../editors/vscode/vscode-sql.md) - Install SQL extension for VS Code

@@ -1,6 +1,6 @@
 # PHP for Windows
 
-[← back](index.md)
+[← back](../index.md)
 
 ## Download and install PHP
 

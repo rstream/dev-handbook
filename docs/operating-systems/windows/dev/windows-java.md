@@ -1,6 +1,6 @@
 # Java dev tools for Windows
 
-[← back](index.md)
+[← back](../index.md)
 
 ## 1 Install/update JDK
 
