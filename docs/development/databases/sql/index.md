@@ -18,4 +18,5 @@
 [Create](sql-create.md) - create a Table  
 [Change](sql-change.md) - change a Table (add/update/delete lines)  
 [Alter](sql-alter.md) - change Tables (layout)  
-[Select](sql-select.md) - query data from a Table
+[Select](sql-select.md) - query data from a Table  
+[Aggregate functions](sql-aggregate-functions.md) - COUNT, SUM, AVG, MIN, MAX, GROUP BY, HAVING
