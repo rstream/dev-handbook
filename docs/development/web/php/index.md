@@ -16,6 +16,7 @@
 ### Language basics
 
 [Types](common/php-types.md) - basic and complex types in PHP  
+[Operators](common/php-operators.md) - arithmetic, comparison, logical operators  
 [Conditions/loops](common/php-cond-loops.md) - loop and conditions in PHP  
 [Strings](common/php-strings.md) - string basics and common operations  
 [Arrays](common/php-arrays.md) - lists, associative arrays, and template data
