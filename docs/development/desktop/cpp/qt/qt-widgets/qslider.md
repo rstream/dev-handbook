@@ -2,18 +2,53 @@
 
 [← back](../qt-widgets.md)
 
-Slider (horizontal/vertical)
+`QSlider` lets the user choose an integer value from a range. It is useful for volume, zoom, brightness, progress-like settings, and other bounded values.
+
+```cpp
+#include <QSlider>
+```
+
+## Basic usage
 
 ```cpp
 QSlider *slider = new QSlider(Qt::Horizontal);
 slider->setRange(0, 100);
 slider->setValue(30);
-slider->setSingleStep(5); // keyboard!
-slider->setPageStep(10); // pgup/pgdn + click to the left/right of the slider
-slider->setTickPosition(QSlider::TicksAbove);
-slider->setTickInterval(10);
+
 QObject::connect(slider, &QSlider::valueChanged, [](int value) {
 	cout << "S=" << value << endl;
 });
+
 layout->addWidget(slider);
 ```
+
+## Common operations
+
+```cpp
+slider->setMinimum(0);
+slider->setMaximum(100);
+slider->setSingleStep(5);
+slider->setPageStep(10);
+slider->setValue(50);
+
+int value = slider->value();
+```
+
+## Tick marks
+
+```cpp
+slider->setTickPosition(QSlider::TicksAbove);
+slider->setTickInterval(10);
+```
+
+## Signals
+
+* `valueChanged(int)` is emitted when the value changes.
+* `sliderMoved(int)` is emitted while the user drags the handle.
+* `sliderReleased()` is useful when expensive work should run after dragging ends.
+
+## Notes
+
+* `setSingleStep()` affects keyboard movement.
+* `setPageStep()` affects Page Up/Page Down and track clicks.
+* Use `Qt::Vertical` for a vertical slider.
