@@ -43,6 +43,14 @@ $email = $_POST['email'] ?? '';
 - output should be escaped with `htmlspecialchars()`
 - input should be validated before saving or processing
 
+## Check that a field exists
+
+```php
+if (isset($_POST['email'])) {
+    $email = trim($_POST['email']);
+}
+```
+
 ## Check that the form was submitted
 
 ```php
