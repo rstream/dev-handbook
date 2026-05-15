@@ -24,10 +24,6 @@
 [QSpinBox](qt-widgets/qspinbox.md) - spin box  
 [QSlider](qt-widgets/qslider.md) - slider
 
-## Menu
-
-[QMenuBar, QMenu](qt-widgets/qmenubar.md) - window menu
-
 ## Dialogs
 
 [QDialog](qt-widgets/qdialog.md) - custom dialog window

@@ -1,6 +1,6 @@
 # QMenuBar, QMenu
 
-[← back](../qt-widgets.md)
+[← back](../index.md)
 
 Menu (+ status bar)
 

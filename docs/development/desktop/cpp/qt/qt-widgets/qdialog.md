@@ -1,6 +1,6 @@
 # QDialog
 
-[← back](../qt-widgets.md)
+[← back](../index.md)
 
 Custom Dialog window
 

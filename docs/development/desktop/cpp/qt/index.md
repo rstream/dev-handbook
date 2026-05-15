@@ -10,4 +10,6 @@
 ## Development
 
 [Qt Widgets](qt-widgets.md) - creation and usage of Qt widgets (labels, inputs, checkboxes, buttons)  
-[Simple dialogs](qt-messagebox.md) - simple message boxes: alerts, confirmations, warnings, errors
+[Menu and Statusbar](qt-widgets/qmenubar.md) - window menu and status bar  
+[Simple dialogs](qt-messagebox.md) - simple message boxes: alerts, confirmations, warnings, errors  
+[Custom dialogs](qt-widgets/qdialog.md) - custom dialog windows

@@ -1,4 +1,4 @@
-# Simple dialogs using QMessageBox
+# QMessageBox: simple dialogs 
 
 [← back](index.md)
 
