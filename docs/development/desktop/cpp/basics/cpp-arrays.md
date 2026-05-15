@@ -1,6 +1,6 @@
 # Arrays in old C/C++
 
-[← back](index.md)
+[← back](../index.md)
 
 ## 1. Idea
 

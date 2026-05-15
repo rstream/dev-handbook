@@ -1,6 +1,6 @@
 # Hello world application using Qt in C++
 
-[← back](../index.md)
+[← back](index.md)
 
 This is a sample "Hello World" application written using Qt in C++
 * create a Main Window

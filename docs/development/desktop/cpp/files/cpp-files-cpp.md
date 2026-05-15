@@ -1,6 +1,6 @@
 # Files with streams in C++
 
-[← back](index.md)
+[← back](../index.md)
 
 ## 1. Idea
 

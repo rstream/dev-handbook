@@ -1,6 +1,6 @@
 # Compilation of the Qt application
 
-[← back](../index.md)
+[← back](index.md)
 
 ## Compiling a C++ Qt app
 

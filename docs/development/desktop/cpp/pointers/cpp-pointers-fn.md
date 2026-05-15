@@ -1,6 +1,6 @@
 # Function pointers and callbacks in C++
 
-[← back](index.md)
+[← back](../index.md)
 
 ## 1. Function pointer
 
