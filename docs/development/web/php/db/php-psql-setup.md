@@ -17,6 +17,14 @@ services.msc
 ```
 Make sure `postgresql-x64-18` service is running.
 
+### Linux
+
+Check PostgreSQL service status:
+```sh
+systemctl status postgresql
+```
+More about [PostgreSQL service management](../../../../operating-systems/linux/postgresql/postgresql-admin.md).
+
 ## <a id="edit-php-ini"></a>Edit php.ini
 
 ### Prepare the file
