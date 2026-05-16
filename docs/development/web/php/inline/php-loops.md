@@ -5,7 +5,14 @@
 Use loops when one HTML fragment must be rendered multiple times.
 In templates, `foreach` is the most common choice.
 
-## Render a list with `foreach`
+## Summary
+
+- [Render a list with `foreach`](#render-a-list-with-foreach) - repeat markup and escape output with `htmlspecialchars()`
+- [Use keys and values](#use-keys-and-values) - render associative arrays with `htmlspecialchars()`
+- [Show a fallback when the array is empty](#show-a-fallback-when-the-array-is-empty) - handle empty lists with `if`
+- [Use `for` when an index is required](#use-for-when-an-index-is-required) - loop by numeric index with `count()`
+
+## <a id="render-a-list-with-foreach"></a>Render a list with `foreach`
 
 ```php
 <ul>
@@ -15,7 +22,7 @@ In templates, `foreach` is the most common choice.
 </ul>
 ```
 
-## Use keys and values
+## <a id="use-keys-and-values"></a>Use keys and values
 
 ```php
 <ul>
@@ -25,7 +32,7 @@ In templates, `foreach` is the most common choice.
 </ul>
 ```
 
-## Show a fallback when the array is empty
+## <a id="show-a-fallback-when-the-array-is-empty"></a>Show a fallback when the array is empty
 
 ```php
 <?php if ($users): ?>
@@ -39,7 +46,7 @@ In templates, `foreach` is the most common choice.
 <?php endif; ?>
 ```
 
-## Use `for` when an index is required
+## <a id="use-for-when-an-index-is-required"></a>Use `for` when an index is required
 
 ```php
 <ol>

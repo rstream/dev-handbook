@@ -2,7 +2,17 @@
 
 [← back](../index.md)
 
-## 1. Arithmetic operators
+## Summary
+
+- [Arithmetic operators](#arithmetic-operators) - numeric operations
+- [Assignment operators](#assignment-operators) - assign and update values
+- [String operator](#string-operator) - concatenate strings with `.`
+- [Comparison operators](#comparison-operators) - loose and strict equality
+- [Relational operators](#relational-operators) - compare ordering
+- [Logical operators](#logical-operators) - combine conditions
+- [Null coalescing operator](#null-coalescing-operator) - default value for missing or `null` data
+
+## <a id="arithmetic-operators"></a>1. Arithmetic operators
 
 ```php
 $a + $b; // addition
@@ -17,7 +27,7 @@ Numeric strings are converted to numbers in arithmetic expressions:
 $x = "10" + 5; // 15
 ```
 
-## 2. Assignment operators
+## <a id="assignment-operators"></a>2. Assignment operators
 
 ```php
 $x = 10;
@@ -27,7 +37,7 @@ $x *= 3;
 $x /= 4;
 ```
 
-## 3. String operator
+## <a id="string-operator"></a>3. String operator
 
 Use `.` to concatenate strings.
 
@@ -38,7 +48,7 @@ $lastName = 'Smith';
 $fullName = $firstName . ' ' . $lastName;
 ```
 
-## 4. Comparison operators
+## <a id="comparison-operators"></a>4. Comparison operators
 
 ### Loose comparison: `==`
 
@@ -71,7 +81,7 @@ $a != $b;  // loose: values are different after type conversion
 $a !== $b; // strict: values or types are different
 ```
 
-## 5. Relational operators
+## <a id="relational-operators"></a>5. Relational operators
 
 ```php
 $a > $b;
@@ -80,7 +90,7 @@ $a >= $b;
 $a <= $b;
 ```
 
-## 6. Logical operators
+## <a id="logical-operators"></a>6. Logical operators
 
 ```php
 $a && $b; // and
@@ -95,7 +105,7 @@ if ($age >= 18 && $isActive) {
 }
 ```
 
-## 7. Null coalescing operator
+## <a id="null-coalescing-operator"></a>7. Null coalescing operator
 
 `??` returns the left value if it exists and is not `null`, otherwise it returns the right value.
 

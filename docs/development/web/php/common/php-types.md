@@ -2,30 +2,36 @@
 
 [← back](../index.md)
 
-## 1. Basic types
+## Summary
+
+- [Basic types](#basic-types) - scalar values, exact type names, and helpers like `strlen()`
+- [Complex types](#complex-types) - arrays, objects, `null`, and helpers like `count()`
+- [Type declarations](#type-declarations) - function parameters, return values, properties, nullable types, unions, and PHPDoc for arrays
+
+## <a id="basic-types"></a>1. Basic types
 
 These are the exact type names used in function parameters, return values, and class properties:
 
 | Value type | Type name in code | Example value |
 | --- | --- | --- |
-| Boolean | `bool` | `true`, `false` |
-| Integer | `int` | `255` |
-| Floating point number | `float` | `199.50` |
-| String | `string` | `'hello'` |
-| Array | `array` | `[1, 2, 3]` |
-| Object | class name or `object` | `User`, `object` |
-| No value | `null` | `null` |
+| [Boolean](#boolean) | `bool` | `true`, `false` |
+| [Integer](#numbers) | `int` | `255` |
+| [Floating point number](#numbers) | `float` | `199.50` |
+| [String](#string) | `string` | `'hello'` |
+| [Array](#array) | `array` | `[1, 2, 3]` |
+| [Object](#object) | class name or `object` | `User`, `object` |
+| [No value](#null) | `null` | `null` |
 
 Use these names exactly: `bool`, not `boolean`; `int`, not `integer`; `float`, not `double`.
 PHP does not have a separate `char` type. A single character is a `string` with length 1.
 
-### Boolean
+### <a id="boolean"></a>Boolean
 
 ```php
 $b = true;
 ```
 
-### Numbers
+### <a id="numbers"></a>Numbers
 
 Integer numbers
 ```php
@@ -41,7 +47,7 @@ $x = 199.50;
 $y = 3.14159265359;
 ```
 
-### String
+### <a id="string"></a>String
 
 ```php
 $hello = "hello world"; // double quotes
@@ -58,9 +64,9 @@ Get string length
 $len = strlen($name);
 ```
 
-## 2. Complex types
+## <a id="complex-types"></a>2. Complex types
 
-### Array
+### <a id="array"></a>Array
 
 Array can work as a list or as a dictionary.
 
@@ -84,7 +90,7 @@ Get array length
 $len = count($arr);
 ```
 
-### Object
+### <a id="object"></a>Object
 
 Object is an instance of a class.
 
@@ -101,7 +107,7 @@ $user = new User();
 $user->name = 'Alice';
 ```
 
-### null
+### <a id="null"></a>null
 
 `null` means "no value".
 
@@ -109,7 +115,7 @@ $user->name = 'Alice';
 $value = null;
 ```
 
-## 3. Type declarations
+## <a id="type-declarations"></a>3. Type declarations
 
 Type declarations make PHP check what values can be passed to a function, returned from a function, or stored in a class property.
 
