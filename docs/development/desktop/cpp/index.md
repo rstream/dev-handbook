@@ -27,6 +27,12 @@
 [Dynamic memory (old)](dynamic/cpp-dynamic-c.md) - C-style dynamic memory usage (malloca/free)  
 [Dynamic memory (new)](dynamic/cpp-dynamic-cpp.md) - Modern dynamic memory usage (new/delete)
 
+### C++ Standard Library
+
+[std::string](std/cpp-std-string.md) - dynamic text strings  
+[std::array](std/cpp-std-array.md) - fixed-size array wrapper  
+[std::vector](std/cpp-std-vector.md) - dynamic array container
+
 ### Working with files
 
 [Files - C-style](files/cpp-files-c.md) - working with files (C-style)  
