@@ -22,7 +22,7 @@ long y = 8000000000; // 64 bit
 
 Floating point numbers:
 ```java
-float x = 199.50;              // 32 bit
+float x = 199.50;         // 32 bit
 double y = 3.14159265359; // 64 bit
 ```
 
@@ -50,7 +50,7 @@ char c = name.charAt(5);
 
 Get string length
 ```java
-int len = name.length(); // not method
+int len = name.length(); // method
 ```
 
 ### Array
@@ -69,7 +69,7 @@ int[] arr = { 128, 256, 512, 1024 };
 int[][] table {
 	{ 128, 256, 512 },
 	{ 1024, 2048, 4096 }
-}; 
+};
 ```
 
 Access array element by index
