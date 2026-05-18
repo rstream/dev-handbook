@@ -1,6 +1,6 @@
 # Strings in Java
 
-[back](../index.md)
+[← back](../index.md)
 
 Strings store text data.
 Use them for names, messages, paths, input values, JSON text, and formatted output.

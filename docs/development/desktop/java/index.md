@@ -22,4 +22,5 @@
 
 ### Working with data types
 
-[Strings](data-types/java-strings.md) - string operations, conversions, and JSON
+[Strings](data-types/java-strings.md) - string operations, conversions, and JSON  
+[Arrays](data-types/java-arrays.md) - arrays, lists, slicing, and conversions

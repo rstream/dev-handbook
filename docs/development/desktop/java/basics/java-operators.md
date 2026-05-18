@@ -1,6 +1,6 @@
 # Operators in Java
 
-[back](../index.md)
+[← back](../index.md)
 
 Operators are symbols that perform operations on values and variables.
 
