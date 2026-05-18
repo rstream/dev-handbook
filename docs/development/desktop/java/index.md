@@ -10,6 +10,7 @@
 ## Language basics
 
 [Types](basics/java-types.md) - basic types in Java  
+[Operators](basics/java-operators.md) - operators in Java  
 [Conditions/loops](basics/java-cond-loops.md) - loop and conditions in Java
 
 [Output (console)](basics/java-output-console.md) - write to console  
