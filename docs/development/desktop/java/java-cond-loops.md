@@ -101,3 +101,4 @@ int value = switch (x) {
     default -> 0;
 };
 ```
+* `yield` returns a value and used when there are several lines of code in the **case** block.
