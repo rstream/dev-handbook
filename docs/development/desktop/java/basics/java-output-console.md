@@ -2,7 +2,13 @@
 
 [← back](../index.md)
 
-## print
+## Summary
+
+- [print](#print) - write text without a new line
+- [println](#println) - write text with a new line
+- [printf](#printf) - formatted output
+
+## <a id="print"></a>print
 
 Writes text to console without a new line.
 
@@ -11,7 +17,7 @@ System.out.print("Hello");
 System.out.print(" World");
 ```
 
-## println
+## <a id="println"></a>println
 
 Writes text and moves cursor to the next line.
 
@@ -20,7 +26,7 @@ System.out.println("Hello");
 System.out.println("World");
 ```
 
-## printf
+## <a id="printf"></a>printf
 
 Formatted output using format specifiers.
 * %s - string
