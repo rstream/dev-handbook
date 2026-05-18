@@ -1,6 +1,6 @@
 # Console output in Java
 
-[← back](index.md)
+[← back](../index.md)
 
 ## print
 

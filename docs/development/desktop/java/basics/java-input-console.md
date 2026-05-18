@@ -1,6 +1,6 @@
 # Console input in Java
 
-[← back](index.md)
+[← back](../index.md)
 
 Read keyboard input in console with `Scanner`.
 

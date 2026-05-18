@@ -1,6 +1,6 @@
 # Conditions and loops in Java
 
-[← back](index.md)
+[← back](../index.md)
 
 ## if / else
 
