@@ -26,6 +26,13 @@ int age = sc.nextInt();
 double score = sc.nextDouble();
 ```
 
+## Close Scanner
+
+Close Scanner and free resource:
+```java
+sc.close();
+```
+
 ## Full example
 
 ```java
