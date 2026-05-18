@@ -4,20 +4,26 @@
 
 Use `<?= ... ?>` to insert a PHP expression into HTML.
 
-## Print text content
+## Summary
+
+- [Print text content](#print-text-content) - `htmlspecialchars()` escapes text between HTML tags
+- [Print attribute values](#print-attribute-values) - `htmlspecialchars()` escapes values inside attributes
+- [Provide a fallback value](#provide-a-fallback-value) - use `??` for missing data
+
+## <a id="print-text-content"></a>Print text content
 
 ```php
 <h1><?= htmlspecialchars($title) ?></h1>
 <p><?= htmlspecialchars($description) ?></p>
 ```
 
-## Print attribute values
+## <a id="print-attribute-values"></a>Print attribute values
 
 ```php
 <img src="<?= htmlspecialchars($imageUrl) ?>" alt="<?= htmlspecialchars($imageAlt) ?>">
 ```
 
-## Provide a fallback value
+## <a id="provide-a-fallback-value"></a>Provide a fallback value
 
 ```php
 <p><?= htmlspecialchars($nickname ?? 'Guest') ?></p>

@@ -2,7 +2,18 @@
 
 [← back](../index.md)
 
-## if / else
+## Summary
+
+- [if / else](#if-else) - choose between branches by condition
+- [while](#while) - repeat while condition is true
+- [do / while](#do-while) - run the body at least once
+- [for](#for) - classic counted loop
+- [foreach](#foreach) - iterate over array values or key/value pairs
+- [Ternary operator](#ternary-operator) - short conditional expression
+- [switch](#switch) - multiple branches by value
+- [match](#match) - expression form for choosing a value
+
+## <a id="if-else"></a>if / else
 
 Branch execution based on a condition.
 
@@ -14,7 +25,7 @@ if ($cond) {
 }
 ```
 
-## while
+## <a id="while"></a>while
 
 Precondition loop: repeats while condition is true.
 
@@ -24,7 +35,7 @@ while ($cond) {
 }
 ```
 
-## do / while
+## <a id="do-while"></a>do / while
 
 Postcondition loop: body runs at least one time.
 
@@ -34,7 +45,7 @@ do {
 } while ($cond);
 ```
 
-## for (classic)
+## <a id="for"></a>for (classic)
 
 Loop with init, condition, and step in one line.
 
@@ -44,7 +55,7 @@ for ($i = 0; $i < $n; $i++) {
 }
 ```
 
-## foreach
+## <a id="foreach"></a>foreach
 
 Iterates over array elements directly.
 
@@ -60,7 +71,7 @@ foreach ($arr as $key => $value) {
 }
 ```
 
-## Ternary operator
+## <a id="ternary-operator"></a>Ternary operator
 
 Short form of simple if/else expression.
 
@@ -68,7 +79,7 @@ Short form of simple if/else expression.
 $result = $cond ? $a : $b;
 ```
 
-## switch
+## <a id="switch"></a>switch
 
 Multiple branches by value with `case`, `break`, and optional `default`.
 
@@ -85,7 +96,7 @@ switch ($x) {
 }
 ```
 
-## match
+## <a id="match"></a>match
 
 Expression form for choosing a value without fall-through.
 

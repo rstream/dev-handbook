@@ -1,38 +1,83 @@
 # QMenuBar, QMenu
 
-[← back](../qt-widgets.md)
+[← back](../index.md)
 
-Menu (+ status bar)
+`QMenuBar` adds an application menu to a main window. Menus contain `QAction` objects; the same action can also be reused in toolbars and context menus.
 
 ```cpp
-// get a window menu pointer
+#include <QAction>
+#include <QKeySequence>
+#include <QMenu>
+#include <QMenuBar>
+#include <QMessageBox>
+#include <QStatusBar>
+```
+
+## Basic usage
+
+```cpp
 QMenuBar *menu = win->menuBar();
 
-// enable status bar
-QStatusBar *sb = win->statusBar();
-sb->setStyleSheet("QStatusBar { border-top: 1px solid #aaa; border-left: 1px solid #aaa; border-bottom: 1px solid #fff; border-right: 1px solid #fff; margin: 1px; } ");
+QStatusBar *statusBar = win->statusBar();
+statusBar->showMessage("Ready");
 
-// menu item 1 - "Tasks"
 QMenu *menuTasks = menu->addMenu("Tasks");
-QAction *actLog = new QAction("Log"); actLog->setStatusTip("Log something");
+QAction *actLog = new QAction("Log", win);
+actLog->setStatusTip("Log something");
 menuTasks->addAction(actLog);
 menuTasks->addSeparator();
-QAction *actExit = new QAction("Exit"); actExit->setStatusTip("Exit application");
+
+QAction *actExit = new QAction("Exit", win);
+actExit->setStatusTip("Exit application");
 menuTasks->addAction(actExit);
 
-// menu item 2 - "Help"
 QMenu *menuHelp = menu->addMenu("Help");
-QAction *actAbout = new QAction("About"); actAbout->setStatusTip("About this application");
+QAction *actAbout = new QAction("About", win);
+actAbout->setStatusTip("About this application");
 menuHelp->addAction(actAbout);
 
-// Actions
 QObject::connect(actLog, &QAction::triggered, []() {
 	cout << "Menu : Log" << endl;
 });
+
 QObject::connect(actExit, &QAction::triggered, [&app]() {
 	app.closeAllWindows();
 });
+
 QObject::connect(actAbout, &QAction::triggered, []() {
 	QMessageBox::information(nullptr, "About", "This is a demo application");
 });
 ```
+
+## Common operations
+
+```cpp
+QAction *actSave = new QAction("Save", win);
+actSave->setShortcut(QKeySequence::Save);
+actSave->setStatusTip("Save current file");
+menuTasks->addAction(actSave);
+
+QAction *actToggle = new QAction("Show details", win);
+actToggle->setCheckable(true);
+actToggle->setChecked(true);
+menuTasks->addAction(actToggle);
+```
+
+## Submenu
+
+```cpp
+QMenu *recentMenu = menuTasks->addMenu("Recent files");
+recentMenu->addAction("notes.txt");
+recentMenu->addAction("report.txt");
+```
+
+## Signals
+
+* `QAction::triggered()` is emitted when the action is activated.
+* `QAction::toggled(bool)` is emitted for checkable actions.
+
+## Notes
+
+* `QMainWindow::menuBar()` creates or returns the window menu bar.
+* `QAction` holds the menu item text, shortcut, status tip, checked state, and triggered signal.
+* Status tips are shown in `QStatusBar` when the menu item is highlighted.

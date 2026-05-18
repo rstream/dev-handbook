@@ -16,9 +16,18 @@
 ### Language basics
 
 [Types](common/php-types.md) - basic and complex types in PHP  
-[Conditions/loops](common/php-cond-loops.md) - loop and conditions in PHP  
+[Operators](common/php-operators.md) - arithmetic, comparison, logical operators  
+[Conditions/loops](common/php-cond-loops.md) - loop and conditions in PHP
+
+### Data and common helpers
+
 [Strings](common/php-strings.md) - string basics and common operations  
-[Arrays](common/php-arrays.md) - lists, associative arrays, and template data
+[Arrays](common/php-arrays.md) - lists, associative arrays, and template data  
+[Value checks](common/php-value-checks.md) - `isset()`, `empty()`, `is_*()` checks  
+[Random values](common/php-random.md) - `random_int()`, `random_bytes()`, tokens  
+[Debugging helpers](common/php-debugging.md) - `var_dump()`, `print_r()`, `error_log()`
+
+### Templates
 
 [Inline usage](inline/index.md) - inline PHP usage (in HTML templates)
 
@@ -35,3 +44,5 @@
 
 [Setup](db/php-psql-setup.md) - set up PHP + PostgreSQL  
 [Simple query](db/php-psql-query.md) - simple query to PostgreSQL  
+[Query parameters](db/php-psql-params.md) - prepared statements with `execute()` and `bindParam()`  
+[Query results](db/php-psql-results.md) - `fetchAll()`, `fetch()`, `fetchColumn()`, and `rowCount()`  

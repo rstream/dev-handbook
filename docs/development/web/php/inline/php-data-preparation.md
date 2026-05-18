@@ -5,7 +5,12 @@
 Templates should mostly render data, not build it.
 Prepare values before including the HTML template.
 
-## Prefer this
+## Summary
+
+- [Prefer this](#prefer-this) - prepare data with helpers like `array_filter()` before rendering
+- [Avoid this](#avoid-this) - keep filtering and transformation out of templates
+
+## <a id="prefer-this"></a>Prefer this
 
 ```php
 <?php
@@ -24,7 +29,7 @@ require 'users.php';
 </ul>
 ```
 
-## Avoid this
+## <a id="avoid-this"></a>Avoid this
 
 ```php
 <ul>

@@ -5,7 +5,13 @@
 Use `if`, `elseif`, and `else` to render different HTML blocks.
 The alternative template syntax is usually easier to read in mixed HTML/PHP files.
 
-## if
+## Summary
+
+- [if](#if) - render a block when a condition is true
+- [if / else](#if-else) - choose between two blocks
+- [if / elseif / else](#if-elseif-else) - choose between several blocks
+
+## <a id="if"></a>if
 
 ```php
 <?php if ($isLoggedIn): ?>
@@ -13,7 +19,7 @@ The alternative template syntax is usually easier to read in mixed HTML/PHP file
 <?php endif; ?>
 ```
 
-## if / else
+## <a id="if-else"></a>if / else
 
 ```php
 <?php if ($isLoggedIn): ?>
@@ -23,7 +29,7 @@ The alternative template syntax is usually easier to read in mixed HTML/PHP file
 <?php endif; ?>
 ```
 
-## if / elseif / else
+## <a id="if-elseif-else"></a>if / elseif / else
 
 ```php
 <?php if ($status === 'success'): ?>

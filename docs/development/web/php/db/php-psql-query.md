@@ -2,7 +2,12 @@
 
 [← back](../index.md)
 
-## Run a query 
+## Summary
+
+- [Run a query](#run-a-query) - `PDO`, `query()`, and `fetchAll()` connect and fetch rows
+- [Render query results](#render-query-results) - `htmlspecialchars()` prints rows safely in HTML
+
+## <a id="run-a-query"></a>Run a query
 
 Set up PDO connection (instance)
 ```php
@@ -33,7 +38,7 @@ $stmt = $pdo->query($query);
 $customers = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ```
 
-## Render query results
+## <a id="render-query-results"></a>Render query results
 
 ```php
 <ul>

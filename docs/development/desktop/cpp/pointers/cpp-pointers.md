@@ -1,6 +1,6 @@
 # Pointers in C++
 
-[← back](index.md)
+[← back](../index.md)
 
 ## 1. What is a pointer
 

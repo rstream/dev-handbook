@@ -1,6 +1,6 @@
 # Type declarations in C++
 
-[← back](index.md)
+[← back](../index.md)
 
 ## 1. `typedef`
 

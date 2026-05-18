@@ -4,7 +4,15 @@
 
 `$_POST` contains form data sent with the HTTP `POST` method.
 
-## Basic form
+## Summary
+
+- [Basic form](#basic-form) - send fields with `method="post"`
+- [Common example](#common-example) - read and print submitted data with `htmlspecialchars()`
+- [Notes](#notes) - common rules for `$_POST`
+- [Check that a field exists](#check-that-a-field-exists) - `isset()` checks optional fields and `trim()` cleans values
+- [Check that the form was submitted](#check-that-the-form-was-submitted) - detect POST requests and clean values with `trim()`
+
+## <a id="basic-form"></a>Basic form
 
 ```html
 <form method="post" action="/post.php">
@@ -19,7 +27,7 @@ PHP can read the submitted value like this:
 $username = $_POST['username'] ?? '';
 ```
 
-## Common example
+## <a id="common-example"></a>Common example
 
 ```php
 <form method="post" action="/post.php">
@@ -35,7 +43,7 @@ $email = $_POST['email'] ?? '';
 <p><?= htmlspecialchars($email) ?></p>
 ```
 
-## Notes
+## <a id="notes"></a>Notes
 
 - `$_POST` is usually used for form submission
 - values from `$_POST` are strings by default
@@ -43,7 +51,15 @@ $email = $_POST['email'] ?? '';
 - output should be escaped with `htmlspecialchars()`
 - input should be validated before saving or processing
 
-## Check that the form was submitted
+## <a id="check-that-a-field-exists"></a>Check that a field exists
+
+```php
+if (isset($_POST['email'])) {
+    $email = trim($_POST['email']);
+}
+```
+
+## <a id="check-that-the-form-was-submitted"></a>Check that the form was submitted
 
 ```php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {

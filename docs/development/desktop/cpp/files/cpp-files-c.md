@@ -1,6 +1,6 @@
 # Files in C style
 
-[← back](index.md)
+[← back](../index.md)
 
 ## 1. Idea
 
