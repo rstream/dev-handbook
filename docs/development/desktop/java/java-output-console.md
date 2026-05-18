@@ -26,6 +26,7 @@ Formatted output using format specifiers.
 * %s - string
 * %d - decimal
 * %f - float
+* %n - next line (OS independent: `\n` for Linux/Mac, `\r\n` for Windows)
 
 ```java
 String name = "Ann";
