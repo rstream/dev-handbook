@@ -16,7 +16,7 @@
 - [Signals](#signals)
 - [Notes](#notes)
 
-## <a id="basic-usage"></a>Basic usage
+## Basic usage
 
 ```cpp
 QLineEdit *lineEdit = new QLineEdit("John");
@@ -30,7 +30,7 @@ QObject::connect(lineEdit, &QLineEdit::textEdited, [](QString text) {
 layout->addWidget(lineEdit);
 ```
 
-## <a id="common-operations"></a>Common operations
+## Common operations
 
 ```cpp
 QString text = lineEdit->text();
@@ -40,19 +40,19 @@ lineEdit->setReadOnly(true);
 lineEdit->setDisabled(true);
 ```
 
-## <a id="password-input"></a>Password input
+## Password input
 
 ```cpp
 lineEdit->setEchoMode(QLineEdit::Password);
 ```
 
-## <a id="signals"></a>Signals
+## Signals
 
 * `textEdited(QString)` is emitted only when the user edits the text.
 * `textChanged(QString)` is emitted for both user edits and programmatic `setText()`.
 * `returnPressed()` is emitted when the user presses Enter.
 
-## <a id="notes"></a>Notes
+## Notes
 
 * `setReadOnly(true)` keeps the field selectable and focusable.
 * `setDisabled(true)` grays out the field and removes normal interaction.

@@ -13,7 +13,7 @@ Do not concatenate values directly into SQL strings.
 - [Boolean parameters](#boolean-parameters) - boolean values should be bound with `PDO::PARAM_BOOL`
 - [Which form to use](#which-form-to-use) - choose `execute([...])` by default, use `bindParam()` when binding is useful
 
-## <a id="prepare-a-query"></a>Prepare a query
+## Prepare a query
 
 Use named placeholders in the SQL query.
 
@@ -31,7 +31,7 @@ $stmt = $pdo->prepare($sql);
 Placeholders are not wrapped in quotes.
 PDO sends values separately from the SQL text.
 
-## <a id="pass-parameters-to-execute"></a>Pass parameters to `execute()`
+## Pass parameters to `execute()`
 
 The simplest form is to pass an associative array to `execute()`.
 
@@ -59,7 +59,7 @@ $stmt->execute([
 ]);
 ```
 
-## <a id="bind-parameters-manually"></a>Bind parameters manually
+## Bind parameters manually
 
 `bindParam()` binds a variable to a placeholder.
 The variable is read when `execute()` runs.
@@ -98,7 +98,7 @@ $name = 'postgresql';
 $stmt->execute();
 ```
 
-## <a id="boolean-parameters"></a>Boolean parameters
+## Boolean parameters
 
 Do not pass boolean parameters through the `execute([...])` array.
 In PDO this form does not let you specify the parameter type, and PostgreSQL boolean values can be passed incorrectly.
@@ -121,7 +121,7 @@ $stmt->execute();
 $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ```
 
-## <a id="which-form-to-use"></a>Which form to use
+## Which form to use
 
 Prefer `execute([...])` for ordinary string and integer parameters.
 It is shorter and easier to read.

@@ -11,7 +11,7 @@ Use cryptographically secure helpers for passwords, reset links, sessions, and A
 - [Random bytes](#random-bytes) - `random_bytes()` returns secure random bytes
 - [Readable random token](#readable-random-token) - `bin2hex()` converts random bytes to a readable token
 
-## <a id="random-integer"></a>Random integer
+## Random integer
 
 `random_int()` returns a cryptographically secure integer between two inclusive limits.
 
@@ -21,7 +21,7 @@ $code = random_int(100000, 999999);
 
 Use it for verification codes or security-sensitive random numbers.
 
-## <a id="random-bytes"></a>Random bytes
+## Random bytes
 
 `random_bytes()` returns raw random bytes.
 
@@ -32,7 +32,7 @@ $bytes = random_bytes(32);
 Raw bytes are not always safe to print or put into a URL directly.
 Convert them to text first.
 
-## <a id="readable-random-token"></a>Readable random token
+## Readable random token
 
 `bin2hex()` converts bytes to hexadecimal text.
 This is a common way to create tokens.

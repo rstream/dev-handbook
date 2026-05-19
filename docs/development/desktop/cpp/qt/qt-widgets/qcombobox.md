@@ -16,7 +16,7 @@
 - [Signals](#signals)
 - [Notes](#notes)
 
-## <a id="basic-usage"></a>Basic usage
+## Basic usage
 
 ```cpp
 QComboBox *combo = new QComboBox();
@@ -29,7 +29,7 @@ QObject::connect(combo, &QComboBox::activated, [combo](int index) {
 layout->addWidget(combo);
 ```
 
-## <a id="common-operations"></a>Common operations
+## Common operations
 
 ```cpp
 combo->addItem("Poland");
@@ -40,7 +40,7 @@ int index = combo->currentIndex();
 QString text = combo->currentText();
 ```
 
-## <a id="item-data"></a>Item data
+## Item data
 
 Each item can store hidden data in addition to visible text.
 
@@ -51,13 +51,13 @@ combo->addItem("Poland", "PL");
 QString countryCode = combo->currentData().toString();
 ```
 
-## <a id="signals"></a>Signals
+## Signals
 
 * `activated(int)` is emitted when the user selects an item.
 * `currentIndexChanged(int)` is emitted when the current index changes, including programmatic changes.
 * `currentTextChanged(QString)` is useful when the text matters more than the index.
 
-## <a id="notes"></a>Notes
+## Notes
 
 * Use `setEditable(true)` if the user should be able to type a custom value.
 * Use item data for IDs/codes instead of parsing visible text.

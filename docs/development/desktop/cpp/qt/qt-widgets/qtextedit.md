@@ -17,7 +17,7 @@
 - [Signals](#signals)
 - [Notes](#notes)
 
-## <a id="basic-usage"></a>Basic usage
+## Basic usage
 
 ```cpp
 QTextEdit *textEdit = new QTextEdit();
@@ -32,7 +32,7 @@ QObject::connect(textEdit, &QTextEdit::textChanged, [textEdit]() {
 layout->addWidget(textEdit);
 ```
 
-## <a id="common-operations"></a>Common operations
+## Common operations
 
 ```cpp
 textEdit->setPlainText("Plain text");
@@ -45,7 +45,7 @@ textEdit->clear();
 textEdit->setReadOnly(true);
 ```
 
-## <a id="formatting"></a>Formatting
+## Formatting
 
 ```cpp
 textEdit->setAcceptRichText(true);
@@ -53,12 +53,12 @@ textEdit->setFontItalic(true);
 textEdit->setFontWeight(QFont::Bold);
 ```
 
-## <a id="signals"></a>Signals
+## Signals
 
 * `textChanged()` is emitted when the document content changes.
 * `copyAvailable(bool)` is emitted when text selection becomes available or unavailable.
 
-## <a id="notes"></a>Notes
+## Notes
 
 * Use `QTextEdit` for rich text and HTML.
 * Use `QPlainTextEdit` for logs, code, or large plain text content.

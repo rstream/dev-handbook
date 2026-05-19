@@ -15,7 +15,7 @@
 - [Rich text](#rich-text)
 - [Notes](#notes)
 
-## <a id="basic-usage"></a>Basic usage
+## Basic usage
 
 ```cpp
 QLabel *label = new QLabel("Sample text");
@@ -27,7 +27,7 @@ label->setText(text);
 layout->addWidget(label);
 ```
 
-## <a id="common-operations"></a>Common operations
+## Common operations
 
 ```cpp
 label->setWordWrap(true);
@@ -36,7 +36,7 @@ label->setText("Updated text");
 label->clear();
 ```
 
-## <a id="rich-text"></a>Rich text
+## Rich text
 
 `QLabel` can render simple rich text automatically when the text looks like HTML.
 
@@ -45,7 +45,7 @@ QLabel *label = new QLabel("<b>Status:</b> ready");
 label->setOpenExternalLinks(true);
 ```
 
-## <a id="notes"></a>Notes
+## Notes
 
 * `QLabel` is not editable. Use `QLineEdit`, `QPlainTextEdit`, or `QTextEdit` for user input.
 * Long text usually needs `setWordWrap(true)`.

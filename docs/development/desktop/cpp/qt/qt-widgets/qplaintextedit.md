@@ -15,7 +15,7 @@
 - [Signals](#signals)
 - [Notes](#notes)
 
-## <a id="basic-usage"></a>Basic usage
+## Basic usage
 
 ```cpp
 QPlainTextEdit *plainTextEdit = new QPlainTextEdit();
@@ -30,7 +30,7 @@ QObject::connect(plainTextEdit, &QPlainTextEdit::textChanged, [plainTextEdit]() 
 layout->addWidget(plainTextEdit);
 ```
 
-## <a id="common-operations"></a>Common operations
+## Common operations
 
 ```cpp
 plainTextEdit->setPlainText("Line 1\nLine 2");
@@ -41,12 +41,12 @@ plainTextEdit->clear();
 plainTextEdit->setReadOnly(true);
 ```
 
-## <a id="signals"></a>Signals
+## Signals
 
 * `textChanged()` is emitted when the document content changes.
 * Use `QTextCursor` when you need precise cursor or selection control.
 
-## <a id="notes"></a>Notes
+## Notes
 
 * Use `QPlainTextEdit` for plain text and large text blocks.
 * Use `QTextEdit` when rich text or HTML formatting is needed.

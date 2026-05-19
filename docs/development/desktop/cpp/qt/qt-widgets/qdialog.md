@@ -19,7 +19,7 @@
 - [Modal and modeless](#modal-and-modeless)
 - [Notes](#notes)
 
-## <a id="basic-usage"></a>Basic usage
+## Basic usage
 
 ```cpp
 QDialog *dlg = new QDialog(win);
@@ -42,7 +42,7 @@ QObject::connect(button, &QPushButton::clicked, [dlg]() {
 dlg->exec();
 ```
 
-## <a id="accept-and-reject"></a>Accept and reject
+## Accept and reject
 
 `exec()` returns `QDialog::Accepted` or `QDialog::Rejected`.
 
@@ -69,14 +69,14 @@ if (dialog.exec() == QDialog::Accepted) {
 }
 ```
 
-## <a id="modal-and-modeless"></a>Modal and modeless
+## Modal and modeless
 
 ```cpp
 dlg->exec(); // modal: blocks interaction with the parent window
 dlg->show(); // modeless: opens and returns immediately
 ```
 
-## <a id="notes"></a>Notes
+## Notes
 
 * Use `accept()` for OK/Apply-like actions.
 * Use `reject()` for Cancel/Close-like actions.

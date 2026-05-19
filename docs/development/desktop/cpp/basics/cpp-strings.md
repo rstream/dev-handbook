@@ -4,20 +4,20 @@
 
 ## Summary
 
-- [Idea](#idea)
-- [Declare strings](#declare-strings)
-- [Print string](#print-string)
-- [Get string length](#get-string-length)
-- [Access characters](#access-characters)
-- [Copy string](#copy-string)
-- [Concatenate strings](#concatenate-strings)
-- [Compare strings](#compare-strings)
-- [Search inside string](#search-inside-string)
-- [Input string](#input-string)
-- [Common functions](#common-functions)
-- [Important limitations](#important-limitations)
+- [Idea](#1-idea)
+- [Declare strings](#2-declare-strings)
+- [Print string](#3-print-string)
+- [Get string length](#4-get-string-length)
+- [Access characters](#5-access-characters)
+- [Copy string](#6-copy-string)
+- [Concatenate strings](#7-concatenate-strings)
+- [Compare strings](#8-compare-strings)
+- [Search inside string](#9-search-inside-string)
+- [Input string](#10-input-string)
+- [Common functions](#11-common-functions)
+- [Important limitations](#12-important-limitations)
 
-## <a id="idea"></a>1. Idea
+## 1. Idea
 
 Before `std::string`, strings in C and old C++ were usually stored as arrays of `char`.
 
@@ -37,7 +37,7 @@ For `"hello"` memory contains:
 
 > Note: most of the string functions require `#include <cstring>`
 
-## <a id="declare-strings"></a>2. Declare strings
+## 2. Declare strings
 
 ```cpp
 char a[] = "hello";
@@ -53,7 +53,7 @@ char bad[] = { 'h', 'i' };   // not a valid C string
 
 Without `'\0'`, functions for C strings will not work correctly.
 
-## <a id="print-string"></a>3. Print string
+## 3. Print string
 
 ```cpp
 #include <iostream>
@@ -62,7 +62,7 @@ char text[] = "hello";
 std::cout << text << '\n';
 ```
 
-## <a id="get-string-length"></a>4. Get string length
+## 4. Get string length
 
 Use `strlen` from `<cstring>`:
 
@@ -75,7 +75,7 @@ size_t len = strlen(text);   // 5
 
 `strlen` does not count the final `'\0'`.
 
-## <a id="access-characters"></a>5. Access characters
+## 5. Access characters
 
 ```cpp
 char text[] = "hello";
@@ -90,7 +90,7 @@ Change character:
 text[0] = 'H';
 ```
 
-## <a id="copy-string"></a>6. Copy string
+## 6. Copy string
 
 Use `strcpy`:
 
@@ -128,7 +128,7 @@ Important:
 * `strncpy` does not always add final `'\0'`
 * often you need to add `'\0'` manually
 
-## <a id="concatenate-strings"></a>7. Concatenate strings
+## 7. Concatenate strings
 
 Use `strcat`:
 
@@ -152,7 +152,7 @@ strncat(text, " world!!!", 6);
 
 Now `text` becomes `"hello world"`.
 
-## <a id="compare-strings"></a>8. Compare strings
+## 8. Compare strings
 
 Use `strcmp`:
 
@@ -192,7 +192,7 @@ int r = strncmp("abcdef", "abcxyz", 3);   // 0
 
 This compares only the first `n` characters.
 
-## <a id="search-inside-string"></a>9. Search inside string
+## 9. Search inside string
 
 Find character with `strchr`:
 
@@ -212,7 +212,7 @@ char* p = strstr(text, "world");
 
 `p` points to `"world"` inside `text`.
 
-## <a id="input-string"></a>10. Input string
+## 10. Input string
 
 One old style is reading into a char array:
 
@@ -229,7 +229,7 @@ For line input:
 std::cin.getline(name, 50);
 ```
 
-## <a id="common-functions"></a>11. Common functions
+## 11. Common functions
 
 From `<cstring>`:
 * `strlen` - string length
@@ -242,7 +242,7 @@ From `<cstring>`:
 * `strchr` - find character
 * `strstr` - find substring
 
-## <a id="important-limitations"></a>12. Important limitations
+## 12. Important limitations
 
 Old C strings:
 * have fixed size

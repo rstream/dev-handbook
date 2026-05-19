@@ -19,7 +19,7 @@
 - [Signals](#signals)
 - [Notes](#notes)
 
-## <a id="basic-usage"></a>Basic usage
+## Basic usage
 
 ```cpp
 QTabWidget *tabs = new QTabWidget();
@@ -40,7 +40,7 @@ tabs->addTab(page2, "Second");
 layout->addWidget(tabs);
 ```
 
-## <a id="common-operations"></a>Common operations
+## Common operations
 
 ```cpp
 tabs->setCurrentIndex(1);
@@ -51,7 +51,7 @@ tabs->setTabEnabled(1, false);
 tabs->removeTab(1);
 ```
 
-## <a id="closable-tabs"></a>Closable tabs
+## Closable tabs
 
 ```cpp
 tabs->setTabsClosable(true);
@@ -63,12 +63,12 @@ QObject::connect(tabs, &QTabWidget::tabCloseRequested, [tabs](int index) {
 });
 ```
 
-## <a id="signals"></a>Signals
+## Signals
 
 * `currentChanged(int)` is emitted when the active tab changes.
 * `tabCloseRequested(int)` is emitted when the user clicks a close button on a closable tab.
 
-## <a id="notes"></a>Notes
+## Notes
 
 * `addTab()` takes ownership of the page widget.
 * Removing a tab does not automatically delete its page widget.

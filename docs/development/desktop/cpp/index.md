@@ -8,12 +8,12 @@
 - [Syntax](#syntax)
 - [Frameworks](#frameworks)
 
-## <a id="general"></a>General
+## General
 
 [Compilation](cpp-compilation.md) - compiling C++ files  
 [Hello world](cpp-hello-world.md) - sample "Hello world" application
 
-## <a id="syntax"></a>Syntax
+## Syntax
 
 ### Basics
 
@@ -44,6 +44,6 @@
 [Files - C-style](files/cpp-files-c.md) - working with files (C-style)  
 [Files - streams](files/cpp-files-cpp.md) - working with files using streams
 
-## <a id="frameworks"></a>Frameworks
+## Frameworks
 
 [Qt](qt/index.md) - Qt cross-platform development  

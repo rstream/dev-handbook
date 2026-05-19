@@ -10,7 +10,7 @@ Escape dynamic values before inserting them into HTML to reduce XSS risk.
 - [Escape attributes too](#escape-attributes-too) - `htmlspecialchars()` also escapes values inside HTML attributes
 - [Avoid raw HTML unless content is trusted](#avoid-raw-html-unless-content-is-trusted) - avoid printing untrusted HTML directly
 
-## <a id="use-htmlspecialchars-by-default"></a>Use `htmlspecialchars()` by default
+## Use `htmlspecialchars()` by default
 
 ```php
 <p><?= htmlspecialchars($message) ?></p>
@@ -22,7 +22,7 @@ A common explicit form is:
 <p><?= htmlspecialchars($message, ENT_QUOTES, 'UTF-8') ?></p>
 ```
 
-## <a id="escape-attributes-too"></a>Escape attributes too
+## Escape attributes too
 
 ```php
 <a href="<?= htmlspecialchars($url, ENT_QUOTES, 'UTF-8') ?>">
@@ -30,7 +30,7 @@ A common explicit form is:
 </a>
 ```
 
-## <a id="avoid-raw-html-unless-content-is-trusted"></a>Avoid raw HTML unless content is trusted
+## Avoid raw HTML unless content is trusted
 
 ```php
 <div><?= $unsafeHtml ?></div>

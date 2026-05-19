@@ -4,15 +4,15 @@
 
 ## Summary
 
-- [if / else](#if-else)
+- [if / else](#if--else)
 - [while](#while)
-- [do / while](#do-while)
+- [do / while](#do--while)
 - [for (classic)](#for-classic)
 - [for-each](#for-each)
 - [Ternary operator](#ternary-operator)
 - [switch](#switch)
 
-## <a id="if-else"></a>if / else
+## if / else
 
 Branch execution based on a condition.
 
@@ -24,7 +24,7 @@ if (cond) {
 }
 ```
 
-## <a id="while"></a>while
+## while
 
 Precondition loop: repeats while condition is true.
 
@@ -34,7 +34,7 @@ while (cond) {
 }
 ```
 
-## <a id="do-while"></a>do / while
+## do / while
 
 Postcondition loop: body runs at least one time.
 
@@ -44,7 +44,7 @@ do {
 } while (cond);
 ```
 
-## <a id="for-classic"></a>for (classic)
+## for (classic)
 
 Loop with init, condition, and step in one line.
 
@@ -54,7 +54,7 @@ for (int i = 0; i < n; i++) {
 }
 ```
 
-## <a id="for-each"></a>for-each
+## for-each
 
 Iterates over array elements directly.
 
@@ -64,7 +64,7 @@ for (int x : arr) {
 }
 ```
 
-## <a id="ternary-operator"></a>Ternary operator
+## Ternary operator
 
 Short form of simple if/else expression.
 
@@ -72,7 +72,7 @@ Short form of simple if/else expression.
 int result = cond ? a : b;
 ```
 
-## <a id="switch"></a>switch
+## switch
 
 Multiple branches by value with `case`, `break`, and optional `default`.
 

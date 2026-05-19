@@ -18,7 +18,7 @@ It stores text, knows its own length, and can grow when you append more characte
 - [Find text](#find-text) - search with `find()`
 - [Substring](#substring) - copy part of a string with `substr()`
 
-## <a id="include-header"></a>Include header
+## Include header
 
 `std::string` is declared in `<string>`.
 
@@ -33,7 +33,7 @@ For input and output you usually also need `<iostream>`.
 #include <string>
 ```
 
-## <a id="declare-string"></a>Declare string
+## Declare string
 
 ```cpp
 std::string name;
@@ -47,7 +47,7 @@ An empty string contains no characters.
 std::string empty = "";
 ```
 
-## <a id="read-and-print"></a>Read and print
+## Read and print
 
 Print a string:
 
@@ -73,7 +73,7 @@ std::getline(std::cin, line);
 `std::cin >> name` stops at the first space.
 `std::getline()` reads the whole line.
 
-## <a id="length"></a>Length
+## Length
 
 Use `size()` to get the number of characters.
 
@@ -88,7 +88,7 @@ int len = text.size();   // 5
 int len = text.length();
 ```
 
-## <a id="check-empty-string"></a>Check empty string
+## Check empty string
 
 Use `empty()` to check if a string has no characters.
 
@@ -100,7 +100,7 @@ if (text.empty()) {
 }
 ```
 
-## <a id="access-characters"></a>Access characters
+## Access characters
 
 Index starts from `0`.
 
@@ -114,7 +114,7 @@ text[0] = 'H';
 Be careful with indexes.
 Accessing outside the string is an error.
 
-## <a id="concatenate-strings"></a>Concatenate strings
+## Concatenate strings
 
 Use `+` to create a new string.
 
@@ -132,7 +132,7 @@ std::string text = "hello";
 text += " world";
 ```
 
-## <a id="compare-strings"></a>Compare strings
+## Compare strings
 
 `std::string` compares text content with normal operators.
 
@@ -157,7 +157,7 @@ if (a < b) {
 }
 ```
 
-## <a id="find-text"></a>Find text
+## Find text
 
 Use `find()` to search for a character or substring.
 
@@ -176,7 +176,7 @@ if (pos != std::string::npos) {
 }
 ```
 
-## <a id="substring"></a>Substring
+## Substring
 
 Use `substr()` to copy part of a string.
 

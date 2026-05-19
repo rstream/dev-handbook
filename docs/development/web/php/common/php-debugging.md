@@ -10,7 +10,7 @@ Use these helpers while developing to inspect values and write simple diagnostic
 - [Print readable data](#print-readable-data) - `print_r()` prints arrays and objects in a compact form
 - [Write to error log](#write-to-error-log) - `error_log()` writes a diagnostic message
 
-## <a id="dump-a-value"></a>Dump a value
+## Dump a value
 
 `var_dump()` shows both the type and the value.
 
@@ -24,7 +24,7 @@ It is useful when type matters.
 var_dump($_POST['age'] ?? null);
 ```
 
-## <a id="print-readable-data"></a>Print readable data
+## Print readable data
 
 `print_r()` is often easier to read for arrays.
 
@@ -38,7 +38,7 @@ Inside an HTML page, wrap debug output in `<pre>`.
 <pre><?php print_r($items); ?></pre>
 ```
 
-## <a id="write-to-error-log"></a>Write to error log
+## Write to error log
 
 `error_log()` writes a message to the PHP error log instead of printing it into the page.
 

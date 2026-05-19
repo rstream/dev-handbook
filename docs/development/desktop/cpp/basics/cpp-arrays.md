@@ -4,19 +4,19 @@
 
 ## Summary
 
-- [Idea](#idea)
-- [Declare array](#declare-array)
-- [Partial initialization](#partial-initialization)
-- [Size by initializer](#size-by-initializer)
-- [Access elements](#access-elements)
-- [Array length](#array-length)
-- [Loop through array](#loop-through-array)
-- [Multidimensional arrays](#multidimensional-arrays)
-- [Arrays in functions](#arrays-in-functions)
-- [Copy array](#copy-array)
-- [Limitations](#limitations)
+- [Idea](#1-idea)
+- [Declare array](#2-declare-array)
+- [Partial initialization](#3-partial-initialization)
+- [Size by initializer](#4-size-by-initializer)
+- [Access elements](#5-access-elements)
+- [Array length](#6-array-length)
+- [Loop through array](#7-loop-through-array)
+- [Multidimensional arrays](#8-multidimensional-arrays)
+- [Arrays in functions](#9-arrays-in-functions)
+- [Copy array](#10-copy-array)
+- [Limitations](#11-limitations)
 
-## <a id="idea"></a>1. Idea
+## 1. Idea
 
 Before `std::array` and `std::vector`, arrays were usually fixed-size built-in arrays.
 
@@ -26,7 +26,7 @@ int arr[5];
 
 Array size is usually fixed after declaration.
 
-## <a id="declare-array"></a>2. Declare array
+## 2. Declare array
 
 ```cpp
 int arr[5];
@@ -40,7 +40,7 @@ Example with initialization:
 int nums[5] = { 10, 20, 30, 40, 50 };
 ```
 
-## <a id="partial-initialization"></a>3. Partial initialization
+## 3. Partial initialization
 
 ```cpp
 int arr[5] = { 1, 2 };
@@ -57,7 +57,7 @@ Initialize all with zero:
 int arr[5] = {};
 ```
 
-## <a id="size-by-initializer"></a>4. Size by initializer
+## 4. Size by initializer
 
 Compiler can detect size automatically:
 
@@ -67,7 +67,7 @@ int arr[] = { 10, 20, 30, 40 };
 
 Here size is `4`.
 
-## <a id="access-elements"></a>5. Access elements
+## 5. Access elements
 
 ```cpp
 int arr[] = { 10, 20, 30 };
@@ -78,7 +78,7 @@ arr[1] = 99;
 
 Index starts from `0`.
 
-## <a id="array-length"></a>6. Array length
+## 6. Array length
 
 For local built-in arrays:
 
@@ -89,7 +89,7 @@ int len = sizeof(arr) / sizeof(arr[0]);
 
 This works only when array is still a real array, not a function parameter.
 
-## <a id="loop-through-array"></a>7. Loop through array
+## 7. Loop through array
 
 Classic loop:
 
@@ -102,7 +102,7 @@ for (int i = 0; i < len; i++) {
 }
 ```
 
-## <a id="multidimensional-arrays"></a>8. Multidimensional arrays
+## 8. Multidimensional arrays
 
 ```cpp
 int table[2][3] = {
@@ -117,7 +117,7 @@ Access element:
 int x = table[1][2];   // 6
 ```
 
-## <a id="arrays-in-functions"></a>9. Arrays in functions
+## 9. Arrays in functions
 
 When passed to a function, array becomes a pointer to the first element.
 
@@ -138,7 +138,7 @@ printArray(nums, 3);
 
 Because of this, function usually needs array length as a separate argument.
 
-## <a id="copy-array"></a>10. Copy array
+## 10. Copy array
 
 Built-in arrays cannot be assigned directly.
 
@@ -159,7 +159,7 @@ for (int i = 0; i < 3; i++) {
 }
 ```
 
-## <a id="limitations"></a>11. Limitations
+## 11. Limitations
 
 Old built-in arrays:
 * have fixed size

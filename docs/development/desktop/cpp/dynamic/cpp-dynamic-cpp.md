@@ -4,16 +4,16 @@
 
 ## Summary
 
-- [Idea](#idea)
-- [Allocate one object](#allocate-one-object)
-- [Allocate with initialization](#allocate-with-initialization)
-- [Allocate array](#allocate-array)
-- [Objects and constructors](#objects-and-constructors)
-- [Common mistakes](#common-mistakes)
-- [new vs malloc](#new-vs-malloc)
-- [Modern C++ recommendation](#modern-cpp-recommendation)
+- [Idea](#1-idea)
+- [Allocate one object](#2-allocate-one-object)
+- [Allocate with initialization](#3-allocate-with-initialization)
+- [Allocate array](#4-allocate-array)
+- [Objects and constructors](#5-objects-and-constructors)
+- [Common mistakes](#6-common-mistakes)
+- [new vs malloc](#7-new-vs-malloc)
+- [Modern C++ recommendation](#8-modern-c-recommendation)
 
-## <a id="idea"></a>1. Idea
+## 1. Idea
 
 In C++, dynamic memory is commonly allocated with:
 * `new`
@@ -23,7 +23,7 @@ In C++, dynamic memory is commonly allocated with:
 
 Unlike `malloc`, `new` creates objects and calls constructors.
 
-## <a id="allocate-one-object"></a>2. Allocate one object
+## 2. Allocate one object
 
 ```cpp
 int* ptr = new int;
@@ -37,7 +37,7 @@ delete ptr;
 ptr = nullptr;
 ```
 
-## <a id="allocate-with-initialization"></a>3. Allocate with initialization
+## 3. Allocate with initialization
 
 ```cpp
 int* a = new int(25);
@@ -50,7 +50,7 @@ Example:
 std::cout << *a << '\n';
 ```
 
-## <a id="allocate-array"></a>4. Allocate array
+## 4. Allocate array
 
 ```cpp
 int* arr = new int[5];
@@ -73,7 +73,7 @@ arr = nullptr;
 
 Use `delete[]` only for memory created with `new[]`.
 
-## <a id="objects-and-constructors"></a>5. Objects and constructors
+## 5. Objects and constructors
 
 For class objects, `new` calls constructor and `delete` calls destructor.
 
@@ -93,7 +93,7 @@ delete user;
 
 This is one important difference from `malloc/free`.
 
-## <a id="common-mistakes"></a>6. Common mistakes
+## 6. Common mistakes
 
 Wrong:
 
@@ -115,7 +115,7 @@ Also wrong:
 * using pointer after `delete`
 * deleting the same pointer twice
 
-## <a id="new-vs-malloc"></a>7. `new` vs `malloc`
+## 7. `new` vs `malloc`
 
 `new`
 * returns correct pointer type
@@ -129,7 +129,7 @@ Also wrong:
 
 For normal C++ code, `new/delete` are better than `malloc/free`.
 
-## <a id="modern-cpp-recommendation"></a>8. Modern C++ recommendation
+## 8. Modern C++ recommendation
 
 Even `new/delete` are not the best default choice in modern C++.
 
@@ -148,7 +148,7 @@ std::unique_ptr<int> ptr = std::make_unique<int>(42);
 
 Memory will be released automatically.
 
-## <a id="summary-2"></a>9. Summary
+## 9. Summary
 
 * use `new` for one object
 * use `new[]` for arrays

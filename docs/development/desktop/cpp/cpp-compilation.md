@@ -8,7 +8,7 @@
 - [Compile multiple files](#compile-multiple-files)
 - [Additional compilation parameters](#additional-compilation-parameters)
 
-## <a id="compile-a-single-file"></a>Compile a single file
+## Compile a single file
 
 General syntax is:
 ```sh
@@ -26,7 +26,7 @@ Where:
 * `-o` - "output" flag (output file names goes after)
 * `bin/hello` - name of the output file (e.g. "hello.exe" or "hello" in the folder "bin")
 
-## <a id="compile-multiple-files"></a>Compile multiple files
+## Compile multiple files
 
 Compile multiple files (headers are in the same folder):
 ```sh
@@ -38,7 +38,7 @@ Compile multiple files (headers are in `./include`):
 g++ -g util.cpp app.cpp -Iinclude -o bin/hello
 ```
 
-## <a id="additional-compilation-parameters"></a>Additional compilation parameters
+## Additional compilation parameters
 
 Build with additional parameters:
 ```sh

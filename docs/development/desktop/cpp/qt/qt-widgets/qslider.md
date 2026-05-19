@@ -16,7 +16,7 @@
 - [Signals](#signals)
 - [Notes](#notes)
 
-## <a id="basic-usage"></a>Basic usage
+## Basic usage
 
 ```cpp
 QSlider *slider = new QSlider(Qt::Horizontal);
@@ -30,7 +30,7 @@ QObject::connect(slider, &QSlider::valueChanged, [](int value) {
 layout->addWidget(slider);
 ```
 
-## <a id="common-operations"></a>Common operations
+## Common operations
 
 ```cpp
 slider->setMinimum(0);
@@ -42,20 +42,20 @@ slider->setValue(50);
 int value = slider->value();
 ```
 
-## <a id="tick-marks"></a>Tick marks
+## Tick marks
 
 ```cpp
 slider->setTickPosition(QSlider::TicksAbove);
 slider->setTickInterval(10);
 ```
 
-## <a id="signals"></a>Signals
+## Signals
 
 * `valueChanged(int)` is emitted when the value changes.
 * `sliderMoved(int)` is emitted while the user drags the handle.
 * `sliderReleased()` is useful when expensive work should run after dragging ends.
 
-## <a id="notes"></a>Notes
+## Notes
 
 * `setSingleStep()` affects keyboard movement.
 * `setPageStep()` affects Page Up/Page Down and track clicks.

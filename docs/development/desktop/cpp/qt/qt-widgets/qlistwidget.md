@@ -17,7 +17,7 @@
 - [Signals](#signals)
 - [Notes](#notes)
 
-## <a id="basic-usage"></a>Basic usage
+## Basic usage
 
 ```cpp
 QListWidget *list = new QListWidget();
@@ -34,7 +34,7 @@ QObject::connect(list, &QListWidget::itemSelectionChanged, [list]() {
 layout->addWidget(list);
 ```
 
-## <a id="common-operations"></a>Common operations
+## Common operations
 
 ```cpp
 list->addItem("Gliwice");
@@ -47,20 +47,20 @@ delete list->takeItem(row);
 list->clearSelection();
 ```
 
-## <a id="selection-mode"></a>Selection mode
+## Selection mode
 
 ```cpp
 list->setSelectionMode(QAbstractItemView::MultiSelection);
 QList<QListWidgetItem *> items = list->selectedItems();
 ```
 
-## <a id="signals"></a>Signals
+## Signals
 
 * `itemClicked(QListWidgetItem *)` is emitted when the user clicks an item.
 * `itemSelectionChanged()` is emitted when the selection changes.
 * `currentRowChanged(int)` is convenient when only the row number is needed.
 
-## <a id="notes"></a>Notes
+## Notes
 
 * Check `currentItem()` for `nullptr` when the list may have no selection.
 * `takeItem()` removes an item from the list but does not delete it.

@@ -10,7 +10,7 @@ Prepare values before including the HTML template.
 - [Prefer this](#prefer-this) - prepare data with helpers like `array_filter()` before rendering
 - [Avoid this](#avoid-this) - keep filtering and transformation out of templates
 
-## <a id="prefer-this"></a>Prefer this
+## Prefer this
 
 ```php
 <?php
@@ -29,7 +29,7 @@ require 'users.php';
 </ul>
 ```
 
-## <a id="avoid-this"></a>Avoid this
+## Avoid this
 
 ```php
 <ul>

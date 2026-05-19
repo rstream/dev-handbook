@@ -8,10 +8,10 @@ The alternative template syntax is usually easier to read in mixed HTML/PHP file
 ## Summary
 
 - [if](#if) - render a block when a condition is true
-- [if / else](#if-else) - choose between two blocks
-- [if / elseif / else](#if-elseif-else) - choose between several blocks
+- [if / else](#if--else) - choose between two blocks
+- [if / elseif / else](#if--elseif--else) - choose between several blocks
 
-## <a id="if"></a>if
+## if
 
 ```php
 <?php if ($isLoggedIn): ?>
@@ -19,7 +19,7 @@ The alternative template syntax is usually easier to read in mixed HTML/PHP file
 <?php endif; ?>
 ```
 
-## <a id="if-else"></a>if / else
+## if / else
 
 ```php
 <?php if ($isLoggedIn): ?>
@@ -29,7 +29,7 @@ The alternative template syntax is usually easier to read in mixed HTML/PHP file
 <?php endif; ?>
 ```
 
-## <a id="if-elseif-else"></a>if / elseif / else
+## if / elseif / else
 
 ```php
 <?php if ($status === 'success'): ?>

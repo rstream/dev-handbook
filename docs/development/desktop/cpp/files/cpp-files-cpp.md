@@ -4,22 +4,22 @@
 
 ## Summary
 
-- [Idea](#idea)
-- [Open file for reading](#open-file-for-reading)
-- [Read file](#read-file)
-- [Open file for writing](#open-file-for-writing)
-- [Close file](#close-file)
-- [Create file](#create-file)
-- [Delete file](#delete-file)
-- [Check existence](#check-existence)
-- [File size](#file-size)
-- [File metadata](#file-metadata)
-- [Check if path is file or directory](#check-if-path-is-file-or-directory)
-- [Create directory](#create-directory)
-- [Delete directory](#delete-directory)
-- [Example](#example)
+- [Idea](#1-idea)
+- [Open file for reading](#2-open-file-for-reading)
+- [Read file](#3-read-file)
+- [Open file for writing](#4-open-file-for-writing)
+- [Close file](#5-close-file)
+- [Create file](#6-create-file)
+- [Delete file](#7-delete-file)
+- [Check existence](#8-check-existence)
+- [File size](#9-file-size)
+- [File metadata](#10-file-metadata)
+- [Check if path is file or directory](#11-check-if-path-is-file-or-directory)
+- [Create directory](#12-create-directory)
+- [Delete directory](#13-delete-directory)
+- [Example](#14-example)
 
-## <a id="idea"></a>1. Idea
+## 1. Idea
 
 Modern C++ usually uses:
 * file streams from `<fstream>`
@@ -27,7 +27,7 @@ Modern C++ usually uses:
 
 This is more readable and more convenient than old `FILE*` API.
 
-## <a id="open-file-for-reading"></a>2. Open file for reading
+## 2. Open file for reading
 
 ```cpp
 #include <fstream>
@@ -45,7 +45,7 @@ State after open:
 * stream is valid on success
 * stream converts to `false` on error
 
-## <a id="read-file"></a>3. Read file
+## 3. Read file
 
 Read one line:
 
@@ -106,7 +106,7 @@ Where:
 * `gcount()` - number of bytes actually read by the last unformatted read
 * stream may become false if requested amount could not be fully read
 
-## <a id="open-file-for-writing"></a>4. Open file for writing
+## 4. Open file for writing
 
 ```cpp
 #include <fstream>
@@ -141,7 +141,7 @@ Parameters of `out.write(reinterpret_cast<const char*>(&x), sizeof(x))`:
 Return value:
 * reference to stream
 
-## <a id="close-file"></a>5. Close file
+## 5. Close file
 
 File streams can be closed explicitly with `close()`:
 
@@ -162,7 +162,7 @@ Important:
 * when stream object is destroyed, file is usually closed automatically
 * explicit `close()` is useful when file must be closed before the end of scope
 
-## <a id="create-file"></a>6. Create file
+## 6. Create file
 
 File is usually created automatically when opened by `std::ofstream`:
 
@@ -173,7 +173,7 @@ std::ofstream out("new.txt");
 If file does not exist, it is created.
 If file exists, default `std::ofstream` mode usually truncates it.
 
-## <a id="delete-file"></a>7. Delete file
+## 7. Delete file
 
 Use `std::filesystem::remove`:
 
@@ -187,7 +187,7 @@ Return value:
 * `true` if something was removed
 * `false` if path did not exist
 
-## <a id="check-existence"></a>8. Check existence
+## 8. Check existence
 
 ```cpp
 #include <filesystem>
@@ -201,7 +201,7 @@ Return value:
 * `true` if path exists
 * `false` otherwise
 
-## <a id="file-size"></a>9. File size
+## 9. File size
 
 ```cpp
 std::uintmax_t size = fs::file_size("data.txt");
@@ -212,7 +212,7 @@ Return value:
 
 Usually call it only after `fs::exists(...)` and for regular files.
 
-## <a id="file-metadata"></a>10. File metadata
+## 10. File metadata
 
 Modern standard library gives easy access to some metadata:
 
@@ -239,7 +239,7 @@ Important:
 * Windows file attributes such as hidden / archive are not standard C++ metadata
 * for such attributes you usually need OS-specific API
 
-## <a id="check-if-path-is-file-or-directory"></a>11. Check if path is file or directory
+## 11. Check if path is file or directory
 
 ```cpp
 bool isFile = fs::is_regular_file("data.txt");
@@ -250,7 +250,7 @@ Return value:
 * `true` if path has requested type
 * `false` otherwise
 
-## <a id="create-directory"></a>12. Create directory
+## 12. Create directory
 
 Create one directory:
 
@@ -272,7 +272,7 @@ Return value:
 * `true` if at least one directory was created
 * `false` if full path already existed
 
-## <a id="delete-directory"></a>13. Delete directory
+## 13. Delete directory
 
 Delete empty directory:
 
@@ -295,7 +295,7 @@ Return value:
 
 Be careful: `remove_all` deletes everything inside.
 
-## <a id="example"></a>14. Example
+## 14. Example
 
 ```cpp
 #include <filesystem>
@@ -319,7 +319,7 @@ int main() {
 }
 ```
 
-## <a id="summary-2"></a>15. Summary
+## 15. Summary
 
 For modern C++ code:
 * use `std::ifstream` for reading

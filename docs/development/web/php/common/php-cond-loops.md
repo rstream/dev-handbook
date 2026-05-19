@@ -4,16 +4,16 @@
 
 ## Summary
 
-- [if / else](#if-else) - choose between branches by condition
+- [if / else](#if--else) - choose between branches by condition
 - [while](#while) - repeat while condition is true
-- [do / while](#do-while) - run the body at least once
-- [for](#for) - classic counted loop
+- [do / while](#do--while) - run the body at least once
+- [for](#for-classic) - classic counted loop
 - [foreach](#foreach) - iterate over array values or key/value pairs
 - [Ternary operator](#ternary-operator) - short conditional expression
 - [switch](#switch) - multiple branches by value
 - [match](#match) - expression form for choosing a value
 
-## <a id="if-else"></a>if / else
+## if / else
 
 Branch execution based on a condition.
 
@@ -25,7 +25,7 @@ if ($cond) {
 }
 ```
 
-## <a id="while"></a>while
+## while
 
 Precondition loop: repeats while condition is true.
 
@@ -35,7 +35,7 @@ while ($cond) {
 }
 ```
 
-## <a id="do-while"></a>do / while
+## do / while
 
 Postcondition loop: body runs at least one time.
 
@@ -45,7 +45,7 @@ do {
 } while ($cond);
 ```
 
-## <a id="for"></a>for (classic)
+## for (classic)
 
 Loop with init, condition, and step in one line.
 
@@ -55,7 +55,7 @@ for ($i = 0; $i < $n; $i++) {
 }
 ```
 
-## <a id="foreach"></a>foreach
+## foreach
 
 Iterates over array elements directly.
 
@@ -71,7 +71,7 @@ foreach ($arr as $key => $value) {
 }
 ```
 
-## <a id="ternary-operator"></a>Ternary operator
+## Ternary operator
 
 Short form of simple if/else expression.
 
@@ -79,7 +79,7 @@ Short form of simple if/else expression.
 $result = $cond ? $a : $b;
 ```
 
-## <a id="switch"></a>switch
+## switch
 
 Multiple branches by value with `case`, `break`, and optional `default`.
 
@@ -96,7 +96,7 @@ switch ($x) {
 }
 ```
 
-## <a id="match"></a>match
+## match
 
 Expression form for choosing a value without fall-through.
 

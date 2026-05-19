@@ -4,12 +4,12 @@
 
 ## Summary
 
-- [typedef](#typedef)
-- [using](#using)
-- [Templates with using](#templates-with-using)
-- [typedef vs using](#typedef-vs-using)
+- [typedef](#1-typedef)
+- [using](#2-using)
+- [Templates with using](#3-templates-with-using)
+- [typedef vs using](#4-typedef-vs-using)
 
-## <a id="typedef"></a>1. `typedef`
+## 1. `typedef`
 
 `typedef` creates an alias for an existing type.
 
@@ -44,7 +44,7 @@ Operation op = sum;
 IntPtr ptr = nullptr;
 ```
 
-## <a id="using"></a>2. `using`
+## 2. `using`
 
 `using` is the modern way to declare a type alias. It is clearer and easier to read than `typedef`.
 
@@ -68,7 +68,7 @@ using Name = char[32];
 using Operation = int (*)(int, int); // function pointer
 ```
 
-## <a id="templates-with-using"></a>3. Templates with `using`
+## 3. Templates with `using`
 
 `using` supports alias templates, which `typedef` cannot do directly.
 
@@ -83,7 +83,7 @@ List<int> numbers = { 1, 2, 3 };
 List<std::string> names = { "Ann", "Bob" };
 ```
 
-## <a id="typedef-vs-using"></a>4. `typedef` vs `using`
+## 4. `typedef` vs `using`
 
 `typedef`
 * old C/C++ style

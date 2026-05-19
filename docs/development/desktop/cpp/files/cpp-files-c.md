@@ -4,21 +4,21 @@
 
 ## Summary
 
-- [Idea](#idea)
-- [Open file](#open-file)
-- [Read file](#read-file)
-- [Write file](#write-file)
-- [Close file](#close-file)
-- [Create file](#create-file)
-- [Delete file](#delete-file)
-- [Check file existence](#check-file-existence)
-- [File size](#file-size)
-- [File metadata](#file-metadata)
-- [Directory exists](#directory-exists)
-- [Create directory](#create-directory)
-- [Delete directory](#delete-directory)
+- [Idea](#1-idea)
+- [Open file](#2-open-file)
+- [Read file](#3-read-file)
+- [Write file](#4-write-file)
+- [Close file](#5-close-file)
+- [Create file](#6-create-file)
+- [Delete file](#7-delete-file)
+- [Check file existence](#8-check-file-existence)
+- [File size](#9-file-size)
+- [File metadata](#10-file-metadata)
+- [Directory exists](#11-directory-exists)
+- [Create directory](#12-create-directory)
+- [Delete directory](#13-delete-directory)
 
-## <a id="idea"></a>1. Idea
+## 1. Idea
 
 Old C-style file work usually uses:
 * `FILE*` from `<cstdio>`
@@ -27,7 +27,7 @@ Old C-style file work usually uses:
 
 This style is low-level and portable only partly. File metadata and directory operations often depend on OS.
 
-## <a id="open-file"></a>2. Open file
+## 2. Open file
 
 ```cpp
 #include <cstdio>
@@ -58,7 +58,7 @@ if (f == nullptr) {
 }
 ```
 
-## <a id="read-file"></a>3. Read file
+## 3. Read file
 
 Read line:
 
@@ -100,7 +100,7 @@ If result is less than requested:
 * file may have ended
 * or read error happened
 
-## <a id="write-file"></a>4. Write file
+## 4. Write file
 
 Write text:
 
@@ -125,7 +125,7 @@ Parameters of `fwrite(&x, sizeof(x), 1, f)`:
 Return value:
 * number of elements actually written
 
-## <a id="close-file"></a>5. Close file
+## 5. Close file
 
 ```cpp
 fclose(f);
@@ -135,7 +135,7 @@ Return value:
 * `0` on success
 * `EOF` on error
 
-## <a id="create-file"></a>6. Create file
+## 6. Create file
 
 Usually file is created by opening it for writing:
 
@@ -146,7 +146,7 @@ if (f != nullptr) {
 }
 ```
 
-## <a id="delete-file"></a>7. Delete file
+## 7. Delete file
 
 Use `remove`:
 
@@ -162,7 +162,7 @@ Return value:
 * `0` on success
 * non-zero on error
 
-## <a id="check-file-existence"></a>8. Check file existence
+## 8. Check file existence
 
 One common old way is `stat`:
 
@@ -181,7 +181,7 @@ Return value:
 * `0` on success
 * non-zero on error
 
-## <a id="file-size"></a>9. File size
+## 9. File size
 
 With `stat`:
 
@@ -205,7 +205,7 @@ Where:
 * `ftell(f)` - get current byte position
 * `fseek(f, 0, SEEK_SET)` - move back to file start
 
-## <a id="file-metadata"></a>10. File metadata
+## 10. File metadata
 
 With `stat` you can usually get:
 * file size
@@ -230,7 +230,7 @@ Important:
 * file attributes such as hidden / read-only are OS-specific
 * on Windows these are often accessed through WinAPI
 
-## <a id="directory-exists"></a>11. Directory exists
+## 11. Directory exists
 
 Directories can also be checked with `stat`:
 
@@ -242,7 +242,7 @@ bool exists = (stat("logs", &st) == 0);
 bool isDir = exists && (st.st_mode & S_IFDIR);
 ```
 
-## <a id="create-directory"></a>12. Create directory
+## 12. Create directory
 
 POSIX:
 
@@ -272,7 +272,7 @@ Return value:
 * `0` on success
 * `-1` on error
 
-## <a id="delete-directory"></a>13. Delete directory
+## 13. Delete directory
 
 POSIX:
 
@@ -300,7 +300,7 @@ Return value:
 
 Usually directory must be empty.
 
-## <a id="summary-2"></a>14. Summary
+## 14. Summary
 
 Old C-style approach is useful for:
 * simple file reading and writing

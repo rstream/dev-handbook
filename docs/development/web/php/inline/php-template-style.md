@@ -9,7 +9,7 @@ Use a consistent style so mixed HTML/PHP templates stay readable.
 - [Recommended rules](#recommended-rules) - use `<?= ... ?>`, `endif`, `endforeach`, and `htmlspecialchars()`
 - [Example](#example) - complete mixed HTML/PHP example with `htmlspecialchars()`
 
-## <a id="recommended-rules"></a>Recommended rules
+## Recommended rules
 
 - use `<?= ... ?>` for output
 - use `if: endif;` and `foreach: endforeach;` for HTML blocks
@@ -17,7 +17,7 @@ Use a consistent style so mixed HTML/PHP templates stay readable.
 - keep business logic outside the template
 - keep indentation aligned with the surrounding HTML
 
-## <a id="example"></a>Example
+## Example
 
 ```php
 <section class="products">

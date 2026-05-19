@@ -15,7 +15,7 @@
 - [Three states](#three-states)
 - [Signals](#signals)
 
-## <a id="basic-usage"></a>Basic usage
+## Basic usage
 
 ```cpp
 QCheckBox *checkbox = new QCheckBox("Check me!");
@@ -28,7 +28,7 @@ QObject::connect(checkbox, &QCheckBox::toggled, [](bool checked) {
 layout->addWidget(checkbox);
 ```
 
-## <a id="common-operations"></a>Common operations
+## Common operations
 
 ```cpp
 bool checked = checkbox->isChecked();
@@ -36,7 +36,7 @@ checkbox->setChecked(!checked);
 checkbox->setDisabled(true);
 ```
 
-## <a id="three-states"></a>Three states
+## Three states
 
 Use tri-state mode when the checkbox can represent "partially checked".
 
@@ -45,7 +45,7 @@ checkbox->setTristate(true);
 checkbox->setCheckState(Qt::PartiallyChecked);
 ```
 
-## <a id="signals"></a>Signals
+## Signals
 
 * `toggled(bool)` is emitted when the checked state changes.
 * `stateChanged(int)` is useful when tri-state mode is enabled.

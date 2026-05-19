@@ -4,10 +4,10 @@
 
 ## Summary
 
-- [Basic types](#basic-types)
-- [Complex types](#complex-types)
+- [Basic types](#1-basic-types)
+- [Complex types](#2-complex-types)
 
-## <a id="basic-types"></a>1. Basic types
+## 1. Basic types
 
 ### Boolean
 
@@ -39,7 +39,7 @@ long double z = 3.14159265359L; // extended precision
 char c = 'A'; // single quotes
 ```
 
-## <a id="complex-types"></a>2. Complex types
+## 2. Complex types
 
 ### String
 

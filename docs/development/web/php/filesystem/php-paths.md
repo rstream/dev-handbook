@@ -17,7 +17,7 @@ This page is only about paths, not reading files, writing files, or creating dir
 - [Normalize an existing path](#normalize-an-existing-path) - `realpath()` resolves an existing path
 - [Path separators](#path-separators) - `DIRECTORY_SEPARATOR` and `PATH_SEPARATOR`
 
-## <a id="current-file-path"></a>Current file path
+## Current file path
 
 `__FILE__` is the full path to the current PHP file.
 `__DIR__` is the directory that contains the current PHP file.
@@ -34,7 +34,7 @@ This is usually more stable than relying on the current working directory.
 $configPath = __DIR__ . '/config/app.php';
 ```
 
-## <a id="directory-name"></a>Directory name
+## Directory name
 
 `dirname()` returns the parent directory part of a path.
 
@@ -47,7 +47,7 @@ echo dirname($path, 2);  // /var/www/app
 
 The second argument tells PHP how many parent levels to go up.
 
-## <a id="base-name"></a>Base name
+## Base name
 
 `basename()` returns the last part of a path.
 
@@ -60,7 +60,7 @@ echo basename($path, '.php'); // index
 
 The optional suffix is removed only when the last path part ends with that suffix.
 
-## <a id="path-information"></a>Path information
+## Path information
 
 `pathinfo()` splits a path into common parts.
 
@@ -80,7 +80,7 @@ $name = pathinfo($path, PATHINFO_FILENAME);
 $ext = pathinfo($path, PATHINFO_EXTENSION);
 ```
 
-## <a id="extension"></a>Extension
+## Extension
 
 Use `pathinfo($path, PATHINFO_EXTENSION)` when you only need the extension.
 
@@ -94,7 +94,7 @@ echo $extension; // png
 The extension is returned without the dot.
 If the path has no extension, PHP returns an empty string.
 
-## <a id="build-paths"></a>Build paths
+## Build paths
 
 PHP has no common built-in `join_path()` function.
 For simple local paths, concatenate parts with `DIRECTORY_SEPARATOR`.
@@ -112,7 +112,7 @@ $path = __DIR__ . '/templates/home.php';
 
 Avoid adding user input directly to a path without validation.
 
-## <a id="current-working-directory"></a>Current working directory
+## Current working directory
 
 `getcwd()` returns the current working directory of the running PHP process.
 
@@ -125,7 +125,7 @@ echo $cwd;
 This is not always the same as `__DIR__`.
 For web apps, `__DIR__` is usually better when you need paths relative to source files.
 
-## <a id="normalize-an-existing-path"></a>Normalize an existing path
+## Normalize an existing path
 
 `realpath()` resolves `.` and `..`, symbolic links, and returns an absolute normalized path.
 
@@ -140,7 +140,7 @@ if ($path !== false) {
 `realpath()` returns `false` when the path does not exist.
 Do not use it for paths that you are about to create.
 
-## <a id="path-separators"></a>Path separators
+## Path separators
 
 `DIRECTORY_SEPARATOR` is the separator inside one filesystem path.
 

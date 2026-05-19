@@ -16,7 +16,7 @@ It is similar to a built-in array, but it has useful member functions like `size
 - [Copy and assign](#copy-and-assign) - copy arrays with `=`
 - [Pass to function](#pass-to-function) - keep size information in parameters
 
-## <a id="include-header"></a>Include header
+## Include header
 
 `std::array` is declared in `<array>`.
 
@@ -31,7 +31,7 @@ For input and output you usually also need `<iostream>`.
 #include <iostream>
 ```
 
-## <a id="declare-array"></a>Declare array
+## Declare array
 
 Size is part of the type.
 
@@ -46,7 +46,7 @@ Initialize all elements with zero:
 std::array<int, 5> numbers = {};
 ```
 
-## <a id="access-elements"></a>Access elements
+## Access elements
 
 Index starts from `0`.
 
@@ -64,7 +64,7 @@ int a = values.front();
 int b = values.back();
 ```
 
-## <a id="size"></a>Size
+## Size
 
 Use `size()` to get the number of elements.
 
@@ -76,7 +76,7 @@ int len = values.size();   // 3
 
 Unlike a built-in array passed to a function, `std::array` keeps its size information.
 
-## <a id="loop-through-array"></a>Loop through array
+## Loop through array
 
 Use a range-based `for` loop to read values.
 
@@ -96,7 +96,7 @@ for (int& value : values) {
 }
 ```
 
-## <a id="fill-values"></a>Fill values
+## Fill values
 
 Use `fill()` to set all elements to the same value.
 
@@ -105,7 +105,7 @@ std::array<int, 5> values;
 values.fill(0);
 ```
 
-## <a id="copy-and-assign"></a>Copy and assign
+## Copy and assign
 
 `std::array` can be copied and assigned directly.
 
@@ -118,7 +118,7 @@ b = a;
 
 This is different from built-in arrays.
 
-## <a id="pass-to-function"></a>Pass to function
+## Pass to function
 
 The size is part of the parameter type.
 

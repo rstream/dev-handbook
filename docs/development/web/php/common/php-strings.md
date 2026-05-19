@@ -19,7 +19,7 @@ Use them for plain text, formatted messages, paths, HTML fragments, and other te
 - [Split and join strings](#split-and-join-strings) - `explode()` and `implode()` convert between strings and arrays
 - [Convert binary to hex](#convert-binary-to-hex) - `bin2hex()` converts bytes to readable hex text
 
-## <a id="define-strings"></a>Define strings
+## Define strings
 
 ```php
 $name = 'Alice';
@@ -29,45 +29,45 @@ $message = "Hello, world";
 Single quotes create a literal string.
 Double quotes allow variable interpolation and escape sequences like `\n`.
 
-## <a id="concatenate-strings"></a>Concatenate strings
+## Concatenate strings
 
 ```php
 $fullName = $firstName . ' ' . $lastName;
 ```
 
-## <a id="interpolate-variables"></a>Interpolate variables
+## Interpolate variables
 
 ```php
 $message = "Hello, $name";
 $title = "User: {$user['name']}";
 ```
 
-## <a id="access-string-length"></a>Access string length
+## Access string length
 
 ```php
 $len = strlen($message);
 ```
 
-## <a id="trim-whitespace"></a>Trim whitespace
+## Trim whitespace
 
 ```php
 $title = trim($title);
 ```
 
-## <a id="change-case"></a>Change case
+## Change case
 
 ```php
 $upper = strtoupper($name);
 $lower = strtolower($name);
 ```
 
-## <a id="format-a-string"></a>Format a string
+## Format a string
 
 ```php
 $text = sprintf('%s has %d messages', $name, $count);
 ```
 
-## <a id="find-text"></a>Find text
+## Find text
 
 Use `str_contains()` when you only need a true/false answer.
 
@@ -87,20 +87,20 @@ if ($pos !== false) {
 }
 ```
 
-## <a id="replace-text"></a>Replace text
+## Replace text
 
 ```php
 $url = str_replace(' ', '-', $title);
 ```
 
-## <a id="split-and-join-strings"></a>Split and join strings
+## Split and join strings
 
 ```php
 $tags = explode(',', 'php,web,backend');
 $line = implode(', ', $tags);
 ```
 
-## <a id="convert-binary-to-hex"></a>Convert binary to hex
+## Convert binary to hex
 
 `bin2hex()` is often used to turn random bytes into a readable token.
 

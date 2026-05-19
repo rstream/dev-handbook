@@ -4,16 +4,16 @@
 
 ## Summary
 
-- [Idea](#idea)
-- [malloc](#malloc)
-- [Allocate array](#allocate-array)
-- [calloc](#calloc)
-- [realloc](#realloc)
-- [free](#free)
-- [Important limitations](#important-limitations)
-- [When to use](#when-to-use)
+- [Idea](#1-idea)
+- [malloc](#2-malloc)
+- [Allocate array](#3-allocate-array)
+- [calloc](#4-calloc)
+- [realloc](#5-realloc)
+- [free](#6-free)
+- [Important limitations](#7-important-limitations)
+- [When to use](#8-when-to-use)
 
-## <a id="idea"></a>1. Idea
+## 1. Idea
 
 Dynamic memory is memory allocated during program execution, not at compile time.
 
@@ -29,7 +29,7 @@ These functions are declared in:
 #include <cstdlib>
 ```
 
-## <a id="malloc"></a>2. `malloc`
+## 2. `malloc`
 
 `malloc` allocates a block of memory of given size in bytes.
 
@@ -52,7 +52,7 @@ int main() {
 
 `malloc` does not initialize the memory.
 
-## <a id="allocate-array"></a>3. Allocate array
+## 3. Allocate array
 
 ```cpp
 int* arr = (int*)malloc(5 * sizeof(int));
@@ -72,7 +72,7 @@ After usage:
 free(arr);
 ```
 
-## <a id="calloc"></a>4. `calloc`
+## 4. `calloc`
 
 `calloc` allocates memory for multiple elements and initializes all bytes to zero.
 
@@ -90,7 +90,7 @@ for (int i = 0; i < 5; i++) {
 
 All elements are initially zero.
 
-## <a id="realloc"></a>5. `realloc`
+## 5. `realloc`
 
 `realloc` changes the size of an already allocated memory block.
 
@@ -101,7 +101,7 @@ arr = (int*)realloc(arr, 6 * sizeof(int));
 
 After `realloc`, pointer value may change, because memory can be moved to another place.
 
-## <a id="free"></a>6. `free`
+## 6. `free`
 
 Memory allocated by `malloc`, `calloc`, or `realloc` must be released with `free`.
 
@@ -112,7 +112,7 @@ arr = nullptr;
 
 Setting pointer to `nullptr` after `free` helps avoid accidental use of invalid memory.
 
-## <a id="important-limitations"></a>7. Important limitations
+## 7. Important limitations
 
 `malloc` and related functions:
 * do not call constructors
@@ -132,7 +132,7 @@ User* user = (User*)malloc(sizeof(User)); // bad idea in C++
 
 This is wrong for normal C++ objects, because constructor of `std::string` is not called.
 
-## <a id="when-to-use"></a>8. When to use
+## 8. When to use
 
 In C++ code, C-style dynamic memory is usually used only:
 * when working with old C libraries
