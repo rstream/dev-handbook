@@ -2,7 +2,22 @@
 
 [← back](../index.md)
 
-## 1. Idea
+## Summary
+
+- [Idea](#idea)
+- [Declare strings](#declare-strings)
+- [Print string](#print-string)
+- [Get string length](#get-string-length)
+- [Access characters](#access-characters)
+- [Copy string](#copy-string)
+- [Concatenate strings](#concatenate-strings)
+- [Compare strings](#compare-strings)
+- [Search inside string](#search-inside-string)
+- [Input string](#input-string)
+- [Common functions](#common-functions)
+- [Important limitations](#important-limitations)
+
+## <a id="idea"></a>1. Idea
 
 Before `std::string`, strings in C and old C++ were usually stored as arrays of `char`.
 
@@ -22,7 +37,7 @@ For `"hello"` memory contains:
 
 > Note: most of the string functions require `#include <cstring>`
 
-## 2. Declare strings
+## <a id="declare-strings"></a>2. Declare strings
 
 ```cpp
 char a[] = "hello";
@@ -38,7 +53,7 @@ char bad[] = { 'h', 'i' };   // not a valid C string
 
 Without `'\0'`, functions for C strings will not work correctly.
 
-## 3. Print string
+## <a id="print-string"></a>3. Print string
 
 ```cpp
 #include <iostream>
@@ -47,7 +62,7 @@ char text[] = "hello";
 std::cout << text << '\n';
 ```
 
-## 4. Get string length
+## <a id="get-string-length"></a>4. Get string length
 
 Use `strlen` from `<cstring>`:
 
@@ -60,7 +75,7 @@ size_t len = strlen(text);   // 5
 
 `strlen` does not count the final `'\0'`.
 
-## 5. Access characters
+## <a id="access-characters"></a>5. Access characters
 
 ```cpp
 char text[] = "hello";
@@ -75,7 +90,7 @@ Change character:
 text[0] = 'H';
 ```
 
-## 6. Copy string
+## <a id="copy-string"></a>6. Copy string
 
 Use `strcpy`:
 
@@ -113,7 +128,7 @@ Important:
 * `strncpy` does not always add final `'\0'`
 * often you need to add `'\0'` manually
 
-## 7. Concatenate strings
+## <a id="concatenate-strings"></a>7. Concatenate strings
 
 Use `strcat`:
 
@@ -137,7 +152,7 @@ strncat(text, " world!!!", 6);
 
 Now `text` becomes `"hello world"`.
 
-## 8. Compare strings
+## <a id="compare-strings"></a>8. Compare strings
 
 Use `strcmp`:
 
@@ -177,7 +192,7 @@ int r = strncmp("abcdef", "abcxyz", 3);   // 0
 
 This compares only the first `n` characters.
 
-## 9. Search inside string
+## <a id="search-inside-string"></a>9. Search inside string
 
 Find character with `strchr`:
 
@@ -197,7 +212,7 @@ char* p = strstr(text, "world");
 
 `p` points to `"world"` inside `text`.
 
-## 10. Input string
+## <a id="input-string"></a>10. Input string
 
 One old style is reading into a char array:
 
@@ -214,7 +229,7 @@ For line input:
 std::cin.getline(name, 50);
 ```
 
-## 11. Common functions
+## <a id="common-functions"></a>11. Common functions
 
 From `<cstring>`:
 * `strlen` - string length
@@ -227,7 +242,7 @@ From `<cstring>`:
 * `strchr` - find character
 * `strstr` - find substring
 
-## 12. Important limitations
+## <a id="important-limitations"></a>12. Important limitations
 
 Old C strings:
 * have fixed size

@@ -2,7 +2,18 @@
 
 [← back](../index.md)
 
-## 1. Idea
+## Summary
+
+- [Idea](#idea)
+- [malloc](#malloc)
+- [Allocate array](#allocate-array)
+- [calloc](#calloc)
+- [realloc](#realloc)
+- [free](#free)
+- [Important limitations](#important-limitations)
+- [When to use](#when-to-use)
+
+## <a id="idea"></a>1. Idea
 
 Dynamic memory is memory allocated during program execution, not at compile time.
 
@@ -18,7 +29,7 @@ These functions are declared in:
 #include <cstdlib>
 ```
 
-## 2. `malloc`
+## <a id="malloc"></a>2. `malloc`
 
 `malloc` allocates a block of memory of given size in bytes.
 
@@ -41,7 +52,7 @@ int main() {
 
 `malloc` does not initialize the memory.
 
-## 3. Allocate array
+## <a id="allocate-array"></a>3. Allocate array
 
 ```cpp
 int* arr = (int*)malloc(5 * sizeof(int));
@@ -61,7 +72,7 @@ After usage:
 free(arr);
 ```
 
-## 4. `calloc`
+## <a id="calloc"></a>4. `calloc`
 
 `calloc` allocates memory for multiple elements and initializes all bytes to zero.
 
@@ -79,7 +90,7 @@ for (int i = 0; i < 5; i++) {
 
 All elements are initially zero.
 
-## 5. `realloc`
+## <a id="realloc"></a>5. `realloc`
 
 `realloc` changes the size of an already allocated memory block.
 
@@ -90,7 +101,7 @@ arr = (int*)realloc(arr, 6 * sizeof(int));
 
 After `realloc`, pointer value may change, because memory can be moved to another place.
 
-## 6. `free`
+## <a id="free"></a>6. `free`
 
 Memory allocated by `malloc`, `calloc`, or `realloc` must be released with `free`.
 
@@ -101,7 +112,7 @@ arr = nullptr;
 
 Setting pointer to `nullptr` after `free` helps avoid accidental use of invalid memory.
 
-## 7. Important limitations
+## <a id="important-limitations"></a>7. Important limitations
 
 `malloc` and related functions:
 * do not call constructors
@@ -121,7 +132,7 @@ User* user = (User*)malloc(sizeof(User)); // bad idea in C++
 
 This is wrong for normal C++ objects, because constructor of `std::string` is not called.
 
-## 8. When to use
+## <a id="when-to-use"></a>8. When to use
 
 In C++ code, C-style dynamic memory is usually used only:
 * when working with old C libraries

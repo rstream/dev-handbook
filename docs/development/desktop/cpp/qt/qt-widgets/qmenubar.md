@@ -13,7 +13,15 @@
 #include <QStatusBar>
 ```
 
-## Basic usage
+## Summary
+
+- [Basic usage](#basic-usage)
+- [Common operations](#common-operations)
+- [Submenu](#submenu)
+- [Signals](#signals)
+- [Notes](#notes)
+
+## <a id="basic-usage"></a>Basic usage
 
 ```cpp
 QMenuBar *menu = win->menuBar();
@@ -49,7 +57,7 @@ QObject::connect(actAbout, &QAction::triggered, []() {
 });
 ```
 
-## Common operations
+## <a id="common-operations"></a>Common operations
 
 ```cpp
 QAction *actSave = new QAction("Save", win);
@@ -63,7 +71,7 @@ actToggle->setChecked(true);
 menuTasks->addAction(actToggle);
 ```
 
-## Submenu
+## <a id="submenu"></a>Submenu
 
 ```cpp
 QMenu *recentMenu = menuTasks->addMenu("Recent files");
@@ -71,12 +79,12 @@ recentMenu->addAction("notes.txt");
 recentMenu->addAction("report.txt");
 ```
 
-## Signals
+## <a id="signals"></a>Signals
 
 * `QAction::triggered()` is emitted when the action is activated.
 * `QAction::toggled(bool)` is emitted for checkable actions.
 
-## Notes
+## <a id="notes"></a>Notes
 
 * `QMainWindow::menuBar()` creates or returns the window menu bar.
 * `QAction` holds the menu item text, shortcut, status tip, checked state, and triggered signal.

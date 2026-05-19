@@ -9,7 +9,19 @@
 #include <QPushButton>
 ```
 
-## Alert
+## Summary
+
+- [Alert](#alert)
+- [Warning](#warning)
+- [Error](#error)
+- [Confirmation](#confirmation)
+- [About dialog](#about-dialog)
+- [Custom buttons](#custom-buttons)
+- [Standard icons](#standard-icons)
+- [Standard buttons](#standard-buttons)
+- [Button roles](#button-roles)
+
+## <a id="alert"></a>Alert
 
 Use `information()` for a simple notification.
 
@@ -21,7 +33,7 @@ QMessageBox::information(
 );
 ```
 
-## Warning
+## <a id="warning"></a>Warning
 
 Use `warning()` when the user should pay attention before continuing.
 
@@ -33,7 +45,7 @@ QMessageBox::warning(
 );
 ```
 
-## Error
+## <a id="error"></a>Error
 
 Use `critical()` for errors.
 
@@ -45,7 +57,7 @@ QMessageBox::critical(
 );
 ```
 
-## Confirmation
+## <a id="confirmation"></a>Confirmation
 
 Use `question()` and check which button the user selected.
 
@@ -64,7 +76,7 @@ if (answer == QMessageBox::Yes) {
 }
 ```
 
-## About dialog
+## <a id="about-dialog"></a>About dialog
 
 Use `about()` for short application information.
 
@@ -76,7 +88,7 @@ QMessageBox::about(
 );
 ```
 
-## Custom buttons
+## <a id="custom-buttons"></a>Custom buttons
 
 Create a `QMessageBox` instance when the dialog needs custom text for buttons.
 
@@ -98,7 +110,7 @@ if (box.clickedButton() == saveButton) {
 }
 ```
 
-## Standard icons
+## <a id="standard-icons"></a>Standard icons
 
 Use these values with `setIcon()` when creating a `QMessageBox` instance.
 
@@ -115,7 +127,7 @@ QMessageBox box(win);
 box.setIcon(QMessageBox::Question);
 ```
 
-## Standard buttons
+## <a id="standard-buttons"></a>Standard buttons
 
 Common standard buttons for message boxes.
 
@@ -147,7 +159,7 @@ QMessageBox::StandardButton answer =
     static_cast<QMessageBox::StandardButton>(box.exec());
 ```
 
-## Button roles
+## <a id="button-roles"></a>Button roles
 
 Button roles are used with custom buttons. They describe what the button does.
 

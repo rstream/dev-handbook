@@ -2,7 +2,20 @@
 
 [← back](../index.md)
 
-## 1. What is a pointer
+## Summary
+
+- [What is a pointer](#what-is-a-pointer)
+- [Declare a pointer](#declare-a-pointer)
+- [Get address](#get-address)
+- [Dereference pointer](#dereference-pointer)
+- [Null pointer](#null-pointer)
+- [Pointers and arrays](#pointers-and-arrays)
+- [Pointer arithmetic](#pointer-arithmetic)
+- [Pass by pointer](#pass-by-pointer)
+- [Pointer to pointer](#pointer-to-pointer)
+- [Important notes](#important-notes)
+
+## <a id="what-is-a-pointer"></a>1. What is a pointer
 
 A pointer stores a memory address of another object.
 
@@ -16,7 +29,7 @@ Where:
 * `&value` - address of variable `value`
 * `ptr` - pointer to `int`
 
-## 2. Declare a pointer
+## <a id="declare-a-pointer"></a>2. Declare a pointer
 
 ```cpp
 int* a;
@@ -26,7 +39,7 @@ double* price;
 
 Pointer type must match the type of the object it points to.
 
-## 3. Get address
+## <a id="get-address"></a>3. Get address
 
 Use operator `&` to get an address:
 
@@ -35,7 +48,7 @@ int value = 25;
 int* ptr = &value;
 ```
 
-## 4. Dereference pointer
+## <a id="dereference-pointer"></a>4. Dereference pointer
 
 Use operator `*` to access the value by address:
 
@@ -47,7 +60,7 @@ int x = *ptr;   // x = 25
 *ptr = 99;      // value becomes 99
 ```
 
-## 5. Null pointer
+## <a id="null-pointer"></a>5. Null pointer
 
 A pointer can point to nothing:
 
@@ -63,7 +76,7 @@ if (ptr != nullptr) {
 }
 ```
 
-## 6. Pointers and arrays
+## <a id="pointers-and-arrays"></a>6. Pointers and arrays
 
 Array name can be used as a pointer to the first element.
 
@@ -75,7 +88,7 @@ int a = ptr[0];
 int b = *(ptr + 1);
 ```
 
-## 7. Pointer arithmetic
+## <a id="pointer-arithmetic"></a>7. Pointer arithmetic
 
 For arrays, pointer can move between elements:
 
@@ -89,7 +102,7 @@ int x = *ptr;     // 20
 
 Pointer arithmetic depends on pointed type size.
 
-## 8. Pass by pointer
+## <a id="pass-by-pointer"></a>8. Pass by pointer
 
 Pointers are often used to modify variables inside a function.
 
@@ -106,7 +119,7 @@ int main() {
 
 After call, `x` becomes `0`.
 
-## 9. Pointer to pointer
+## <a id="pointer-to-pointer"></a>9. Pointer to pointer
 
 Pointer can also store address of another pointer.
 
@@ -122,7 +135,7 @@ Access value:
 int x = **ptr2;
 ```
 
-## 10. Important notes
+## <a id="important-notes"></a>10. Important notes
 
 * uninitialized pointers are dangerous
 * `nullptr` is safer than old `NULL`

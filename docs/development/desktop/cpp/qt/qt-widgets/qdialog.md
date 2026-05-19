@@ -12,7 +12,14 @@
 #include <QVBoxLayout>
 ```
 
-## Basic usage
+## Summary
+
+- [Basic usage](#basic-usage)
+- [Accept and reject](#accept-and-reject)
+- [Modal and modeless](#modal-and-modeless)
+- [Notes](#notes)
+
+## <a id="basic-usage"></a>Basic usage
 
 ```cpp
 QDialog *dlg = new QDialog(win);
@@ -35,7 +42,7 @@ QObject::connect(button, &QPushButton::clicked, [dlg]() {
 dlg->exec();
 ```
 
-## Accept and reject
+## <a id="accept-and-reject"></a>Accept and reject
 
 `exec()` returns `QDialog::Accepted` or `QDialog::Rejected`.
 
@@ -62,14 +69,14 @@ if (dialog.exec() == QDialog::Accepted) {
 }
 ```
 
-## Modal and modeless
+## <a id="modal-and-modeless"></a>Modal and modeless
 
 ```cpp
 dlg->exec(); // modal: blocks interaction with the parent window
 dlg->show(); // modeless: opens and returns immediately
 ```
 
-## Notes
+## <a id="notes"></a>Notes
 
 * Use `accept()` for OK/Apply-like actions.
 * Use `reject()` for Cancel/Close-like actions.

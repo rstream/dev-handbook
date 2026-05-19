@@ -8,7 +8,15 @@
 #include <QSlider>
 ```
 
-## Basic usage
+## Summary
+
+- [Basic usage](#basic-usage)
+- [Common operations](#common-operations)
+- [Tick marks](#tick-marks)
+- [Signals](#signals)
+- [Notes](#notes)
+
+## <a id="basic-usage"></a>Basic usage
 
 ```cpp
 QSlider *slider = new QSlider(Qt::Horizontal);
@@ -22,7 +30,7 @@ QObject::connect(slider, &QSlider::valueChanged, [](int value) {
 layout->addWidget(slider);
 ```
 
-## Common operations
+## <a id="common-operations"></a>Common operations
 
 ```cpp
 slider->setMinimum(0);
@@ -34,20 +42,20 @@ slider->setValue(50);
 int value = slider->value();
 ```
 
-## Tick marks
+## <a id="tick-marks"></a>Tick marks
 
 ```cpp
 slider->setTickPosition(QSlider::TicksAbove);
 slider->setTickInterval(10);
 ```
 
-## Signals
+## <a id="signals"></a>Signals
 
 * `valueChanged(int)` is emitted when the value changes.
 * `sliderMoved(int)` is emitted while the user drags the handle.
 * `sliderReleased()` is useful when expensive work should run after dragging ends.
 
-## Notes
+## <a id="notes"></a>Notes
 
 * `setSingleStep()` affects keyboard movement.
 * `setPageStep()` affects Page Up/Page Down and track clicks.

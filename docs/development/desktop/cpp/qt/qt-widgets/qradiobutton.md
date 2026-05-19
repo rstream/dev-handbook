@@ -9,7 +9,14 @@
 #include <QRadioButton>
 ```
 
-## Basic usage
+## Summary
+
+- [Basic usage](#basic-usage)
+- [Common operations](#common-operations)
+- [Signals](#signals)
+- [Notes](#notes)
+
+## <a id="basic-usage"></a>Basic usage
 
 ```cpp
 QButtonGroup *radios = new QButtonGroup();
@@ -33,7 +40,7 @@ layout->addWidget(rad2);
 layout->addWidget(rad3);
 ```
 
-## Common operations
+## <a id="common-operations"></a>Common operations
 
 ```cpp
 rad1->setChecked(true);
@@ -42,13 +49,13 @@ int id = radios->checkedId();
 radios->button(2)->setChecked(true);
 ```
 
-## Signals
+## <a id="signals"></a>Signals
 
 * `QRadioButton::toggled(bool)` tracks one button.
 * `QButtonGroup::buttonToggled(QAbstractButton *, bool)` tracks the whole group.
 * `QButtonGroup::idToggled(int, bool)` is convenient when you assigned IDs.
 
-## Notes
+## <a id="notes"></a>Notes
 
 * Radio buttons with the same parent are auto-exclusive by default.
 * `QButtonGroup` is not visible. It only manages button relationships and IDs.

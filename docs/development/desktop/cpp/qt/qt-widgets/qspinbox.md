@@ -8,7 +8,14 @@
 #include <QSpinBox>
 ```
 
-## Basic usage
+## Summary
+
+- [Basic usage](#basic-usage)
+- [Common operations](#common-operations)
+- [Signals](#signals)
+- [Notes](#notes)
+
+## <a id="basic-usage"></a>Basic usage
 
 ```cpp
 QSpinBox *spin = new QSpinBox();
@@ -24,7 +31,7 @@ QObject::connect(spin, &QSpinBox::valueChanged, [](int value) {
 layout->addWidget(spin);
 ```
 
-## Common operations
+## <a id="common-operations"></a>Common operations
 
 ```cpp
 spin->setMinimum(0);
@@ -36,12 +43,12 @@ spin->setWrapping(true);
 int value = spin->value();
 ```
 
-## Signals
+## <a id="signals"></a>Signals
 
 * `valueChanged(int)` is emitted when the numeric value changes.
 * `textChanged(QString)` is emitted when the displayed text changes, including prefix/suffix.
 
-## Notes
+## <a id="notes"></a>Notes
 
 * Use `QDoubleSpinBox` for floating-point values.
 * `setWrapping(true)` allows moving from max back to min and from min back to max.

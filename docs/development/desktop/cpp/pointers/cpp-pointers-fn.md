@@ -2,7 +2,18 @@
 
 [← back](../index.md)
 
-## 1. Function pointer
+## Summary
+
+- [Function pointer](#function-pointer)
+- [Call through function pointer](#call-through-function-pointer)
+- [Another example](#another-example)
+- [typedef and using](#typedef-and-using)
+- [Callback idea](#callback-idea)
+- [Callback for processing values](#callback-for-processing-values)
+- [Why callbacks are useful](#why-callbacks-are-useful)
+- [Notes](#notes)
+
+## <a id="function-pointer"></a>1. Function pointer
 
 A function pointer stores the address of a function.
 
@@ -16,7 +27,7 @@ int (*op)(int, int) = sum;
 
 The pointer type must match the function signature.
 
-## 2. Call through function pointer
+## <a id="call-through-function-pointer"></a>2. Call through function pointer
 
 ```cpp
 int result1 = op(2, 3);
@@ -25,7 +36,7 @@ int result2 = (*op)(2, 3);
 
 Both calls are valid.
 
-## 3. Another example
+## <a id="another-example"></a>3. Another example
 
 ```cpp
 void hello() {
@@ -36,7 +47,7 @@ void (*printer)() = hello;
 printer();
 ```
 
-## 4. `typedef` and `using`
+## <a id="typedef-and-using"></a>4. `typedef` and `using`
 
 Function pointer syntax can be hard to read, so aliases are often used.
 
@@ -63,7 +74,7 @@ Operation op = mul;
 int result = op(4, 5);
 ```
 
-## 5. Callback idea
+## <a id="callback-idea"></a>5. Callback idea
 
 A callback is a function passed to another function, so it can be called later.
 
@@ -89,7 +100,7 @@ run(sum, 10, 5); // 15
 run(sub, 10, 5); // 5
 ```
 
-## 6. Callback for processing values
+## <a id="callback-for-processing-values"></a>6. Callback for processing values
 
 ```cpp
 void process(int* arr, int len, void (*handler)(int)) {
@@ -110,14 +121,14 @@ int arr[] = { 3, 6, 9 };
 process(arr, 3, printNumber);
 ```
 
-## 7. Why callbacks are useful
+## <a id="why-callbacks-are-useful"></a>7. Why callbacks are useful
 
 Callbacks help when:
 * different behavior must be selected dynamically
 * one function should reuse external logic
 * event-based systems call user code later
 
-## 8. Notes
+## <a id="notes"></a>8. Notes
 
 * function pointers can point only to regular functions with matching signature
 * member functions have different syntax and cannot be used the same way directly

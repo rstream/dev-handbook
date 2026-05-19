@@ -2,12 +2,18 @@
 
 [← back](../../../index.md)
 
-## General
+## Summary
+
+- [General](#general)
+- [Syntax](#syntax)
+- [Frameworks](#frameworks)
+
+## <a id="general"></a>General
 
 [Compilation](cpp-compilation.md) - compiling C++ files  
 [Hello world](cpp-hello-world.md) - sample "Hello world" application
 
-## Syntax
+## <a id="syntax"></a>Syntax
 
 ### Basics
 
@@ -38,6 +44,6 @@
 [Files - C-style](files/cpp-files-c.md) - working with files (C-style)  
 [Files - streams](files/cpp-files-cpp.md) - working with files using streams
 
-## Frameworks
+## <a id="frameworks"></a>Frameworks
 
 [Qt](qt/index.md) - Qt cross-platform development  

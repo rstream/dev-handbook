@@ -2,7 +2,12 @@
 
 [← back](../index.md)
 
-## 1. Basic types
+## Summary
+
+- [Basic types](#basic-types)
+- [Complex types](#complex-types)
+
+## <a id="basic-types"></a>1. Basic types
 
 ### Boolean
 
@@ -34,7 +39,7 @@ long double z = 3.14159265359L; // extended precision
 char c = 'A'; // single quotes
 ```
 
-## 2. Complex types
+## <a id="complex-types"></a>2. Complex types
 
 ### String
 

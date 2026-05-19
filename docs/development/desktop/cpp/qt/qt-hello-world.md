@@ -4,14 +4,20 @@
 
 This is a minimal Qt Widgets application. It creates a `QApplication`, opens a `QMainWindow`, adds a central widget with a layout, and shows a label.
 
-## What this example shows
+## Summary
+
+- [What this example shows](#what-this-example-shows)
+- [Example](#example)
+- [Notes](#notes)
+
+## <a id="what-this-example-shows"></a>What this example shows
 
 * `QApplication` owns the GUI event loop.
 * `QMainWindow` is the top-level application window.
 * `setCentralWidget()` defines the main content area.
 * `QVBoxLayout` arranges child widgets vertically.
 
-## Example
+## <a id="example"></a>Example
 
 ```cpp
 #include <QApplication>
@@ -33,7 +39,7 @@ int main(int argc, char *argv[]) {
 }
 ```
 
-## Notes
+## <a id="notes"></a>Notes
 
 * A Qt Widgets app must create exactly one `QApplication` object.
 * `app.exec()` starts the event loop and keeps the application running.
