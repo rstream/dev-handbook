@@ -8,8 +8,7 @@
 - [println](#println) - write text with a new line
 - [printf](#printf) - formatted output
 
-## <a id="print"></a>print
-
+## print
 Writes text to console without a new line.
 
 ```java
@@ -17,8 +16,7 @@ System.out.print("Hello");
 System.out.print(" World");
 ```
 
-## <a id="println"></a>println
-
+## println
 Writes text and moves cursor to the next line.
 
 ```java
@@ -26,8 +24,7 @@ System.out.println("Hello");
 System.out.println("World");
 ```
 
-## <a id="printf"></a>printf
-
+## printf
 Formatted output using format specifiers.
 * %s - string
 * %d - decimal

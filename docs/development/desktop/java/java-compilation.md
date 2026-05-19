@@ -8,8 +8,7 @@
 - [Run java apps](#run-java-apps) - run source or byte-code files
 - [Create JAR](#create-jar) - package compiled classes
 
-## <a id="compile-java-sources-to-byte-code"></a>Compile java sources to byte-code
-
+## Compile java sources to byte-code
 If you have a single file:
 
 ```sh
@@ -27,8 +26,7 @@ javac MyApp.java Second.java Third.java
 ```
 Will produce several `*.class` files.
 
-## <a id="run-java-apps"></a>Run java apps
-
+## Run java apps
 ### Running source code (*.java) files
 
 Need to use IDE for running *.java files before compilation to byte-code.  
@@ -46,8 +44,7 @@ java MyApp
 This will execute **MyApp.class** file  
 Need to pass only 1 file (the main one), all dependent classes will be loaded automatically.
 
-## <a id="create-jar"></a>Create JAR
-
+## Create JAR
 ### Create a manifest file
 
 Create file `manifest.txt` with the following content:
