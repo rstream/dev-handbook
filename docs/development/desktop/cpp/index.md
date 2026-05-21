@@ -39,6 +39,8 @@
 [std::array](std/cpp-std-array.md) - fixed-size array wrapper  
 [std::vector](std/cpp-std-vector.md) - dynamic array container
 
+[Random generation](std/cpp-std-random.md) - random numbers, strings, tokens, shuffle
+
 ### Working with files
 
 [Files - C-style](files/cpp-files-c.md) - working with files (C-style)  
