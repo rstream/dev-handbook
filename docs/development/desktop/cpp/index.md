@@ -23,6 +23,8 @@
 [Strings](basics/cpp-strings.md) - working with strings (C-style)  
 [Arrays](basics/cpp-arrays.md) - working with arrays (C-style)
 
+[Random](basics/cpp-random.md) - legacy random generation (C-style)
+
 ### Pointers
 
 [Pointers](pointers/cpp-pointers.md) - working with pointers in C++  
