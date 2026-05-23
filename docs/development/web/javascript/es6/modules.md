@@ -72,11 +72,15 @@ import './setup.js';
 
 ## Module behavior
 
+### Include module in HTML
+
 In browser HTML, use `type="module"`.
 
 ```html
 <script type="module" src="app.js"></script>
 ```
+
+### Always strict
 
 Modules always run in strict mode.
 
@@ -85,8 +89,12 @@ this;
 // undefined at the top level
 ```
 
+### Always defer
+
 Module scripts are deferred by default.
 They run after HTML parsing, similar to classic scripts with `defer`.
+
+### Top level variables are not on `window`
 
 Top-level variables are module-scoped.
 They are not added to `window`.
@@ -97,6 +105,8 @@ const appName = 'Demo';
 window.appName;
 // undefined
 ```
+
+### Top level await
 
 Modules can use top-level `await`.
 

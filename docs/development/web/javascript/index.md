@@ -14,10 +14,6 @@
 [Modules](es6/modules.md) - `import`, `export`, and module-specific behavior  
 [Promises](es6/promises.md) - basic async values before `async` / `await`
 
-## Modules
-
-[<script type=\"module\">](type-module.md) - specifics of adding scripts as modules
-
 ## Network
 
-[AJAX](ajax.md) - old & new syntax of AJAX requests
+[AJAX](network/ajax.md) - old & new syntax of AJAX requests

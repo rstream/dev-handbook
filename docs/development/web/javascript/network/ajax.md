@@ -1,6 +1,6 @@
 # AJAX
 
-[← back](index.md)
+[← back](../index.md)
 
 Old and new syntax of AJAX requests.
 
