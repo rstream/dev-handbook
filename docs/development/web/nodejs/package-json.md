@@ -16,7 +16,7 @@
 - [package-lock.json](#package-lock-json) - exact installed dependency versions
 - [node_modules](#node-modules) - installed package files
 
-## <a id="create-package-json"></a>Create package.json
+## Create package.json
 
 Create a `package.json` file interactively:
 
@@ -30,7 +30,7 @@ Create it with default answers:
 npm init -y
 ```
 
-## <a id="install-dependencies"></a>Install dependencies
+## Install dependencies
 
 Install all packages listed in `package.json`:
 
@@ -68,7 +68,7 @@ Short form:
 npm i eslint -D
 ```
 
-## <a id="dependencies"></a>dependencies
+## dependencies
 
 `dependencies` are packages needed to run the application.
 
@@ -84,7 +84,7 @@ Example:
 
 Use this for runtime libraries: web servers, database clients, UI libraries, helpers used by production code.
 
-## <a id="devdependencies"></a>devDependencies
+## devDependencies
 
 `devDependencies` are packages needed only while developing, testing, or building the project.
 
@@ -101,7 +101,7 @@ Example:
 
 Use this for linters, test runners, bundlers, formatters, and TypeScript.
 
-## <a id="remove-a-dependency"></a>Remove a dependency
+## Remove a dependency
 
 Remove a package from `package.json` and `node_modules`:
 
@@ -115,7 +115,7 @@ Short form:
 npm rm lodash
 ```
 
-## <a id="scripts"></a>scripts
+## scripts
 
 `scripts` are named commands for the project.
 
@@ -144,7 +144,7 @@ npm start
 npm test
 ```
 
-## <a id="type"></a>type
+## type
 
 Defines the Node.js module type.
 
@@ -166,13 +166,13 @@ When using `"type": "module"`, local imports usually need file extensions:
 import myModule from './my-module.js';
 ```
 
-## <a id="package-lock-json"></a>package-lock.json
+## package-lock.json
 
 `package-lock.json` stores the exact versions installed by npm.
 
 Commit it to the repository for applications so other developers and deployment systems install the same dependency tree.
 
-## <a id="node-modules"></a>node_modules
+## node_modules
 
 `node_modules` contains installed package files.
 
