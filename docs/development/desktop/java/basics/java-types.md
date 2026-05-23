@@ -4,11 +4,10 @@
 
 ## Summary
 
-- [Basic types](#basic-types) - boolean, numbers, and char
-- [Complex types](#complex-types) - String, arrays, and enum
+- [Basic types](#1-basic-types) - boolean, numbers, and char
+- [Complex types](#2-complex-types) - String, arrays, and enum
 
-## <a id="basic-types"></a>1. Basic types
-
+## 1. Basic types
 ### Boolean
 
 ```java
@@ -37,8 +36,7 @@ double y = 3.14159265359; // 64 bit
 char c = 'A'; // 16 bit; single quotes!
 ```
 
-## <a id="complex-types"></a>2. Complex types
-
+## 2. Complex types
 ### String
 
 String is a class.  

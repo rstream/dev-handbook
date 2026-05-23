@@ -26,8 +26,7 @@ Java arrays have a fixed size. Use `ArrayList` when you need push/pop-like opera
 - [Filter and map](#filter-and-map) - transform values with streams
 - [Primitive arrays and streams](#primitive-arrays-and-streams) - `int[]`, `double[]`, and stream helpers
 
-## <a id="create-arrays"></a>Create arrays
-
+## Create arrays
 Create an array with a fixed size:
 
 ```java
@@ -42,8 +41,7 @@ int[] numbers = { 10, 20, 30 };
 String[] colors = { "red", "green", "blue" };
 ```
 
-## <a id="access-elements"></a>Access elements
-
+## Access elements
 Indexes start from `0`.
 
 ```java
@@ -55,8 +53,7 @@ colors[1] = "black";
 
 Invalid indexes throw `ArrayIndexOutOfBoundsException`.
 
-## <a id="array-length"></a>Array length
-
+## Array length
 ```java
 int[] numbers = { 10, 20, 30 };
 
@@ -65,8 +62,7 @@ int count = numbers.length; // 3
 
 `length` is a field, not a method.
 
-## <a id="loop-through-arrays"></a>Loop through arrays
-
+## Loop through arrays
 Use a classic loop when you need the index:
 
 ```java
@@ -85,8 +81,7 @@ for (String color : colors) {
 }
 ```
 
-## <a id="multidimensional-arrays"></a>Multidimensional arrays
-
+## Multidimensional arrays
 ```java
 int[][] matrix = {
     { 1, 2, 3 },
@@ -96,8 +91,7 @@ int[][] matrix = {
 int value = matrix[1][2]; // 6
 ```
 
-## <a id="fill-arrays"></a>Fill arrays
-
+## Fill arrays
 ```java
 import java.util.Arrays;
 
@@ -106,8 +100,7 @@ int[] numbers = new int[5];
 Arrays.fill(numbers, 10); // [10, 10, 10, 10, 10]
 ```
 
-## <a id="copy-arrays"></a>Copy arrays
-
+## Copy arrays
 ```java
 import java.util.Arrays;
 
@@ -125,8 +118,7 @@ int[] a = { 1, 2 };
 int[] b = a; // same array object
 ```
 
-## <a id="slice-arrays"></a>Slice arrays
-
+## Slice arrays
 Use `Arrays.copyOfRange(array, from, to)`.
 The start index is included. The end index is excluded.
 
@@ -138,8 +130,7 @@ int[] numbers = { 10, 20, 30, 40, 50 };
 int[] middle = Arrays.copyOfRange(numbers, 1, 4); // [20, 30, 40]
 ```
 
-## <a id="sort-arrays"></a>Sort arrays
-
+## Sort arrays
 ```java
 import java.util.Arrays;
 
@@ -150,8 +141,7 @@ Arrays.sort(numbers); // [10, 20, 30]
 
 `Arrays.sort()` changes the original array.
 
-## <a id="search-arrays"></a>Search arrays
-
+## Search arrays
 For sorted arrays, use `Arrays.binarySearch()`.
 
 ```java
@@ -177,8 +167,7 @@ for (int i = 0; i < names.length; i++) {
 }
 ```
 
-## <a id="compare-arrays"></a>Compare arrays
-
+## Compare arrays
 Use `Arrays.equals()` to compare contents.
 
 ```java
@@ -199,8 +188,7 @@ int[][] b = { { 1, 2 }, { 3, 4 } };
 boolean same = Arrays.deepEquals(a, b); // true
 ```
 
-## <a id="convert-arrays-to-strings"></a>Convert arrays to strings
-
+## Convert arrays to strings
 Use `Arrays.toString()` for readable output.
 
 ```java
@@ -232,8 +220,7 @@ String csv = Arrays.stream(numbers)
     .collect(Collectors.joining(","));
 ```
 
-## <a id="convert-strings-to-arrays"></a>Convert strings to arrays
-
+## Convert strings to arrays
 ```java
 String csv = "java,arrays,strings";
 
@@ -249,8 +236,7 @@ String filename = "report.pdf";
 String[] parts = filename.split("\\.");
 ```
 
-## <a id="convert-arrays-and-lists"></a>Convert arrays and lists
-
+## Convert arrays and lists
 Convert array to fixed-size list view:
 
 ```java
@@ -277,8 +263,7 @@ Convert list to array:
 String[] array = list.toArray(new String[0]);
 ```
 
-## <a id="use-arraylist"></a>Use ArrayList
-
+## Use ArrayList
 `ArrayList` is a dynamic array-like collection.
 
 ```java
@@ -297,8 +282,7 @@ colors.remove(0);
 int count = colors.size();
 ```
 
-## <a id="push-and-pop"></a>Push and pop
-
+## Push and pop
 Java arrays do not have `push()` or `pop()` methods.
 Use `ArrayList` for this behavior.
 
@@ -327,8 +311,7 @@ if (!stack.isEmpty()) {
 }
 ```
 
-## <a id="filter-and-map"></a>Filter and map
-
+## Filter and map
 Use streams to filter values.
 
 ```java
@@ -349,8 +332,7 @@ String[] upper = Arrays.stream(names)
     .toArray(String[]::new);
 ```
 
-## <a id="primitive-arrays-and-streams"></a>Primitive arrays and streams
-
+## Primitive arrays and streams
 Primitive arrays use specialized streams.
 
 ```java

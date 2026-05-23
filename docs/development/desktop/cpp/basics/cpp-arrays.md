@@ -2,6 +2,20 @@
 
 [← back](../index.md)
 
+## Summary
+
+- [Idea](#1-idea)
+- [Declare array](#2-declare-array)
+- [Partial initialization](#3-partial-initialization)
+- [Size by initializer](#4-size-by-initializer)
+- [Access elements](#5-access-elements)
+- [Array length](#6-array-length)
+- [Loop through array](#7-loop-through-array)
+- [Multidimensional arrays](#8-multidimensional-arrays)
+- [Arrays in functions](#9-arrays-in-functions)
+- [Copy array](#10-copy-array)
+- [Limitations](#11-limitations)
+
 ## 1. Idea
 
 Before `std::array` and `std::vector`, arrays were usually fixed-size built-in arrays.

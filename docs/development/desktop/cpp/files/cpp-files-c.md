@@ -2,6 +2,22 @@
 
 [← back](../index.md)
 
+## Summary
+
+- [Idea](#1-idea)
+- [Open file](#2-open-file)
+- [Read file](#3-read-file)
+- [Write file](#4-write-file)
+- [Close file](#5-close-file)
+- [Create file](#6-create-file)
+- [Delete file](#7-delete-file)
+- [Check file existence](#8-check-file-existence)
+- [File size](#9-file-size)
+- [File metadata](#10-file-metadata)
+- [Directory exists](#11-directory-exists)
+- [Create directory](#12-create-directory)
+- [Delete directory](#13-delete-directory)
+
 ## 1. Idea
 
 Old C-style file work usually uses:

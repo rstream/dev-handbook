@@ -12,7 +12,7 @@ Use them to distinguish missing data, empty data, and values of a specific type.
 - [Compare with `null`](#compare-with-null) - `=== null` and `!== null` are explicit null checks
 - [Check value type](#check-value-type) - `is_string()`, `is_int()`, `is_float()`, `is_bool()`, `is_array()`, `is_object()`, and `is_null()`
 
-## <a id="check-that-a-value-exists"></a>Check that a value exists
+## Check that a value exists
 
 `isset()` returns `true` when a variable or array key exists and its value is not `null`.
 
@@ -30,7 +30,7 @@ if (isset($user['email'])) {
 }
 ```
 
-## <a id="check-for-empty-values"></a>Check for empty values
+## Check for empty values
 
 `empty()` returns `true` for missing variables and for values PHP considers empty, such as `''`, `'0'`, `0`, `false`, `null`, and `[]`.
 
@@ -43,7 +43,7 @@ if (empty($name)) {
 Use `empty()` when this broad meaning is intended.
 Use a stricter check when `0` or `'0'` should be allowed.
 
-## <a id="compare-with-null"></a>Compare with `null`
+## Compare with `null`
 
 Use strict comparison when you specifically need to check for `null`.
 
@@ -57,7 +57,7 @@ if ($email !== null) {
 }
 ```
 
-## <a id="check-value-type"></a>Check value type
+## Check value type
 
 Use `is_*()` helpers when code accepts mixed data and needs to branch by type.
 

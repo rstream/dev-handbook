@@ -8,6 +8,14 @@
 #include <QSlider>
 ```
 
+## Summary
+
+- [Basic usage](#basic-usage)
+- [Common operations](#common-operations)
+- [Tick marks](#tick-marks)
+- [Signals](#signals)
+- [Notes](#notes)
+
 ## Basic usage
 
 ```cpp

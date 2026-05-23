@@ -9,6 +9,18 @@
 #include <QPushButton>
 ```
 
+## Summary
+
+- [Alert](#alert)
+- [Warning](#warning)
+- [Error](#error)
+- [Confirmation](#confirmation)
+- [About dialog](#about-dialog)
+- [Custom buttons](#custom-buttons)
+- [Standard icons](#standard-icons)
+- [Standard buttons](#standard-buttons)
+- [Button roles](#button-roles)
+
 ## Alert
 
 Use `information()` for a simple notification.

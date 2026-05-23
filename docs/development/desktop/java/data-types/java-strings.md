@@ -24,8 +24,7 @@ Use them for names, messages, paths, input values, JSON text, and formatted outp
 - [Parse values from strings](#parse-values-from-strings) - strings to numbers and booleans
 - [JSON](#json) - convert objects to JSON and JSON to objects
 
-## <a id="define-strings"></a>Define strings
-
+## Define strings
 ```java
 String name = "Alice";
 String empty = "";
@@ -34,8 +33,7 @@ String text = new String("hello");
 
 Usually prefer string literals (`"Alice"`) instead of `new String(...)`.
 
-## <a id="concatenate-strings"></a>Concatenate strings
-
+## Concatenate strings
 ```java
 String firstName = "Alice";
 String lastName = "Smith";
@@ -56,16 +54,14 @@ sb.append(age);
 String result = sb.toString();
 ```
 
-## <a id="string-length"></a>String length
-
+## String length
 ```java
 String text = "hello";
 
 int len = text.length(); // 5
 ```
 
-## <a id="access-characters"></a>Access characters
-
+## Access characters
 Indexes start from `0`.
 
 ```java
@@ -75,8 +71,7 @@ char first = text.charAt(0); // 'h'
 char last = text.charAt(text.length() - 1); // 'o'
 ```
 
-## <a id="compare-strings"></a>Compare strings
-
+## Compare strings
 Use `.equals()` to compare string content.
 
 ```java
@@ -94,8 +89,7 @@ boolean sameName = "Alice".equalsIgnoreCase("alice"); // true
 
 Do not use `==` for string content comparison. It compares object references.
 
-## <a id="find-text"></a>Find text
-
+## Find text
 Use `.contains()` when you only need a boolean result.
 
 ```java
@@ -116,8 +110,7 @@ int dot = filename.indexOf(".");
 
 `indexOf()` returns `-1` when text was not found.
 
-## <a id="extract-substrings"></a>Extract substrings
-
+## Extract substrings
 ```java
 String text = "abcdef";
 
@@ -127,8 +120,7 @@ String fromThree = text.substring(3);     // "def"
 
 The start index is included. The end index is excluded.
 
-## <a id="replace-text"></a>Replace text
-
+## Replace text
 ```java
 String title = "hello world";
 
@@ -141,8 +133,7 @@ Use `.replaceAll()` for regular expressions.
 String cleaned = text.replaceAll("[^a-zA-Z0-9]", "");
 ```
 
-## <a id="trim-whitespace"></a>Trim whitespace
-
+## Trim whitespace
 ```java
 String raw = "  hello  ";
 
@@ -152,8 +143,7 @@ String stripped = raw.strip(); // "hello"
 
 `strip()` is Unicode-aware and is usually a better choice in modern Java.
 
-## <a id="change-case"></a>Change case
-
+## Change case
 ```java
 String name = "Alice";
 
@@ -161,8 +151,7 @@ String upper = name.toUpperCase(); // "ALICE"
 String lower = name.toLowerCase(); // "alice"
 ```
 
-## <a id="split-and-join-strings"></a>Split and join strings
-
+## Split and join strings
 ```java
 String csv = "java,strings,json";
 
@@ -180,8 +169,7 @@ List<String> tags = List.of("java", "strings", "json");
 String line = String.join(", ", tags);
 ```
 
-## <a id="format-strings"></a>Format strings
-
+## Format strings
 ```java
 String name = "Alice";
 int count = 5;
@@ -195,8 +183,7 @@ For console output:
 System.out.printf("%s has %d messages%n", name, count);
 ```
 
-## <a id="convert-strings-and-bytes"></a>Convert strings and bytes
-
+## Convert strings and bytes
 Use a charset explicitly when converting between text and bytes.
 
 ```java
@@ -208,8 +195,7 @@ byte[] bytes = text.getBytes(StandardCharsets.UTF_8);
 String decoded = new String(bytes, StandardCharsets.UTF_8);
 ```
 
-## <a id="convert-other-types-to-string"></a>Convert other types to string
-
+## Convert other types to string
 ```java
 int age = 25;
 double score = 95.5;
@@ -226,8 +212,7 @@ Objects are converted with their `.toString()` method.
 String text = String.valueOf(user);
 ```
 
-## <a id="parse-values-from-strings"></a>Parse values from strings
-
+## Parse values from strings
 ```java
 String ageText = "25";
 String scoreText = "95.5";
@@ -248,8 +233,7 @@ try {
 }
 ```
 
-## <a id="json"></a>JSON
-
+## JSON
 Java does not have one built-in general-purpose JSON API in the standard library.
 A common practical choice is Jackson.
 

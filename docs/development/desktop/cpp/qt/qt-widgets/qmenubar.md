@@ -13,6 +13,14 @@
 #include <QStatusBar>
 ```
 
+## Summary
+
+- [Basic usage](#basic-usage)
+- [Common operations](#common-operations)
+- [Submenu](#submenu)
+- [Signals](#signals)
+- [Notes](#notes)
+
 ## Basic usage
 
 ```cpp

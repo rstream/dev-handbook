@@ -10,20 +10,20 @@ Use `<?= ... ?>` to insert a PHP expression into HTML.
 - [Print attribute values](#print-attribute-values) - `htmlspecialchars()` escapes values inside attributes
 - [Provide a fallback value](#provide-a-fallback-value) - use `??` for missing data
 
-## <a id="print-text-content"></a>Print text content
+## Print text content
 
 ```php
 <h1><?= htmlspecialchars($title) ?></h1>
 <p><?= htmlspecialchars($description) ?></p>
 ```
 
-## <a id="print-attribute-values"></a>Print attribute values
+## Print attribute values
 
 ```php
 <img src="<?= htmlspecialchars($imageUrl) ?>" alt="<?= htmlspecialchars($imageAlt) ?>">
 ```
 
-## <a id="provide-a-fallback-value"></a>Provide a fallback value
+## Provide a fallback value
 
 ```php
 <p><?= htmlspecialchars($nickname ?? 'Guest') ?></p>

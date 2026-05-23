@@ -16,8 +16,7 @@ Operators are symbols that perform operations on values and variables.
 - [instanceof](#instanceof) - check object type
 - [Operator precedence](#operator-precedence) - expression evaluation order
 
-## <a id="arithmetic"></a>Arithmetic
-
+## Arithmetic
 Used with numeric values.
 
 ```java
@@ -37,8 +36,7 @@ With floating point numbers, division keeps the fractional part.
 double x = 10.0 / 3.0; // 3.3333333333333335
 ```
 
-## <a id="assignment"></a>Assignment
-
+## Assignment
 Assigns values to variables.
 
 ```java
@@ -51,8 +49,7 @@ x /= 4;  // x = x / 4
 x %= 2;  // x = x % 2
 ```
 
-## <a id="comparison"></a>Comparison
-
+## Comparison
 Comparison operators return `boolean`.
 
 ```java
@@ -76,8 +73,7 @@ String b = "hello";
 boolean sameText = a.equals(b); // true
 ```
 
-## <a id="logical"></a>Logical
-
+## Logical
 Used with `boolean` values.
 
 ```java
@@ -97,8 +93,7 @@ if (name != null && name.length() > 0) {
 }
 ```
 
-## <a id="increment-and-decrement"></a>Increment and decrement
-
+## Increment and decrement
 ```java
 int x = 5;
 
@@ -116,8 +111,7 @@ int x = 5;
 int y = x++; // x = 6, y = 5
 ```
 
-## <a id="bitwise"></a>Bitwise
-
+## Bitwise
 Used with integer values.
 
 ```java
@@ -130,8 +124,7 @@ int xor = a ^ b;  // 0b0110
 int not = ~a;     // inverted bits
 ```
 
-## <a id="shift"></a>Shift
-
+## Shift
 Moves bits left or right.
 
 ```java
@@ -145,8 +138,7 @@ int unsignedRight = x >>> 1;
 * `>>` keeps the sign bit.
 * `>>>` fills left bits with zeros.
 
-## <a id="instanceof"></a>instanceof
-
+## instanceof
 Checks whether an object has a specific type.
 
 ```java
@@ -178,8 +170,7 @@ if (value instanceof String) {
 }
 ```
 
-## <a id="operator-precedence"></a>Operator precedence
-
+## Operator precedence
 Operators with higher precedence run first. Use parentheses when the expression is not obvious.
 
 ```java

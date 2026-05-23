@@ -12,7 +12,7 @@ In templates, `foreach` is the most common choice.
 - [Show a fallback when the array is empty](#show-a-fallback-when-the-array-is-empty) - handle empty lists with `if`
 - [Use `for` when an index is required](#use-for-when-an-index-is-required) - loop by numeric index with `count()`
 
-## <a id="render-a-list-with-foreach"></a>Render a list with `foreach`
+## Render a list with `foreach`
 
 ```php
 <ul>
@@ -22,7 +22,7 @@ In templates, `foreach` is the most common choice.
 </ul>
 ```
 
-## <a id="use-keys-and-values"></a>Use keys and values
+## Use keys and values
 
 ```php
 <ul>
@@ -32,7 +32,7 @@ In templates, `foreach` is the most common choice.
 </ul>
 ```
 
-## <a id="show-a-fallback-when-the-array-is-empty"></a>Show a fallback when the array is empty
+## Show a fallback when the array is empty
 
 ```php
 <?php if ($users): ?>
@@ -46,7 +46,7 @@ In templates, `foreach` is the most common choice.
 <?php endif; ?>
 ```
 
-## <a id="use-for-when-an-index-is-required"></a>Use `for` when an index is required
+## Use `for` when an index is required
 
 ```php
 <ol>

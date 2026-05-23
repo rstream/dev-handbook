@@ -13,7 +13,7 @@ The right method depends on what kind of SQL query was executed.
 - [Check changed rows](#check-changed-rows) - `rowCount()` is useful for `INSERT`, `UPDATE`, and `DELETE`
 - [Which method to use](#which-method-to-use) - choose by expected result shape
 
-## <a id="read-many-rows"></a>Read many rows
+## Read many rows
 
 Use `fetchAll()` when the query can return multiple rows.
 
@@ -37,7 +37,7 @@ foreach ($users as $user) {
 }
 ```
 
-## <a id="read-one-row"></a>Read one row
+## Read one row
 
 Use `fetch()` when the query should return one row.
 
@@ -64,7 +64,7 @@ if ($user === false) {
 }
 ```
 
-## <a id="read-one-value"></a>Read one value
+## Read one value
 
 Use `fetchColumn()` when the query returns one value, such as a count or an id.
 
@@ -97,7 +97,7 @@ $stmt->execute([
 $id = (int) $stmt->fetchColumn();
 ```
 
-## <a id="check-changed-rows"></a>Check changed rows
+## Check changed rows
 
 For `INSERT`, `UPDATE`, and `DELETE`, there may be no result rows to fetch.
 Use `rowCount()` when you need to know whether the query changed any rows.
@@ -128,7 +128,7 @@ if ($updated) {
 }
 ```
 
-## <a id="which-method-to-use"></a>Which method to use
+## Which method to use
 
 | Query result | Method |
 | --- | --- |

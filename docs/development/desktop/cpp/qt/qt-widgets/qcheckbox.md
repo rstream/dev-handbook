@@ -8,6 +8,13 @@
 #include <QCheckBox>
 ```
 
+## Summary
+
+- [Basic usage](#basic-usage)
+- [Common operations](#common-operations)
+- [Three states](#three-states)
+- [Signals](#signals)
+
 ## Basic usage
 
 ```cpp

@@ -8,6 +8,14 @@
 #include <QComboBox>
 ```
 
+## Summary
+
+- [Basic usage](#basic-usage)
+- [Common operations](#common-operations)
+- [Item data](#item-data)
+- [Signals](#signals)
+- [Notes](#notes)
+
 ## Basic usage
 
 ```cpp

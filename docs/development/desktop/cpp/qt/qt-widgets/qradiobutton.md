@@ -9,6 +9,13 @@
 #include <QRadioButton>
 ```
 
+## Summary
+
+- [Basic usage](#basic-usage)
+- [Common operations](#common-operations)
+- [Signals](#signals)
+- [Notes](#notes)
+
 ## Basic usage
 
 ```cpp

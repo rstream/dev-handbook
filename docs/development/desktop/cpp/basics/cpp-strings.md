@@ -2,6 +2,21 @@
 
 [← back](../index.md)
 
+## Summary
+
+- [Idea](#1-idea)
+- [Declare strings](#2-declare-strings)
+- [Print string](#3-print-string)
+- [Get string length](#4-get-string-length)
+- [Access characters](#5-access-characters)
+- [Copy string](#6-copy-string)
+- [Concatenate strings](#7-concatenate-strings)
+- [Compare strings](#8-compare-strings)
+- [Search inside string](#9-search-inside-string)
+- [Input string](#10-input-string)
+- [Common functions](#11-common-functions)
+- [Important limitations](#12-important-limitations)
+
 ## 1. Idea
 
 Before `std::string`, strings in C and old C++ were usually stored as arrays of `char`.

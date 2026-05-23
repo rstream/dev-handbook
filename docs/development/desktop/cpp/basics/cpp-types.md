@@ -2,6 +2,11 @@
 
 [← back](../index.md)
 
+## Summary
+
+- [Basic types](#1-basic-types)
+- [Complex types](#2-complex-types)
+
 ## 1. Basic types
 
 ### Boolean

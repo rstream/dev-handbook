@@ -8,6 +8,14 @@
 #include <QLineEdit>
 ```
 
+## Summary
+
+- [Basic usage](#basic-usage)
+- [Common operations](#common-operations)
+- [Password input](#password-input)
+- [Signals](#signals)
+- [Notes](#notes)
+
 ## Basic usage
 
 ```cpp

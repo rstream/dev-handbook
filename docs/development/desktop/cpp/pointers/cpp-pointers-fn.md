@@ -2,6 +2,17 @@
 
 [← back](../index.md)
 
+## Summary
+
+- [Function pointer](#1-function-pointer)
+- [Call through function pointer](#2-call-through-function-pointer)
+- [Another example](#3-another-example)
+- [typedef and using](#4-typedef-and-using)
+- [Callback idea](#5-callback-idea)
+- [Callback for processing values](#6-callback-for-processing-values)
+- [Why callbacks are useful](#7-why-callbacks-are-useful)
+- [Notes](#8-notes)
+
 ## 1. Function pointer
 
 A function pointer stores the address of a function.

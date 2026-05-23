@@ -2,6 +2,17 @@
 
 [← back](../index.md)
 
+## Summary
+
+- [Idea](#1-idea)
+- [Allocate one object](#2-allocate-one-object)
+- [Allocate with initialization](#3-allocate-with-initialization)
+- [Allocate array](#4-allocate-array)
+- [Objects and constructors](#5-objects-and-constructors)
+- [Common mistakes](#6-common-mistakes)
+- [new vs malloc](#7-new-vs-malloc)
+- [Modern C++ recommendation](#8-modern-c-recommendation)
+
 ## 1. Idea
 
 In C++, dynamic memory is commonly allocated with:

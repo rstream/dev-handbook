@@ -4,16 +4,15 @@
 
 ## Summary
 
-- [if / else](#if-else) - branch execution by condition
+- [if / else](#if--else) - branch execution by condition
 - [while](#while) - precondition loop
-- [do / while](#do-while) - postcondition loop
+- [do / while](#do--while) - postcondition loop
 - [for classic](#for-classic) - loop with init, condition, and step
 - [for-each](#for-each) - iterate over array elements
 - [Ternary operator](#ternary-operator) - short conditional expression
 - [switch](#switch) - multiple branches by value
 
-## <a id="if-else"></a>if / else
-
+## if / else
 Branch execution based on a condition.
 
 ```java
@@ -24,8 +23,7 @@ if (cond) {
 }
 ```
 
-## <a id="while"></a>while
-
+## while
 Precondition loop: repeats while condition is true.
 
 ```java
@@ -34,8 +32,7 @@ while (cond) {
 }
 ```
 
-## <a id="do-while"></a>do / while
-
+## do / while
 Postcondition loop: body runs at least one time.
 
 ```java
@@ -44,8 +41,7 @@ do {
 } while (cond);
 ```
 
-## <a id="for-classic"></a>for (classic)
-
+## for (classic)
 Loop with init, condition, and step in one line.
 
 ```java
@@ -54,8 +50,7 @@ for (int i = 0; i < n; i++) {
 }
 ```
 
-## <a id="for-each"></a>for-each
-
+## for-each
 Iterates over array elements directly.
 
 ```java
@@ -64,16 +59,14 @@ for (int x : arr) {
 }
 ```
 
-## <a id="ternary-operator"></a>Ternary operator
-
+## Ternary operator
 Short form of simple if/else expression.
 
 ```java
 int result = cond ? a : b;
 ```
 
-## <a id="switch"></a>switch
-
+## switch
 ### classic syntax
 Multiple branches by value with `case`, `break`, and optional `default`.
 

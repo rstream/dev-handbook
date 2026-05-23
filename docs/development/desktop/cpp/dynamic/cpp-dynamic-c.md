@@ -2,6 +2,17 @@
 
 [← back](../index.md)
 
+## Summary
+
+- [Idea](#1-idea)
+- [malloc](#2-malloc)
+- [Allocate array](#3-allocate-array)
+- [calloc](#4-calloc)
+- [realloc](#5-realloc)
+- [free](#6-free)
+- [Important limitations](#7-important-limitations)
+- [When to use](#8-when-to-use)
+
 ## 1. Idea
 
 Dynamic memory is memory allocated during program execution, not at compile time.

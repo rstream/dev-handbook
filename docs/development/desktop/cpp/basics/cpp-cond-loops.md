@@ -2,6 +2,16 @@
 
 [← back](../index.md)
 
+## Summary
+
+- [if / else](#if--else)
+- [while](#while)
+- [do / while](#do--while)
+- [for (classic)](#for-classic)
+- [for-each](#for-each)
+- [Ternary operator](#ternary-operator)
+- [switch](#switch)
+
 ## if / else
 
 Branch execution based on a condition.

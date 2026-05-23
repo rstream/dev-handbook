@@ -2,6 +2,19 @@
 
 [← back](../index.md)
 
+## Summary
+
+- [What is a pointer](#1-what-is-a-pointer)
+- [Declare a pointer](#2-declare-a-pointer)
+- [Get address](#3-get-address)
+- [Dereference pointer](#4-dereference-pointer)
+- [Null pointer](#5-null-pointer)
+- [Pointers and arrays](#6-pointers-and-arrays)
+- [Pointer arithmetic](#7-pointer-arithmetic)
+- [Pass by pointer](#8-pass-by-pointer)
+- [Pointer to pointer](#9-pointer-to-pointer)
+- [Important notes](#10-important-notes)
+
 ## 1. What is a pointer
 
 A pointer stores a memory address of another object.

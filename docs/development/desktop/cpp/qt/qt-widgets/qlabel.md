@@ -8,6 +8,13 @@
 #include <QLabel>
 ```
 
+## Summary
+
+- [Basic usage](#basic-usage)
+- [Common operations](#common-operations)
+- [Rich text](#rich-text)
+- [Notes](#notes)
+
 ## Basic usage
 
 ```cpp

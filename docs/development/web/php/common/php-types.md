@@ -4,11 +4,11 @@
 
 ## Summary
 
-- [Basic types](#basic-types) - scalar values, exact type names, and helpers like `strlen()`
-- [Complex types](#complex-types) - arrays, objects, `null`, and helpers like `count()`
-- [Type declarations](#type-declarations) - function parameters, return values, properties, nullable types, unions, and PHPDoc for arrays
+- [Basic types](#1-basic-types) - scalar values, exact type names, and helpers like `strlen()`
+- [Complex types](#2-complex-types) - arrays, objects, `null`, and helpers like `count()`
+- [Type declarations](#3-type-declarations) - function parameters, return values, properties, nullable types, unions, and PHPDoc for arrays
 
-## <a id="basic-types"></a>1. Basic types
+## 1. Basic types
 
 These are the exact type names used in function parameters, return values, and class properties:
 
@@ -25,13 +25,13 @@ These are the exact type names used in function parameters, return values, and c
 Use these names exactly: `bool`, not `boolean`; `int`, not `integer`; `float`, not `double`.
 PHP does not have a separate `char` type. A single character is a `string` with length 1.
 
-### <a id="boolean"></a>Boolean
+### Boolean
 
 ```php
 $b = true;
 ```
 
-### <a id="numbers"></a>Numbers
+### Numbers
 
 Integer numbers
 ```php
@@ -47,7 +47,7 @@ $x = 199.50;
 $y = 3.14159265359;
 ```
 
-### <a id="string"></a>String
+### String
 
 ```php
 $hello = "hello world"; // double quotes
@@ -64,9 +64,9 @@ Get string length
 $len = strlen($name);
 ```
 
-## <a id="complex-types"></a>2. Complex types
+## 2. Complex types
 
-### <a id="array"></a>Array
+### Array
 
 Array can work as a list or as a dictionary.
 
@@ -90,7 +90,7 @@ Get array length
 $len = count($arr);
 ```
 
-### <a id="object"></a>Object
+### Object
 
 Object is an instance of a class.
 
@@ -107,7 +107,7 @@ $user = new User();
 $user->name = 'Alice';
 ```
 
-### <a id="null"></a>null
+### null
 
 `null` means "no value".
 
@@ -115,7 +115,7 @@ $user->name = 'Alice';
 $value = null;
 ```
 
-## <a id="type-declarations"></a>3. Type declarations
+## 3. Type declarations
 
 Type declarations make PHP check what values can be passed to a function, returned from a function, or stored in a class property.
 

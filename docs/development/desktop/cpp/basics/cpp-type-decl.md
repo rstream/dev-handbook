@@ -2,6 +2,13 @@
 
 [← back](../index.md)
 
+## Summary
+
+- [typedef](#1-typedef)
+- [using](#2-using)
+- [Templates with using](#3-templates-with-using)
+- [typedef vs using](#4-typedef-vs-using)
+
 ## 1. `typedef`
 
 `typedef` creates an alias for an existing type.

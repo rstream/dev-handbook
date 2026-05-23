@@ -23,7 +23,7 @@ $page = (int) ($_GET['page'] ?? 1);
 - [Notes](#notes) - common rules for `$_GET`
 - [Check that a parameter exists](#check-that-a-parameter-exists) - `isset()` checks optional data before reading
 
-## <a id="common-example"></a>Common example
+## Common example
 
 ```php
 <?php
@@ -41,14 +41,14 @@ If the user opens:
 
 then `$category` will contain `laptops`.
 
-## <a id="notes"></a>Notes
+## Notes
 
 - `$_GET` is used for filters, search, pagination, and other small values in the URL
 - values from `$_GET` are strings by default
 - a missing key should be handled with `??`
 - output should be escaped with `htmlspecialchars()`
 
-## <a id="check-that-a-parameter-exists"></a>Check that a parameter exists
+## Check that a parameter exists
 
 ```php
 if (isset($_GET['id'])) {

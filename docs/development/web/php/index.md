@@ -38,6 +38,10 @@
 [\$_GET](requests/php-req-get.md) - GET request parameters  
 [\$_POST](requests/php-req-post.md) - POST request parameters
 
+## Filesystem
+
+[Paths](filesystem/php-paths.md) - working with file paths  
+
 ## Using PHP with Databases
 
 ### PostgreSQL

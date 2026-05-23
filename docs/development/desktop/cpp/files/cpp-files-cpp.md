@@ -2,6 +2,23 @@
 
 [← back](../index.md)
 
+## Summary
+
+- [Idea](#1-idea)
+- [Open file for reading](#2-open-file-for-reading)
+- [Read file](#3-read-file)
+- [Open file for writing](#4-open-file-for-writing)
+- [Close file](#5-close-file)
+- [Create file](#6-create-file)
+- [Delete file](#7-delete-file)
+- [Check existence](#8-check-existence)
+- [File size](#9-file-size)
+- [File metadata](#10-file-metadata)
+- [Check if path is file or directory](#11-check-if-path-is-file-or-directory)
+- [Create directory](#12-create-directory)
+- [Delete directory](#13-delete-directory)
+- [Example](#14-example)
+
 ## 1. Idea
 
 Modern C++ usually uses:

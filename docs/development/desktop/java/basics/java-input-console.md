@@ -12,8 +12,7 @@ Read keyboard input in console with `Scanner`.
 - [Close Scanner](#close-scanner) - free the input resource
 - [Full example](#full-example) - complete console input program
 
-## <a id="create-scanner"></a>Create scanner
-
+## Create scanner
 ```java
 import java.util.Scanner;
 
@@ -21,28 +20,24 @@ Scanner sc = new Scanner(System.in);
 ```
 > Note: created scanner should be closed after usage (full example below)
 
-## <a id="read-string-line"></a>Read string (line)
-
+## Read string (line)
 ```java
 String name = sc.nextLine();
 ```
 
-## <a id="read-numbers"></a>Read numbers
-
+## Read numbers
 ```java
 int age = sc.nextInt();
 double score = sc.nextDouble();
 ```
 
-## <a id="close-scanner"></a>Close Scanner
-
+## Close Scanner
 Close Scanner and free resource:
 ```java
 sc.close();
 ```
 
-## <a id="full-example"></a>Full example
-
+## Full example
 ```java
 import java.util.Scanner;
 

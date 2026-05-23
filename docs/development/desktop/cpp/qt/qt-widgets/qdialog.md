@@ -12,6 +12,13 @@
 #include <QVBoxLayout>
 ```
 
+## Summary
+
+- [Basic usage](#basic-usage)
+- [Accept and reject](#accept-and-reject)
+- [Modal and modeless](#modal-and-modeless)
+- [Notes](#notes)
+
 ## Basic usage
 
 ```cpp

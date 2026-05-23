@@ -2,6 +2,12 @@
 
 [← back](../../../index.md)
 
+## Summary
+
+- [General](#general)
+- [Syntax](#syntax)
+- [Frameworks](#frameworks)
+
 ## General
 
 [Compilation](cpp-compilation.md) - compiling C++ files  
@@ -16,6 +22,8 @@
 [Conditions and loops](basics/cpp-cond-loops.md) - conditions, loops, ternary operator, switch  
 [Strings](basics/cpp-strings.md) - working with strings (C-style)  
 [Arrays](basics/cpp-arrays.md) - working with arrays (C-style)
+
+[Random](basics/cpp-random.md) - legacy random generation (C-style)
 
 ### Pointers
 
@@ -32,6 +40,8 @@
 [std::string](std/cpp-std-string.md) - dynamic text strings  
 [std::array](std/cpp-std-array.md) - fixed-size array wrapper  
 [std::vector](std/cpp-std-vector.md) - dynamic array container
+
+[Random generation](std/cpp-std-random.md) - random numbers, strings, tokens, shuffle
 
 ### Working with files
 

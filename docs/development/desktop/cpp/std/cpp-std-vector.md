@@ -17,7 +17,7 @@ It is the usual replacement for manual dynamic arrays in modern C++.
 - [Clear vector](#clear-vector) - remove all elements with `clear()`
 - [Pass to function](#pass-to-function) - pass by reference to avoid copying
 
-## <a id="include-header"></a>Include header
+## Include header
 
 `std::vector` is declared in `<vector>`.
 
@@ -32,7 +32,7 @@ For input and output you usually also need `<iostream>`.
 #include <vector>
 ```
 
-## <a id="declare-vector"></a>Declare vector
+## Declare vector
 
 Create an empty vector:
 
@@ -53,7 +53,7 @@ std::vector<int> values(5);       // 5 elements with value 0
 std::vector<int> scores(5, 100);  // 5 elements with value 100
 ```
 
-## <a id="add-elements"></a>Add elements
+## Add elements
 
 Use `push_back()` to append a value to the end.
 
@@ -67,7 +67,7 @@ numbers.push_back(30);
 
 The vector grows automatically.
 
-## <a id="access-elements"></a>Access elements
+## Access elements
 
 Index starts from `0`.
 
@@ -88,7 +88,7 @@ int b = values.back();
 Be careful with empty vectors.
 `front()` and `back()` require at least one element.
 
-## <a id="size"></a>Size
+## Size
 
 Use `size()` to get the number of elements.
 
@@ -106,7 +106,7 @@ if (values.empty()) {
 }
 ```
 
-## <a id="loop-through-vector"></a>Loop through vector
+## Loop through vector
 
 Use a range-based `for` loop to read values.
 
@@ -126,7 +126,7 @@ for (int& value : values) {
 }
 ```
 
-## <a id="remove-elements"></a>Remove elements
+## Remove elements
 
 Use `pop_back()` to remove the last element.
 
@@ -139,7 +139,7 @@ values.pop_back();
 After this, `values` contains `10` and `20`.
 Call `pop_back()` only when the vector is not empty.
 
-## <a id="clear-vector"></a>Clear vector
+## Clear vector
 
 Use `clear()` to remove all elements.
 
@@ -151,7 +151,7 @@ values.clear();
 
 After `clear()`, `values.size()` is `0`.
 
-## <a id="pass-to-function"></a>Pass to function
+## Pass to function
 
 Use `const std::vector<int>&` when a function only reads the vector.
 

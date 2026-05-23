@@ -4,6 +4,15 @@
 
 Qt Widgets are building blocks for desktop user interfaces. Most pages below show the widget purpose, common operations, important signals, and short notes about typical pitfalls.
 
+## Summary
+
+- [Static widgets](#static-widgets)
+- [Checkboxes/radio buttons](#checkboxesradio-buttons)
+- [Text editing widgets](#text-editing-widgets)
+- [Selectors](#selectors)
+- [Dialogs](#dialogs)
+- [Layout widgets](#layout-widgets)
+
 ## Static widgets
 
 * [QLabel](qt-widgets/qlabel.md) - read-only text or image label

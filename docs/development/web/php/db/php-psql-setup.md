@@ -4,10 +4,10 @@
 
 ## Summary
 
-- [Make sure PostgreSQL service is running](#postgresql-service) - check the database service before PHP setup
-- [Edit php.ini](#edit-php-ini) - enable PostgreSQL extensions for PHP
+- [Make sure PostgreSQL service is running](#make-sure-postgresql-service-is-running) - check the database service before PHP setup
+- [Edit php.ini](#edit-phpini) - enable PostgreSQL extensions for PHP
 
-## <a id="postgresql-service"></a>Make sure PostgreSQL service is running
+## Make sure PostgreSQL service is running
 
 ### Windows
 
@@ -25,7 +25,7 @@ systemctl status postgresql
 ```
 More about [PostgreSQL service management](../../../../operating-systems/linux/postgresql/postgresql-admin.md).
 
-## <a id="edit-php-ini"></a>Edit php.ini
+## Edit php.ini
 
 ### Prepare the file
 

@@ -4,6 +4,12 @@
 
 This is a minimal Qt Widgets application. It creates a `QApplication`, opens a `QMainWindow`, adds a central widget with a layout, and shows a label.
 
+## Summary
+
+- [What this example shows](#what-this-example-shows)
+- [Example](#example)
+- [Notes](#notes)
+
 ## What this example shows
 
 * `QApplication` owns the GUI event loop.
