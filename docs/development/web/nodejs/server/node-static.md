@@ -12,13 +12,13 @@ It is useful for simple local servers, demos, and small projects without Express
 - [Static files with GET and POST endpoints](#static-files-with-get-and-post-endpoints) - serve files and handle two API routes
 - [Run server](#run-server) - start the server with Node.js
 
-## <a id="install"></a>Install
+## Install
 
 ```bash
 npm i node-static
 ```
 
-## <a id="folder-structure"></a>Folder structure
+## Folder structure
 
 Example project:
 
@@ -35,7 +35,7 @@ project/
 Files from `./public` will be available in the browser.
 For example, `./public/index.html` will be served as `/index.html`.
 
-## <a id="static-files-with-get-and-post-endpoints"></a>Static files with GET and POST endpoints
+## Static files with GET and POST endpoints
 
 ```js
 const http = require('node:http');
@@ -73,7 +73,7 @@ server.listen(3000, () => {
 });
 ```
 
-## <a id="run-server"></a>Run server
+## Run server
 
 ```bash
 node server.js
