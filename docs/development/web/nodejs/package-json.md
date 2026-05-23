@@ -12,7 +12,7 @@
 - [devDependencies](#devdependencies) - packages needed only for development
 - [Remove a dependency](#remove-a-dependency) - uninstall a package
 - [scripts](#scripts) - project commands
-- [type](#type) - choose CommonJS or ES modules
+- [type](#type) - choose ES modules
 - [package-lock.json](#package-lock-json) - exact installed dependency versions
 - [node_modules](#node-modules) - installed package files
 
@@ -146,24 +146,9 @@ npm test
 
 ## <a id="type"></a>type
 
-Defines the Node.js module type:
+Defines the Node.js module type.
 
-- `commonjs` - default, uses `require()`
-- `module` - uses `import` and `export`
-
-CommonJS:
-
-```json
-{
-  "type": "commonjs"
-}
-```
-
-```js
-const fs = require('node:fs');
-```
-
-ES modules:
+Use `"module"` for ES modules:
 
 ```json
 {

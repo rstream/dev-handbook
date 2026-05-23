@@ -124,7 +124,7 @@ curl -X POST http://localhost:3000/api/user -H "Content-Type: application/json" 
 Full example:
 
 ```js
-const http = require('node:http');
+import http from 'node:http';
 
 function readTextBody(req) {
   return new Promise((resolve, reject) => {

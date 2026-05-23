@@ -38,8 +38,8 @@ For example, `./public/index.html` will be served as `/index.html`.
 ## Static files with GET and POST endpoints
 
 ```js
-const http = require('node:http');
-const staticServer = require('node-static');
+import http from 'node:http';
+import staticServer from 'node-static';
 
 const files = new staticServer.Server('./public');
 

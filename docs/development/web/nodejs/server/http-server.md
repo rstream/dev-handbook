@@ -14,7 +14,7 @@ Node.js can create an HTTP server without extra packages using the built-in `nod
 ## Create server
 
 ```js
-const http = require('node:http');
+import http from 'node:http';
 
 const server = http.createServer((req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/plain' });
@@ -44,7 +44,7 @@ server.listen(3000, () => {
 Use `URL` to read the path and query parameters.
 
 ```js
-const http = require('node:http');
+import http from 'node:http';
 
 const server = http.createServer((req, res) => {
   const url = new URL(req.url, 'http://localhost');

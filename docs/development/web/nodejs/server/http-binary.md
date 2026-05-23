@@ -72,7 +72,7 @@ if (req.method === 'GET' && url.pathname === '/download') {
 Use `fs.createReadStream()` for real files, so Node.js does not need to load the whole file into memory.
 
 ```js
-const fs = require('node:fs');
+import fs from 'node:fs';
 
 if (req.method === 'GET' && url.pathname === '/image') {
   res.writeHead(200, { 'Content-Type': 'image/png' });
@@ -84,8 +84,8 @@ if (req.method === 'GET' && url.pathname === '/image') {
 Full example:
 
 ```js
-const fs = require('node:fs');
-const http = require('node:http');
+import fs from 'node:fs';
+import http from 'node:http';
 
 function readBinaryBody(req) {
   return new Promise((resolve, reject) => {
