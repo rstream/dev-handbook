@@ -1,6 +1,6 @@
 # Git
 
-[<- back](./index.md)
+[← back](index.md)
 
 ## SSH for GitHub (quick setup)
 
