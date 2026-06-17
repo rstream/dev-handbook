@@ -2,6 +2,13 @@
 
 [← back](index.md)
 
+## Summary
+
+- [Printing unescaped input](#printing-unescaped-input) - `htmlspecialchars()` escapes dynamic values
+- [Too much logic in the template](#too-much-logic-in-the-template) - keep complex work outside HTML
+- [Database access in the template](#database-access-in-the-template) - query before rendering
+- [Hard-to-read mixed syntax](#hard-to-read-mixed-syntax) - prefer alternative template syntax
+
 ## Printing unescaped input
 
 ```php

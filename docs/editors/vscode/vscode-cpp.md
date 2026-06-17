@@ -8,7 +8,7 @@ Set up VS Code for building and running C++ apps.
 
 First of all - install C++ compilers:  
 [Instruction for Linux](../../operating-systems/linux/linux-cpp.md)  
-[Instruction for Windows](../../operating-systems/windows/windows-cpp.md)
+[Instruction for Windows](../../operating-systems/windows/dev/windows-cpp.md)
 
 ## 2. Install extensions
 

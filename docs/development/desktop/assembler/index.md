@@ -2,13 +2,17 @@
 
 [← back](../../../index.md)
 
-## General
+## Quick start
 
 [Installation](asm-installation.md) - install assembler    
 [Compilation](asm-compilation.md) - assembler code compilation  
 [Hello world](asm-hello-world.md) - sample "Hello world" application (DOS)
 
 ## Coding
+
+### Language basics
+
+[Registers](basics/asm-registers.md) - CPU registers basics
 
 ### int 21h
 

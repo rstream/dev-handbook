@@ -5,6 +5,13 @@
 Use loops when one HTML fragment must be rendered multiple times.
 In templates, `foreach` is the most common choice.
 
+## Summary
+
+- [Render a list with `foreach`](#render-a-list-with-foreach) - repeat markup and escape output with `htmlspecialchars()`
+- [Use keys and values](#use-keys-and-values) - render associative arrays with `htmlspecialchars()`
+- [Show a fallback when the array is empty](#show-a-fallback-when-the-array-is-empty) - handle empty lists with `if`
+- [Use `for` when an index is required](#use-for-when-an-index-is-required) - loop by numeric index with `count()`
+
 ## Render a list with `foreach`
 
 ```php

@@ -2,14 +2,19 @@
 
 [← back](index.md)
 
-## Compile java sources to byte-code
+## Summary
 
+- [Compile java sources to byte-code](#compile-java-sources-to-byte-code) - create `.class` files
+- [Run java apps](#run-java-apps) - run source or byte-code files
+- [Create JAR](#create-jar) - package compiled classes
+
+## Compile java sources to byte-code
 If you have a single file:
 
 ```sh
 javac MyApp.java
 ```
-Will product a file `MyApp.class`.
+Will produce a file `MyApp.class`.
 
 For multiple files:
 ```sh
@@ -22,7 +27,6 @@ javac MyApp.java Second.java Third.java
 Will produce several `*.class` files.
 
 ## Run java apps
-
 ### Running source code (*.java) files
 
 Need to use IDE for running *.java files before compilation to byte-code.  
@@ -41,7 +45,6 @@ This will execute **MyApp.class** file
 Need to pass only 1 file (the main one), all dependent classes will be loaded automatically.
 
 ## Create JAR
-
 ### Create a manifest file
 
 Create file `manifest.txt` with the following content:
@@ -72,8 +75,8 @@ Flexible & recommended way (all files from a specific folder - recursive)
 jar cfm MyApp.jar manifest.txt -C out .
 ```
 This will do:
-* change (temporarily) current folder to `./out`
-* take all files in `./out` and all its subfolders
+* `-C out`: change (temporarily) current folder to `./out`
+* `.`: take all files in `./out` and all its subfolders
 > Note: this syntax takes all files, not only `*.class` - so make sure there are no non-class files in this folder.
 
 Flags:

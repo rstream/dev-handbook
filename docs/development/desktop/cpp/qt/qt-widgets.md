@@ -1,17 +1,44 @@
 # Qt Widgets
 
-[← back](../index.md)
+[← back](index.md)
 
-[QLabel](qt-widgets/qlabel.md) - static text  
-[QLineEdit](qt-widgets/qlineedit.md) - single line input  
-[QCheckBox](qt-widgets/qcheckbox.md) - checkbox  
-[QRadioButton, QButtonGroup](qt-widgets/qradiobutton.md) - radio button + button group  
-[QPlainTextEdit](qt-widgets/qplaintextedit.md) - multi-line plain text box  
-[QTextEdit](qt-widgets/qtextedit.md) - multi-line rich text box  
-[QComboBox](qt-widgets/qcombobox.md) - dropdown  
-[QListWidget](qt-widgets/qlistwidget.md) - list with selectable options  
-[QMenuBar, QMenu](qt-widgets/qmenubar.md) - window menu  
-[QDialog](qt-widgets/qdialog.md) - custom dialog window  
-[QTabWidget](qt-widgets/qtabwidget.md) - tabs  
-[QSpinBox](qt-widgets/qspinbox.md) - spin box  
-[QSlider](qt-widgets/qslider.md) - slider
+Qt Widgets are building blocks for desktop user interfaces. Most pages below show the widget purpose, common operations, important signals, and short notes about typical pitfalls.
+
+## Summary
+
+- [Static widgets](#static-widgets)
+- [Checkboxes/radio buttons](#checkboxesradio-buttons)
+- [Text editing widgets](#text-editing-widgets)
+- [Selectors](#selectors)
+- [Dialogs](#dialogs)
+- [Layout widgets](#layout-widgets)
+
+## Static widgets
+
+* [QLabel](qt-widgets/qlabel.md) - read-only text or image label
+
+## Checkboxes/radio buttons
+
+* [QCheckBox](qt-widgets/qcheckbox.md) - independent on/off option
+* [QRadioButton, QButtonGroup](qt-widgets/qradiobutton.md) - mutually exclusive option group
+
+## Text editing widgets
+
+* [QLineEdit](qt-widgets/qlineedit.md) - single-line text input
+* [QPlainTextEdit](qt-widgets/qplaintextedit.md) - multi-line plain text editor
+* [QTextEdit](qt-widgets/qtextedit.md) - multi-line rich text/HTML editor
+
+## Selectors
+
+* [QComboBox](qt-widgets/qcombobox.md) - dropdown for one selected value
+* [QListWidget](qt-widgets/qlistwidget.md) - simple selectable item list
+* [QSpinBox](qt-widgets/qspinbox.md) - bounded integer input
+* [QSlider](qt-widgets/qslider.md) - bounded integer value slider
+
+## Dialogs
+
+* [QDialog](qt-widgets/qdialog.md) - custom modal or modeless dialog window
+
+## Layout widgets
+
+* [QTabWidget](qt-widgets/qtabwidget.md) - tabbed pages in one content area

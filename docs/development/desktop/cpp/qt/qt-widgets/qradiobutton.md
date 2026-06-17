@@ -2,32 +2,60 @@
 
 [← back](../qt-widgets.md)
 
-**Grouped** radio buttons with text labels
+`QRadioButton` is used when the user must select exactly one option from a small group. Use `QButtonGroup` when you want IDs or need to group buttons that do not share the same parent.
+
+```cpp
+#include <QButtonGroup>
+#include <QRadioButton>
+```
+
+## Summary
+
+- [Basic usage](#basic-usage)
+- [Common operations](#common-operations)
+- [Signals](#signals)
+- [Notes](#notes)
+
+## Basic usage
 
 ```cpp
 QButtonGroup *radios = new QButtonGroup();
 QRadioButton *rad1 = new QRadioButton("Katowice");
 QRadioButton *rad2 = new QRadioButton("Sosnowiec");
 QRadioButton *rad3 = new QRadioButton("Nowhere");
-// add buttons to group, assign IDs
+
 radios->addButton(rad1, 1);
 radios->addButton(rad2, 2);
 radios->addButton(rad3, 3);
-// toggle event
+
 QObject::connect(radios, &QButtonGroup::buttonToggled, [radios](QAbstractButton *btn, bool checked) {
 	if (checked) {
-		// button from param
 		cout << btn->text().toStdString() << endl;
-		// button from QButtonGroup
-		cout << radios->checkedButton()->text().toStdString() << endl;
-		// get checked button ID
-		if (radios->checkedId() == 3) {
-			// set radio by ID
-			radios->button(1)->setChecked(true);
-		}
+		cout << "ID=" << radios->checkedId() << endl;
 	}
 });
+
 layout->addWidget(rad1);
 layout->addWidget(rad2);
 layout->addWidget(rad3);
 ```
+
+## Common operations
+
+```cpp
+rad1->setChecked(true);
+QAbstractButton *button = radios->checkedButton();
+int id = radios->checkedId();
+radios->button(2)->setChecked(true);
+```
+
+## Signals
+
+* `QRadioButton::toggled(bool)` tracks one button.
+* `QButtonGroup::buttonToggled(QAbstractButton *, bool)` tracks the whole group.
+* `QButtonGroup::idToggled(int, bool)` is convenient when you assigned IDs.
+
+## Notes
+
+* Radio buttons with the same parent are auto-exclusive by default.
+* `QButtonGroup` is not visible. It only manages button relationships and IDs.

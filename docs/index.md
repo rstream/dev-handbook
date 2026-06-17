@@ -9,7 +9,7 @@ Generally it's about:
 
 ### General
 
-[Git](general/git/index.md) - Git documentation
+[Git](development/general/git/index.md) - Git documentation
 
 ### Desktop development
 

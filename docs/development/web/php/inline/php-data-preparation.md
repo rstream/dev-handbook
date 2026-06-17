@@ -5,6 +5,11 @@
 Templates should mostly render data, not build it.
 Prepare values before including the HTML template.
 
+## Summary
+
+- [Prefer this](#prefer-this) - prepare data with helpers like `array_filter()` before rendering
+- [Avoid this](#avoid-this) - keep filtering and transformation out of templates
+
 ## Prefer this
 
 ```php

@@ -2,15 +2,16 @@
 
 [← back](../../../index.md)
 
-## init
+## Basics directives
 
-The `init` method (of the object referenced by `x-data`) is called automatically!
+[x-data](alpine-x-data.md) - define component state and scope  
+[x-init](alpine-x-init.md) - init the Alpine context  
+[x-text and x-html](alpine-content.md) - render text or HTML  
+[x-bind](alpine-x-bind.md) - bind attributes and classes  
+[x-model](alpine-x-model.md) - bind form controls  
+[x-show and x-if](alpine-conditional-rendering.md) - conditionally display content  
+[x-for](alpine-x-for.md) - render lists  
 
-So if you also put it in `x-init` - it will run **TWICE!**  
-This snippet:
-```html
-<div x-data="app" x-init="init"></div>
-```
-Will run `app.init()` two times:
-* first time because it is referenced in `x-init`
-* second time because of the method naming - `init` (!)
+## Events
+
+[x-on and @](alpine-x-on.md) - handle DOM events  

@@ -4,6 +4,11 @@
 
 Use a consistent style so mixed HTML/PHP templates stay readable.
 
+## Summary
+
+- [Recommended rules](#recommended-rules) - use `<?= ... ?>`, `endif`, `endforeach`, and `htmlspecialchars()`
+- [Example](#example) - complete mixed HTML/PHP example with `htmlspecialchars()`
+
 ## Recommended rules
 
 - use `<?= ... ?>` for output

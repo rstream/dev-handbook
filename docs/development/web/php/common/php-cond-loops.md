@@ -2,6 +2,17 @@
 
 [← back](../index.md)
 
+## Summary
+
+- [if / else](#if--else) - choose between branches by condition
+- [while](#while) - repeat while condition is true
+- [do / while](#do--while) - run the body at least once
+- [for](#for-classic) - classic counted loop
+- [foreach](#foreach) - iterate over array values or key/value pairs
+- [Ternary operator](#ternary-operator) - short conditional expression
+- [switch](#switch) - multiple branches by value
+- [match](#match) - expression form for choosing a value
+
 ## if / else
 
 Branch execution based on a condition.

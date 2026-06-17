@@ -2,30 +2,57 @@
 
 [← back](../qt-widgets.md)
 
-Display single-line text input field
+`QLineEdit` is a single-line text input. Use it for names, paths, filters, search boxes, passwords, and short values.
+
+```cpp
+#include <QLineEdit>
+```
+
+## Summary
+
+- [Basic usage](#basic-usage)
+- [Common operations](#common-operations)
+- [Password input](#password-input)
+- [Signals](#signals)
+- [Notes](#notes)
+
+## Basic usage
 
 ```cpp
 QLineEdit *lineEdit = new QLineEdit("John");
-// max length
 lineEdit->setMaxLength(20);
-// placeholder
 lineEdit->setPlaceholderText("enter name");
-// get text
-QString text = lineEdit->text();
-text += " Doe";
-// set text
-lineEdit->setText(text);
-// text change event
-QObject::connect(lineEdit, &QLineEdit::textEdited, [lineEdit](QString text) {
+
+QObject::connect(lineEdit, &QLineEdit::textEdited, [](QString text) {
 	cout << text.toStdString() << endl;
-	if (text == "John Doe.") {
-		// set  disabled (gray)
-		lineEdit->setDisabled(true);
-	}
-	if (text == "John Doe,") {
-		// set read only
-		lineEdit->setReadOnly(true);
-	}
 });
+
 layout->addWidget(lineEdit);
 ```
+
+## Common operations
+
+```cpp
+QString text = lineEdit->text();
+lineEdit->setText(text + " Doe");
+lineEdit->clear();
+lineEdit->setReadOnly(true);
+lineEdit->setDisabled(true);
+```
+
+## Password input
+
+```cpp
+lineEdit->setEchoMode(QLineEdit::Password);
+```
+
+## Signals
+
+* `textEdited(QString)` is emitted only when the user edits the text.
+* `textChanged(QString)` is emitted for both user edits and programmatic `setText()`.
+* `returnPressed()` is emitted when the user presses Enter.
+
+## Notes
+
+* `setReadOnly(true)` keeps the field selectable and focusable.
+* `setDisabled(true)` grays out the field and removes normal interaction.

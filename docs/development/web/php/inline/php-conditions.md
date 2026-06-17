@@ -5,6 +5,12 @@
 Use `if`, `elseif`, and `else` to render different HTML blocks.
 The alternative template syntax is usually easier to read in mixed HTML/PHP files.
 
+## Summary
+
+- [if](#if) - render a block when a condition is true
+- [if / else](#if--else) - choose between two blocks
+- [if / elseif / else](#if--elseif--else) - choose between several blocks
+
 ## if
 
 ```php

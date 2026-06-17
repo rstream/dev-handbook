@@ -4,6 +4,12 @@
 
 Escape dynamic values before inserting them into HTML to reduce XSS risk.
 
+## Summary
+
+- [Use `htmlspecialchars()` by default](#use-htmlspecialchars-by-default) - escape text content
+- [Escape attributes too](#escape-attributes-too) - `htmlspecialchars()` also escapes values inside HTML attributes
+- [Avoid raw HTML unless content is trusted](#avoid-raw-html-unless-content-is-trusted) - avoid printing untrusted HTML directly
+
 ## Use `htmlspecialchars()` by default
 
 ```php

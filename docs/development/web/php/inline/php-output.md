@@ -4,6 +4,12 @@
 
 Use `<?= ... ?>` to insert a PHP expression into HTML.
 
+## Summary
+
+- [Print text content](#print-text-content) - `htmlspecialchars()` escapes text between HTML tags
+- [Print attribute values](#print-attribute-values) - `htmlspecialchars()` escapes values inside attributes
+- [Provide a fallback value](#provide-a-fallback-value) - use `??` for missing data
+
 ## Print text content
 
 ```php

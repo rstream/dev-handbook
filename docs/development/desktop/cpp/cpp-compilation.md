@@ -2,6 +2,12 @@
 
 [← back](index.md)
 
+## Summary
+
+- [Compile a single file](#compile-a-single-file)
+- [Compile multiple files](#compile-multiple-files)
+- [Additional compilation parameters](#additional-compilation-parameters)
+
 ## Compile a single file
 
 General syntax is:
