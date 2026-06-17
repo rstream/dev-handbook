@@ -19,3 +19,7 @@ https://www.php.net/downloads.php?os=windows
 ```sh
 setx PATH "C:\Soft\PHP;%PATH%"
 ```
+
+## Set up PHP for working with DBs
+
+[PHP + PostgreSQL](../../../development/web/php/db/php-psql-setup.md) - setup for PostgreSQL  

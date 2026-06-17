@@ -22,4 +22,5 @@ I'm an openSUSE user, so most information is related to this OS (like usage of `
 [C++ compilers](linux-cpp.md) - install C++ compilers for Linux  
 [Java dev tools](linux-java.md) - install JDK for Linux  
 [Qt 6](linux-qt.md) - install Qt for Linux  
+[PHP](linux-php.md) - install PHP for Linux  
 [SQL](linux-sql.md) - install SQL for Linux
