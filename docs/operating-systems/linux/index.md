@@ -16,6 +16,11 @@ I'm an openSUSE user, so most information is related to this OS (like usage of `
 [Application .desktop files](general/linux-desktop-files.md) - `.desktop` files for applications   
 [Application icons](general/linux-app-icons.md) - icon files for applications 
 
+### Console commands and terminal usage
+
+[Command basics](cli/command-basics.md) - general command syntax, options and help  
+[Navigation](cli/navigation.md) - basic directory navigation in terminal
+
 ## Software on Linux
 
 [Double Commander](soft/linux-doublecmd.md) - Double Commander file manager  
