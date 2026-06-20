@@ -14,6 +14,18 @@ function first<T>(items: T[]): T | undefined {
 const name = first(["Ann", "Bob"]); // string | undefined
 ```
 
+Using arrow function:
+```ts
+const first = <T>(items: T[]): T | undefined => {
+  return items[0];
+};
+```
+
+Type declaration:
+```ts
+type GenericFn = <T>(items: T[]) => T | undefined;
+```
+
 ## Constraints
 
 ```ts
@@ -22,13 +34,17 @@ function getId<T extends { id: number }>(item: T) {
 }
 ```
 
-`extends` limits what `T` can be.
+`extends` limits what `T` can be (`T` must be an object with a mandatory key `type`)
 
 ## Default type
 
 ```ts
 type ApiResponse<T = unknown> = {
   data: T;
+};
+
+const response: ApiResponse<string> = {
+  data: "hello"
 };
 ```
 
