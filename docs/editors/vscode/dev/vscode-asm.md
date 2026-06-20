@@ -1,6 +1,6 @@
 # VS Code setup for Assembler
 
-[← back](index.md)
+[← back](../index.md)
 
 ## Install MASM/TASM extension
 

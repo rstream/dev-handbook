@@ -14,7 +14,6 @@ I'm an openSUSE user, so most information is related to this OS (like usage of `
 
 ## Software on Linux
 
-[VS Code](soft/linux-vscode.md) - VS Code for Linux  
 [Double Commander](soft/linux-doublecmd.md) - Double Commander file manager  
 
 ## Development tools

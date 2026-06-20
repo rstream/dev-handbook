@@ -53,5 +53,5 @@ To make Qt work with your editor you need to set up:
 
 ### VS Code
 
-[VS Code - compilation](../../../../editors/vscode/vscode-cpp.md#build-configuration-for-qt) - VS Code project settings for Qt compilation  
-[VS Code - IntelliSense](../../../../editors/vscode/vscode-cpp.md#configuration-for-qt) - VS Code project settings for Qt IntelliSense
+[VS Code - compilation](../../../../editors/vscode/dev/vscode-cpp.md#build-configuration-for-qt) - VS Code project settings for Qt compilation  
+[VS Code - IntelliSense](../../../../editors/vscode/dev/vscode-cpp.md#configuration-for-qt) - VS Code project settings for Qt IntelliSense

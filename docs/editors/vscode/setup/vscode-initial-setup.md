@@ -1,6 +1,6 @@
 # VS Code initial setup
 
-[← back](index.md)
+[← back](../index.md)
 
 ## 1. Disable Telemetry
 
@@ -48,9 +48,9 @@ Go to:
 * if `Ctrl+/` is not working for non-english keyboard layout (line comment) - bind it to `Ctrl+[Slash]` (using physical key instead - layout independent)
 * if "Ctrl+Shift" is captured for keyboard layout switching, you can bind block comment to `Alt+Shift+[Slash]`
 
-My key bindings:  
-[for Windows](assets/keybindings-windows.json)  
-[for Linux](assets/keybindings-linux.json)
+My key bindings (take key bindings from this file to override the defaults):  
+[for Windows](../assets/keybindings-windows.json)  
+[for Linux](../assets/keybindings-linux.json)
 
 ## 5. Set default path
 

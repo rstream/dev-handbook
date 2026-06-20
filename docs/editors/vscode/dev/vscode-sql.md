@@ -1,6 +1,6 @@
 # VS Code extensions for SQL
 
-[← back](index.md)
+[← back](../index.md)
 
 ## SQLTools
 

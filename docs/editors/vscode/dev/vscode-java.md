@@ -1,13 +1,13 @@
 # VS Code setup for Java
 
-[← back](index.md)
+[← back](../index.md)
 
 Set up VS Code for building and running Java apps.
 
 ## 1 Install JDK
 
-[Instruction for Linux](../../operating-systems/linux/linux-java.md) - Install JDK for Linux  
-[Instruction for Windows](../../operating-systems/windows/dev/windows-java.md) - Install JDK for Windows
+[Instruction for Linux](../../../operating-systems/linux/linux-java.md) - Install JDK for Linux  
+[Instruction for Windows](../../../operating-systems/windows/dev/windows-java.md) - Install JDK for Windows
 
 ## 2 Install VS Code extension
 

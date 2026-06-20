@@ -1,6 +1,6 @@
 # VS Code setup for PHP
 
-[← back](index.md)
+[← back](../index.md)
 
 Set up VS Code for building and running web apps with PHP.
 
