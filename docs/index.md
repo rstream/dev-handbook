@@ -23,11 +23,12 @@ Development of desktop applications (non-web)
 
 Development of web applications (client and server side)
 
-[JavaScript](development/web/javascript/index.md) - JavaScript  
+[JavaScript](development/web/javascript/index.md) - JavaScript development  
+[TypeScript](development/web/typescript/index.md) - TypeScript development  
 [Node.js](development/web/nodejs/index.md) - Node.js development  
 [Alpine](development/web/alpine/index.md) - AlpineJS development  
 [Webpack](development/web/webpack/index.md) - Webpack  
-[PHP](development/web/php/index.md) - PHP  
+[PHP](development/web/php/index.md) - PHP development  
 [Preact](development/web/preact/index.md) - PreactJS
 
 ### Data bases
