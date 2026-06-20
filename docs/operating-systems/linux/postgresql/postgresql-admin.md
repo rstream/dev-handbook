@@ -1,6 +1,6 @@
 # PostgreSQL administration
 
-[← back](../linux-sql.md)
+[← back](../dev/linux-sql.md)
 
 ## 1. PostgreSQL server commands
 

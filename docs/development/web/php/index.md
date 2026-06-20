@@ -5,7 +5,7 @@
 ## Installation
 
 [Windows](../../../operating-systems/windows/dev/windows-php.md) - Install PHP for Windows  
-[Linux](../../../operating-systems/linux/linux-php.md) - Install PHP for Linux
+[Linux](../../../operating-systems/linux/dev/linux-php.md) - Install PHP for Linux
 
 ## General
 

@@ -7,7 +7,7 @@ Set up VS Code for building and running C++ apps.
 ## 1. Install compilers
 
 First of all - install C++ compilers:  
-[Instruction for Linux](../../../operating-systems/linux/linux-cpp.md)  
+[Instruction for Linux](../../../operating-systems/linux/dev/linux-cpp.md)  
 [Instruction for Windows](../../../operating-systems/windows/dev/windows-cpp.md)
 
 ## 2. Install extensions
@@ -128,7 +128,7 @@ Notes:
 * by default **includePath** contains only current project path; for correct autocomplete for standard C++ libs - also add their paths (included into the example above)
 * path `/usr/include/c++/14/x86_64-suse-linux` would be different for the other versions of Linux
 * by default the compiler is set to `gcc`; change it to `g++` if you are using C++ (not C)
-* "compilerPath" is short (`/usr/bin/g++`) since we created a symlink for `/usr/bin/g++-14` (check [creating symlinks for GCC](../../../operating-systems/linux/linux-cpp.md#create-symlinks))
+* "compilerPath" is short (`/usr/bin/g++`) since we created a symlink for `/usr/bin/g++-14` (check [creating symlinks for GCC](../../../operating-systems/linux/dev/linux-cpp.md#create-symlinks))
 
 ##### Configuration for Qt:
 

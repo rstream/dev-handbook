@@ -1,6 +1,6 @@
 # C++ compilers for Linux
 
-[← back](index.md)
+[← back](../index.md)
 
 ## GCC/G++ compiler
 
@@ -52,7 +52,7 @@ sudo ln -s /usr/bin/g++-14 /usr/bin/g++
 ## Clang
 
 Clang is an alternative to GCC. It is faster and has more detailed logs and error messages.  
-Also it is required for [Kate](../../editors/kate/index.md) to work with C++.
+Also it is required for [Kate](../../../editors/kate/index.md) to work with C++.
 
 To install run:
 ```sh

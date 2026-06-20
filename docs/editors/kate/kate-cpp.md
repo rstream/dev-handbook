@@ -9,19 +9,19 @@ Set up Kate for C++ development.
 ### GCC
 
 GCC is usually a part of Linux, but the version may be outdated. Install the new version if you need it:
-> [Install GCC](../../operating-systems/linux/linux-cpp.md)  
+> [Install GCC](../../operating-systems/linux/dev/linux-cpp.md)  
 
 ### Clang
 
 Clang is required to make Kate understand C++ (even if you are using GCC)
 
-> [Install clang](../../operating-systems/linux/linux-cpp.md#clang)
+> [Install clang](../../operating-systems/linux/dev/linux-cpp.md#clang)
 
 ### Qt
 
 For cross-platform GUI development install Qt package
 
-> [Install Qt](../../operating-systems/linux/linux-qt.md)
+> [Install Qt](../../operating-systems/linux/dev/linux-qt.md)
 
 ## 2. Enable build plugin
 

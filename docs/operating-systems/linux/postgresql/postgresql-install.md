@@ -1,6 +1,6 @@
 # PostgreSQL installation and setup
 
-[← back](../linux-sql.md)
+[← back](../dev/linux-sql.md)
 
 ## Installation
 
