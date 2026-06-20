@@ -4,10 +4,20 @@
 
 ## Parameters and return
 
+Regular function:
+
 ```ts
 function add(a: number, b: number): number {
   return a + b;
 }
+```
+
+Arrow function:
+
+```ts
+const multiply = (a: number, b: number): number => {
+  return a * b;
+};
 ```
 
 ## Optional and default params
