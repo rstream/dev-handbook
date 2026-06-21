@@ -9,12 +9,18 @@ General setup for Zed.
 * Right-click on the blue **project panel** icon at the bottom-right corner.  
 * Select "Dock Left"
 
+## Set custom color theme
+
+* Open Extensions: `Ctrl + Shift + X`.  
+* Install the theme you like, e.g. `Jetbrains Darcula theme`.  
+* Select the new theme: `theme selector: toggle` in Command Palette.
+
 ## Set Tab size
 
 Open settings `Alt + Ctrl + ,`, add a tab size key:
 ```json
 {
-  "tab_size": 4
+    "tab_size": 4
 }
 ```
 
