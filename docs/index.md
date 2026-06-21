@@ -39,6 +39,7 @@ Development of web applications (client and server side)
 
 Setup and tweaks of popular (my favorite) code editors.
 
+[Webstorm](editors/webstorm/index.md) - powerful IDE for web development  
 [KATE](editors/kate/index.md) - very cute, but sometimes not obvious code editor  
 [Visual Studio Code](editors/vscode/index.md) - one of the most popular code editors  
 [Zed](editors/zed/index.md) - fast rust-based code editor  
