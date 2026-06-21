@@ -22,16 +22,44 @@ type Point = [number, number];
 
 ## Interface
 
+Used for object shapes, classes, and APIs that may be extended.
+
+### General interface declaration
+
 ```ts
 interface User {
   id: number;
   name: string;
+  greet(): string;
 }
 ```
 
-Good for object shapes, classes, and APIs that may be extended.
+### Interface for key-value object with any (string) keys
 
-## Extending
+```ts
+interface Scores {
+  [name: string]: number;
+}
+
+const scores: Scores = {
+  alice: 10,
+  bob: 8,
+};
+```
+
+### Interface for function
+
+```ts
+interface FormatName {
+  (firstName: string, lastName: string): string;
+}
+
+const formatName: FormatName = (firstName, lastName) => {
+  return `${firstName} ${lastName}`;
+};
+```
+
+### Extending interfaces
 
 ```ts
 interface Admin extends User {
@@ -47,7 +75,7 @@ type Admin = User & {
 };
 ```
 
-## Declaration merging
+### Declaration merging
 
 Interfaces with the same name merge.
 
