@@ -57,6 +57,31 @@ type Option<T> = {
 };
 ```
 
+## Generic interface + class
+
+```ts
+interface Repository<T> {
+  add(item: T): void;
+  getAll(): T[];
+}
+
+class MemoryRepository<T> implements Repository<T> {
+  private items: T[] = [];
+
+  add(item: T): void {
+    this.items.push(item);
+  }
+
+  getAll(): T[] {
+    return this.items;
+  }
+}
+
+const users = new MemoryRepository<{ id: number; name: string }>();
+
+users.add({ id: 1, name: "Ann" });
+```
+
 ## Generic components
 
 ```ts
