@@ -1,6 +1,6 @@
 # Qt for Windows
 
-[← back](index.md)
+[← back](../index.md)
 
 For cross-platform GUI development install Qt package (in this example we install `Qt6`).
 

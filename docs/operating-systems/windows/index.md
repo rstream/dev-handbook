@@ -11,7 +11,7 @@ Windows settings, tweaks and software installation.
 ## Development on Windows
 
 [C++ compilers](dev/windows-cpp.md) - install C++ compilers for Windows  
-[Qt](windows-qt.md) - install Qt for Windows  
+[Qt](dev/windows-qt.md) - install Qt for Windows  
 [Java dev kit](dev/windows-java.md) - install JDK for Windows  
 [PHP](dev/windows-php.md) - install PHP for Windows  
 [SQL](dev/windows-sql.md) - install and set up SQL services for Windows
