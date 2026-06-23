@@ -8,7 +8,7 @@ Regular function:
 
 ```ts
 function add(a: number, b: number): number {
-  return a + b;
+    return a + b;
 }
 ```
 
@@ -16,7 +16,7 @@ Arrow function:
 
 ```ts
 const multiply = (a: number, b: number): number => {
-  return a * b;
+    return a * b;
 };
 ```
 
@@ -24,11 +24,11 @@ const multiply = (a: number, b: number): number => {
 
 ```ts
 function greet(name = "Guest") {
-  return `Hello, ${name}`;
+    return `Hello, ${name}`;
 }
 
 function findUser(id: number, includePosts?: boolean) {
-  // ...
+    // ...
 }
 ```
 
@@ -40,7 +40,7 @@ An optional `includePosts` param has type `boolean | undefined`
 type Handler = (event: MouseEvent) => void;
 
 const onClick: Handler = event => {
-  console.log(event.clientX);
+    console.log(event.clientX);
 };
 ```
 
@@ -53,7 +53,7 @@ function get(name: string): User[];
 
 // implementation
 function get(value: number | string): User | User[] {
-  throw new Error("todo");
+    throw new Error("todo");
 }
 ```
 

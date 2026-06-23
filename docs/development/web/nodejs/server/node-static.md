@@ -44,32 +44,32 @@ import staticServer from 'node-static';
 const files = new staticServer.Server('./public');
 
 const server = http.createServer((req, res) => {
-  if (req.method === 'GET' && req.url === '/api/hello') {
-    res.writeHead(200, { 'Content-Type': 'application/json' });
-    res.end(JSON.stringify({ message: 'Hello from Node.js' }));
-    return;
-  }
+    if (req.method === 'GET' && req.url === '/api/hello') {
+        res.writeHead(200, { 'Content-Type': 'application/json' });
+        res.end(JSON.stringify({ message: 'Hello from Node.js' }));
+        return;
+    }
 
-  if (req.method === 'POST' && req.url === '/api/echo') {
-    let body = '';
+    if (req.method === 'POST' && req.url === '/api/echo') {
+        let body = '';
 
-    req.on('data', (chunk) => {
-      body += chunk;
-    });
+        req.on('data', (chunk) => {
+            body += chunk;
+        });
 
-    req.on('end', () => {
-      res.writeHead(200, { 'Content-Type': 'application/json' });
-      res.end(JSON.stringify({ received: body }));
-    });
+        req.on('end', () => {
+            res.writeHead(200, { 'Content-Type': 'application/json' });
+            res.end(JSON.stringify({ received: body }));
+        });
 
-    return;
-  }
+        return;
+    }
 
-  files.serve(req, res);
+    files.serve(req, res);
 });
 
 server.listen(3000, () => {
-  console.log('Server is running at http://localhost:3000');
+    console.log('Server is running at http://localhost:3000');
 });
 ```
 

@@ -18,15 +18,15 @@ Use them for large files so Node.js does not load the whole file into memory.
 import fs from 'node:fs';
 
 const stream = fs.createReadStream('large-file.txt', {
-  encoding: 'utf8'
+    encoding: 'utf8'
 });
 
 stream.on('data', (chunk) => {
-  console.log(chunk);
+    console.log(chunk);
 });
 
 stream.on('end', () => {
-  console.log('Done');
+    console.log('Done');
 });
 ```
 
@@ -50,7 +50,7 @@ const stream = fs.createReadStream('large-file.txt', {
 import fs from 'node:fs';
 
 const stream = fs.createWriteStream('output.txt', {
-  encoding: 'utf8'
+    encoding: 'utf8'
 });
 
 stream.write('First line\n');
@@ -81,7 +81,7 @@ import fs from 'node:fs';
 import { pipeline } from 'node:stream/promises';
 
 await pipeline(
-  fs.createReadStream('large-file.txt'),
-  fs.createWriteStream('large-file-copy.txt')
+    fs.createReadStream('large-file.txt'),
+    fs.createWriteStream('large-file-copy.txt')
 );
 ```

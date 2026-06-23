@@ -8,10 +8,10 @@ Common options worth recognizing.
 
 ```json
 {
-  "compilerOptions": {
-    "target": "ES2022",
-    "lib": ["ES2022", "DOM"]
-  }
+    "compilerOptions": {
+        "target": "ES2022",
+        "lib": ["ES2022", "DOM"]
+    }
 }
 ```
 
@@ -21,11 +21,11 @@ Common options worth recognizing.
 
 ```json
 {
-  "compilerOptions": {
-    "strict": true,
-    "noUncheckedIndexedAccess": true,
-    "exactOptionalPropertyTypes": true
-  }
+    "compilerOptions": {
+        "strict": true,
+        "noUncheckedIndexedAccess": true,
+        "exactOptionalPropertyTypes": true
+    }
 }
 ```
 
@@ -35,12 +35,12 @@ Use `strict` as the baseline. Add extra checks when the project can tolerate mor
 
 ```json
 {
-  "compilerOptions": {
-    "allowJs": true,
-    "checkJs": false,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true
-  }
+    "compilerOptions": {
+        "allowJs": true,
+        "checkJs": false,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true
+    }
 }
 ```
 
@@ -50,10 +50,10 @@ Use `strict` as the baseline. Add extra checks when the project can tolerate mor
 
 ```json
 {
-  "compilerOptions": {
-    "skipLibCheck": true,
-    "incremental": true
-  }
+    "compilerOptions": {
+        "skipLibCheck": true,
+        "incremental": true
+    }
 }
 ```
 

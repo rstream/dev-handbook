@@ -54,9 +54,9 @@ import { readdir } from 'node:fs/promises';
 const entries = await readdir('uploads', { withFileTypes: true });
 
 for (const entry of entries) {
-  console.log(entry.name);
-  console.log(entry.isFile());
-  console.log(entry.isDirectory());
+    console.log(entry.name);
+    console.log(entry.isFile());
+    console.log(entry.isDirectory());
 }
 ```
 
@@ -98,12 +98,12 @@ await rm('old-folder', { recursive: true, force: true });
 import { access } from 'node:fs/promises';
 
 async function directoryExists(dirPath) {
-  try {
-    await access(dirPath);
-    return true;
-  } catch {
-    return false;
-  }
+    try {
+        await access(dirPath);
+        return true;
+    } catch {
+        return false;
+    }
 }
 
 console.log(await directoryExists('uploads'));

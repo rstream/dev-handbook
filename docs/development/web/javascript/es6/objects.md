@@ -25,10 +25,10 @@ const user = { name, age };
 
 ```js
 const user = {
-  name: 'Alice',
-  greet() {
-    return `Hello, ${this.name}`;
-  }
+    name: 'Alice',
+    greet() {
+        return `Hello, ${this.name}`;
+    }
 };
 ```
 
@@ -38,7 +38,7 @@ const user = {
 const field = 'email';
 
 const user = {
-  [field]: 'alice@example.com'
+    [field]: 'alice@example.com'
 };
 ```
 
@@ -48,8 +48,8 @@ Object destructuring:
 
 ```js
 const user = {
-  name: 'Alice',
-  email: 'alice@example.com'
+    name: 'Alice',
+    email: 'alice@example.com'
 };
 
 const { name, email } = user;

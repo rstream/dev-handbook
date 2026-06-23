@@ -17,13 +17,13 @@ It can be fulfilled or rejected.
 
 ```js
 const promise = new Promise((resolve, reject) => {
-  const ok = true;
+    const ok = true;
 
-  if (ok) {
-    resolve('Done');
-  } else {
-    reject(new Error('Failed'));
-  }
+    if (ok) {
+        resolve('Done');
+    } else {
+        reject(new Error('Failed'));
+    }
 });
 ```
 
@@ -33,10 +33,10 @@ Most modern APIs return promises, so you usually consume them instead of creatin
 
 ```js
 fetch('/data.json')
-  .then(response => response.json())
-  .then(data => {
-    console.log(data);
-  });
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+    });
 ```
 
 `then()` returns a new promise, so calls can be chained.
@@ -45,10 +45,10 @@ fetch('/data.json')
 
 ```js
 fetch('/data.json')
-  .then(response => response.json())
-  .catch(error => {
-    console.error(error);
-  });
+    .then(response => response.json())
+    .catch(error => {
+        console.error(error);
+    });
 ```
 
 ## finally
@@ -59,10 +59,10 @@ fetch('/data.json')
 setLoading(true);
 
 fetch('/data.json')
-  .then(response => response.json())
-  .finally(() => {
-    setLoading(false);
-  });
+    .then(response => response.json())
+    .finally(() => {
+        setLoading(false);
+    });
 ```
 
 ## Promise.all
@@ -72,7 +72,7 @@ It rejects when one of them rejects.
 
 ```js
 const [user, settings] = await Promise.all([
-  fetch('/user.json').then(response => response.json()),
-  fetch('/settings.json').then(response => response.json())
+    fetch('/user.json').then(response => response.json()),
+    fetch('/settings.json').then(response => response.json())
 ]);
 ```

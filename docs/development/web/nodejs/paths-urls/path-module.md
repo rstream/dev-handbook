@@ -89,9 +89,9 @@ Build a path from parsed parts:
 
 ```js
 const filePath = path.format({
-  dir: '/app/public',
-  name: 'index',
-  ext: '.html'
+    dir: '/app/public',
+    name: 'index',
+    ext: '.html'
 });
 ```
 

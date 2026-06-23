@@ -8,11 +8,11 @@ TypeScript adds type checking and visibility modifiers to JS classes.
 
 ```ts
 class User {
-  name: string;
+    name: string;
 
-  constructor(name: string) {
-    this.name = name;
-  }
+    constructor(name: string) {
+        this.name = name;
+    }
 }
 ```
 
@@ -20,7 +20,7 @@ class User {
 
 ```ts
 class User {
-  constructor(public id: number, private name: string) {}
+    constructor(public id: number, private name: string) {}
 }
 ```
 
@@ -30,13 +30,13 @@ Same as:
 
 ```ts
 class User {
-  public id: number;
-  private name: string;
+    public id: number;
+    private name: string;
 
-  constructor(id: number, name: string) {
-    this.id = id;
-    this.name = name;
-  }
+    constructor(id: number, name: string) {
+        this.id = id;
+        this.name = name;
+    }
 }
 ```
 
@@ -45,11 +45,11 @@ This would create object properties with the same names.
 
 ```ts
 class User {
-  constructor(
-    public readonly id: number,
-    public name: string,
-    private token: string
-  ) {}
+    constructor(
+        public readonly id: number,
+        public name: string,
+        private token: string
+    ) {}
 }
 
 const user = new User(1, "Ann", "secret");
@@ -64,9 +64,9 @@ user.token; // error: private
 
 ```ts
 class User {
-  public name: string;
-  private token: string;
-  protected role: string;
+    public name: string;
+    private token: string;
+    protected role: string;
 }
 ```
 
@@ -78,11 +78,11 @@ If a field is initialized later, use `!` to tell TypeScript it will be assigned 
 
 ```ts
 class UserForm {
-  input!: HTMLInputElement;
+    input!: HTMLInputElement;
 
-  mount(root: HTMLElement) {
-    this.input = root.querySelector("input") as HTMLInputElement;
-  }
+    mount(root: HTMLElement) {
+        this.input = root.querySelector("input") as HTMLInputElement;
+    }
 }
 ```
 
@@ -94,11 +94,11 @@ Use this only when initialization is guaranteed.
 
 ```ts
 class BaseView {
-  render() {}
+    render() {}
 }
 
 class UserView extends BaseView {
-  override render() {}
+    override render() {}
 }
 ```
 
@@ -108,13 +108,13 @@ With `noImplicitOverride`, overriding methods must use `override`.
 
 ```ts
 interface Printable {
-  print(): void;
+    print(): void;
 }
 
 class Invoice implements Printable {
-  print() {
+    print() {
 	  console.log("Printing Invoice...");
-  }
+    }
 }
 
 function print(document: Printable) {
@@ -127,13 +127,13 @@ function print(document: Printable) {
 Abstract class is a template for further extending. You cannot create objects from an abstract class.
 ```ts
 abstract class Store {
-  constructor(protected name: string) {}
+    constructor(protected name: string) {}
 
-  abstract save(): void;
+    abstract save(): void;
 
-  log() {
-    console.log(`Saving ${this.name}`);
-  }
+    log() {
+        console.log(`Saving ${this.name}`);
+    }
 }
 ```
 
@@ -143,10 +143,10 @@ Abstract classes can contain real code and abstract members.
 
 ```ts
 class FileStore extends Store {
-  save() {
-    this.log();
-    console.log("Saved to file");
-  }
+    save() {
+        this.log();
+        console.log("Saved to file");
+    }
 }
 
 const store = new FileStore("users");
@@ -158,14 +158,14 @@ If the child class has its own constructor, it must call `super()` before using 
 
 ```ts
 class DatabaseStore extends Store {
-  constructor(name: string, private table: string) {
-    super(name);
-  }
+    constructor(name: string, private table: string) {
+        super(name);
+    }
 
-  save() {
-    this.log();
-    console.log(`Saved to ${this.table}`);
-  }
+    save() {
+        this.log();
+        console.log(`Saved to ${this.table}`);
+    }
 }
 
 const dbStore = new DatabaseStore("users", "user_table");

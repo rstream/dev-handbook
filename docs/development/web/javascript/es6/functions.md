@@ -15,7 +15,7 @@ ES6 made function syntax shorter and argument handling cleaner.
 
 ```js
 const double = (value) => {
-  return value * 2;
+    return value * 2;
 };
 ```
 
@@ -37,12 +37,12 @@ Arrow functions keep `this` from the surrounding scope.
 
 ```js
 const timer = {
-  seconds: 0,
-  start() {
-    setInterval(() => {
-      this.seconds += 1;
-    }, 1000);
-  }
+    seconds: 0,
+    start() {
+        setInterval(() => {
+            this.seconds += 1;
+        }, 1000);
+    }
 };
 ```
 
@@ -52,7 +52,7 @@ Do not use arrow functions as object methods when the method needs its own `this
 
 ```js
 function greet(name = 'Guest') {
-  return `Hello, ${name}`;
+    return `Hello, ${name}`;
 }
 ```
 
@@ -62,7 +62,7 @@ Rest parameters collect arguments into a real array.
 
 ```js
 function sum(...numbers) {
-  return numbers.reduce((total, number) => total + number, 0);
+    return numbers.reduce((total, number) => total + number, 0);
 }
 
 sum(1, 2, 3);

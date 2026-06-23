@@ -22,11 +22,11 @@ For `POST` requests, read the request body from the `req` stream.
 
 ```js
 if (req.method === 'GET' && url.pathname === '/hello') {
-  const name = url.searchParams.get('name') || 'Guest';
+    const name = url.searchParams.get('name') || 'Guest';
 
-  res.writeHead(200, { 'Content-Type': 'text/plain' });
-  res.end(`Hello, ${name}`);
-  return;
+    res.writeHead(200, { 'Content-Type': 'text/plain' });
+    res.end(`Hello, ${name}`);
+    return;
 }
 ```
 
@@ -40,14 +40,14 @@ curl "http://localhost:3000/hello?name=Alice"
 
 ```js
 if (req.method === 'GET' && url.pathname === '/api/user') {
-  const user = {
-    id: 1,
-    name: 'Alice'
-  };
+    const user = {
+        id: 1,
+        name: 'Alice'
+    };
 
-  res.writeHead(200, { 'Content-Type': 'application/json' });
-  res.end(JSON.stringify(user));
-  return;
+    res.writeHead(200, { 'Content-Type': 'application/json' });
+    res.end(JSON.stringify(user));
+    return;
 }
 ```
 
@@ -65,19 +65,19 @@ For `POST` requests, request data comes from the `req` stream.
 
 ```js
 function readTextBody(req) {
-  return new Promise((resolve, reject) => {
-    let body = '';
+    return new Promise((resolve, reject) => {
+        let body = '';
 
-    req.on('data', (chunk) => {
-      body += chunk;
+        req.on('data', (chunk) => {
+            body += chunk;
+        });
+
+        req.on('end', () => {
+            resolve(body);
+        });
+
+        req.on('error', reject);
     });
-
-    req.on('end', () => {
-      resolve(body);
-    });
-
-    req.on('error', reject);
-  });
 }
 ```
 
@@ -85,11 +85,11 @@ function readTextBody(req) {
 
 ```js
 if (req.method === 'POST' && url.pathname === '/echo') {
-  const body = await readTextBody(req);
+    const body = await readTextBody(req);
 
-  res.writeHead(200, { 'Content-Type': 'text/plain' });
-  res.end(`Received: ${body}`);
-  return;
+    res.writeHead(200, { 'Content-Type': 'text/plain' });
+    res.end(`Received: ${body}`);
+    return;
 }
 ```
 
@@ -103,15 +103,15 @@ curl -X POST http://localhost:3000/echo -d "hello"
 
 ```js
 if (req.method === 'POST' && url.pathname === '/api/user') {
-  const body = await readTextBody(req);
-  const user = JSON.parse(body);
+    const body = await readTextBody(req);
+    const user = JSON.parse(body);
 
-  res.writeHead(200, { 'Content-Type': 'application/json' });
-  res.end(JSON.stringify({
-    saved: true,
-    user
-  }));
-  return;
+    res.writeHead(200, { 'Content-Type': 'application/json' });
+    res.end(JSON.stringify({
+        saved: true,
+        user
+    }));
+    return;
 }
 ```
 
@@ -127,60 +127,60 @@ Full example:
 import http from 'node:http';
 
 function readTextBody(req) {
-  return new Promise((resolve, reject) => {
-    let body = '';
+    return new Promise((resolve, reject) => {
+        let body = '';
 
-    req.on('data', (chunk) => {
-      body += chunk;
+        req.on('data', (chunk) => {
+            body += chunk;
+        });
+
+        req.on('end', () => {
+            resolve(body);
+        });
+
+        req.on('error', reject);
     });
-
-    req.on('end', () => {
-      resolve(body);
-    });
-
-    req.on('error', reject);
-  });
 }
 
 const server = http.createServer(async (req, res) => {
-  const url = new URL(req.url, 'http://localhost');
+    const url = new URL(req.url, 'http://localhost');
 
-  if (req.method === 'GET' && url.pathname === '/hello') {
-    const name = url.searchParams.get('name') || 'Guest';
+    if (req.method === 'GET' && url.pathname === '/hello') {
+        const name = url.searchParams.get('name') || 'Guest';
 
-    res.writeHead(200, { 'Content-Type': 'text/plain' });
-    res.end(`Hello, ${name}`);
-    return;
-  }
+        res.writeHead(200, { 'Content-Type': 'text/plain' });
+        res.end(`Hello, ${name}`);
+        return;
+    }
 
-  if (req.method === 'GET' && url.pathname === '/api/user') {
-    res.writeHead(200, { 'Content-Type': 'application/json' });
-    res.end(JSON.stringify({ id: 1, name: 'Alice' }));
-    return;
-  }
+    if (req.method === 'GET' && url.pathname === '/api/user') {
+        res.writeHead(200, { 'Content-Type': 'application/json' });
+        res.end(JSON.stringify({ id: 1, name: 'Alice' }));
+        return;
+    }
 
-  if (req.method === 'POST' && url.pathname === '/echo') {
-    const body = await readTextBody(req);
+    if (req.method === 'POST' && url.pathname === '/echo') {
+        const body = await readTextBody(req);
 
-    res.writeHead(200, { 'Content-Type': 'text/plain' });
-    res.end(`Received: ${body}`);
-    return;
-  }
+        res.writeHead(200, { 'Content-Type': 'text/plain' });
+        res.end(`Received: ${body}`);
+        return;
+    }
 
-  if (req.method === 'POST' && url.pathname === '/api/user') {
-    const body = await readTextBody(req);
-    const user = JSON.parse(body);
+    if (req.method === 'POST' && url.pathname === '/api/user') {
+        const body = await readTextBody(req);
+        const user = JSON.parse(body);
 
-    res.writeHead(200, { 'Content-Type': 'application/json' });
-    res.end(JSON.stringify({ saved: true, user }));
-    return;
-  }
+        res.writeHead(200, { 'Content-Type': 'application/json' });
+        res.end(JSON.stringify({ saved: true, user }));
+        return;
+    }
 
-  res.writeHead(404, { 'Content-Type': 'text/plain' });
-  res.end('Not found');
+    res.writeHead(404, { 'Content-Type': 'text/plain' });
+    res.end('Not found');
 });
 
 server.listen(3000, () => {
-  console.log('Server is running at http://localhost:3000');
+    console.log('Server is running at http://localhost:3000');
 });
 ```

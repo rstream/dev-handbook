@@ -8,9 +8,9 @@ Built-in helpers for transforming types.
 
 ```ts
 type User = {
-  id: number;
-  name: string;
-  email: string;
+    id: number;
+    name: string;
+    email: string;
 };
 
 type UserPatch = Partial<User>;
@@ -23,9 +23,9 @@ type ReadonlyUser = Readonly<User>;
 
 ```ts
 type UserPatch = {
-  id?: number;
-  name?: string;
-  email?: string;
+    id?: number;
+    name?: string;
+    email?: string;
 };
 ```
 
@@ -33,8 +33,8 @@ type UserPatch = {
 
 ```ts
 type UserPreview = {
-  id: number;
-  name: string;
+    id: number;
+    name: string;
 };
 ```
 
@@ -42,8 +42,8 @@ type UserPreview = {
 
 ```ts
 type UserWithoutEmail = {
-  id: number;
-  name: string;
+    id: number;
+    name: string;
 };
 ```
 
@@ -51,9 +51,9 @@ type UserWithoutEmail = {
 
 ```ts
 type ReadonlyUser = {
-  readonly id: number;
-  readonly name: string;
-  readonly email: string;
+    readonly id: number;
+    readonly name: string;
+    readonly email: string;
 };
 ```
 
@@ -63,8 +63,8 @@ type ReadonlyUser = {
 type Role = "admin" | "user";
 
 const labels: Record<Role, string> = {
-  admin: "Admin",
-  user: "User"
+    admin: "Admin",
+    user: "User"
 };
 ```
 
@@ -72,8 +72,8 @@ const labels: Record<Role, string> = {
 
 ```ts
 type Labels = {
-  admin: string;
-  user: string;
+    admin: string;
+    user: string;
 };
 ```
 
@@ -81,7 +81,7 @@ type Labels = {
 
 ```ts
 function createUser(name: string) {
-  return { id: 1, name };
+    return { id: 1, name };
 }
 
 type CreatedUser = ReturnType<typeof createUser>;
@@ -92,8 +92,8 @@ type CreateUserArgs = Parameters<typeof createUser>;
 
 ```ts
 type CreatedUser = {
-  id: number;
-  name: string;
+    id: number;
+    name: string;
 };
 ```
 

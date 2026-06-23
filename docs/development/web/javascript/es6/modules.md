@@ -21,7 +21,7 @@ Use named exports when a module exposes several values.
 ```js
 // math.js
 export function add(a, b) {
-  return a + b;
+    return a + b;
 }
 
 export const PI = 3.14;
@@ -45,7 +45,7 @@ Use default export when a module has one main value.
 ```js
 // logger.js
 export default function log(message) {
-  console.log(message);
+    console.log(message);
 }
 ```
 

@@ -24,7 +24,7 @@ It uses `import` and `export`.
 ```js
 // math.js
 export function add(a, b) {
-  return a + b;
+    return a + b;
 }
 
 // app.js
@@ -37,9 +37,9 @@ It uses `require()` and `module.exports`.
 ```js
 // math.cjs
 module.exports = {
-  add(a, b) {
-    return a + b;
-  }
+    add(a, b) {
+        return a + b;
+    }
 };
 
 // app.cjs
@@ -55,7 +55,7 @@ Set `"type": "module"` in `package.json`.
 
 ```json
 {
-  "type": "module"
+    "type": "module"
 }
 ```
 
@@ -69,11 +69,11 @@ Use named exports when a file exposes several values.
 
 ```js
 export function add(a, b) {
-  return a + b;
+    return a + b;
 }
 
 export function subtract(a, b) {
-  return a - b;
+    return a - b;
 }
 ```
 
@@ -104,19 +104,19 @@ You can also export several existing values with one `export` statement.
 
 ```js
 function add(a, b) {
-  return a + b;
+    return a + b;
 }
 
 function subtract(a, b) {
-  return a - b;
+    return a - b;
 }
 
 const PI = 3.14;
 
 export {
-  add,
-  subtract,
-  PI
+    add,
+    subtract,
+    PI
 };
 ```
 
@@ -143,7 +143,7 @@ Use a default export when a file exposes one main value.
 
 ```js
 export default function log(message) {
-  console.log(`[app] ${message}`);
+    console.log(`[app] ${message}`);
 }
 ```
 
@@ -175,11 +175,11 @@ A file can export one default value and several named values.
 export const tableName = 'users';
 
 export function findUser(id) {
-  return { id, name: 'Alice' };
+    return { id, name: 'Alice' };
 }
 
 export default function createUser(name) {
-  return { id: 1, name };
+    return { id: 1, name };
 }
 ```
 
@@ -206,16 +206,16 @@ Export several values:
 
 ```js
 function add(a, b) {
-  return a + b;
+    return a + b;
 }
 
 function subtract(a, b) {
-  return a - b;
+    return a - b;
 }
 
 module.exports = {
-  add,
-  subtract
+    add,
+    subtract
 };
 ```
 
@@ -225,7 +225,7 @@ Export one main value:
 
 ```js
 module.exports = function log(message) {
-  console.log(`[app] ${message}`);
+    console.log(`[app] ${message}`);
 };
 ```
 

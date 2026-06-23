@@ -36,7 +36,7 @@ value.missing.deep.call();
 let value: unknown = JSON.parse(text);
 
 if (typeof value === "string") {
-  value.toUpperCase();
+    value.toUpperCase();
 }
 ```
 
@@ -47,11 +47,11 @@ Use for values that need checking before use.
 
 ```ts
 function log(message: string): void {
-  console.log(message);
+    console.log(message);
 }
 
 function fail(message: string): never {
-  throw new Error(message);
+    throw new Error(message);
 }
 ```
 

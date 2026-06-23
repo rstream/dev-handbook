@@ -22,7 +22,7 @@ $sql = '
 SELECT id, name, email
 FROM users
 WHERE role = :role
-  AND id > :min_id
+    AND id > :min_id
 ';
 
 $stmt = $pdo->prepare($sql);

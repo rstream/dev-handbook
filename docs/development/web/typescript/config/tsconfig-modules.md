@@ -8,11 +8,11 @@ Module settings decide how imports are understood and emitted.
 
 ```json
 {
-  "compilerOptions": {
-    "module": "ESNext",
-    "moduleResolution": "Bundler",
-    "noEmit": true
-  }
+    "compilerOptions": {
+        "module": "ESNext",
+        "moduleResolution": "Bundler",
+        "noEmit": true
+    }
 }
 ```
 
@@ -22,10 +22,10 @@ Use this for Vite, Webpack, Rollup, and similar tools when TypeScript only check
 
 ```json
 {
-  "compilerOptions": {
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext"
-  }
+    "compilerOptions": {
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext"
+    }
 }
 ```
 
@@ -35,10 +35,10 @@ This follows Node rules and uses `package.json` `"type"` to decide ESM vs Common
 
 ```json
 {
-  "compilerOptions": {
-    "module": "CommonJS",
-    "target": "ES2020"
-  }
+    "compilerOptions": {
+        "module": "CommonJS",
+        "target": "ES2020"
+    }
 }
 ```
 

@@ -43,8 +43,8 @@ If `files`, `include`, and `exclude` are omitted, TypeScript includes supported 
 
 ```json
 {
-  "include": ["src/**/*.ts", "src/**/*.tsx"],
-  "exclude": ["node_modules", "dist"]
+    "include": ["src/**/*.ts", "src/**/*.tsx"],
+    "exclude": ["node_modules", "dist"]
 }
 ```
 
@@ -54,7 +54,7 @@ If `files`, `include`, and `exclude` are omitted, TypeScript includes supported 
 
 ```json
 {
-  "files": ["src/main.ts"]
+    "files": ["src/main.ts"]
 }
 ```
 

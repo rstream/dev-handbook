@@ -8,9 +8,9 @@ JSX settings are needed for `.tsx` files.
 
 ```json
 {
-  "compilerOptions": {
-    "jsx": "react-jsx"
-  }
+    "compilerOptions": {
+        "jsx": "react-jsx"
+    }
 }
 ```
 
@@ -20,10 +20,10 @@ Use for modern React and compatible libraries.
 
 ```json
 {
-  "compilerOptions": {
-    "jsx": "react-jsx",
-    "jsxImportSource": "preact"
-  }
+    "compilerOptions": {
+        "jsx": "react-jsx",
+        "jsxImportSource": "preact"
+    }
 }
 ```
 
@@ -33,9 +33,9 @@ This tells TypeScript where JSX runtime and JSX types come from.
 
 ```json
 {
-  "compilerOptions": {
-    "jsx": "preserve"
-  }
+    "compilerOptions": {
+        "jsx": "preserve"
+    }
 }
 ```
 
@@ -45,10 +45,10 @@ Use when another tool transforms JSX.
 
 ```tsx
 type Props = {
-  title: string;
+    title: string;
 };
 
 export function Card({ title }: Props) {
-  return <h2>{title}</h2>;
+    return <h2>{title}</h2>;
 }
 ```

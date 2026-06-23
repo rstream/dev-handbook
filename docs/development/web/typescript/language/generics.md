@@ -8,7 +8,7 @@ Generics let a type depend on another type.
 
 ```ts
 function first<T>(items: T[]): T | undefined {
-  return items[0];
+    return items[0];
 }
 
 const name = first(["Ann", "Bob"]); // string | undefined
@@ -17,7 +17,7 @@ const name = first(["Ann", "Bob"]); // string | undefined
 Using arrow function:
 ```ts
 const first = <T>(items: T[]): T | undefined => {
-  return items[0];
+    return items[0];
 };
 ```
 
@@ -31,7 +31,7 @@ type GenericFn = <T>(items: T[]) => T | undefined;
 Allow to use only types with defined properties.
 ```ts
 function getId<T extends { id: number }>(item: T) {
-  return item.id;
+    return item.id;
 }
 ```
 `extends` limits what `T` can be (`T` must be an object with a mandatory key `type`)
@@ -52,11 +52,11 @@ This function would work for strings, array and any type with numeric "length" p
 
 ```ts
 type ApiResponse<T = unknown> = {
-  data: T;
+    data: T;
 };
 
 const response: ApiResponse<string> = {
-  data: "hello"
+    data: "hello"
 };
 ```
 
@@ -64,8 +64,8 @@ const response: ApiResponse<string> = {
 
 ```ts
 type Option<T> = {
-  label: string;
-  value: T;
+    label: string;
+    value: T;
 };
 ```
 
@@ -73,20 +73,20 @@ type Option<T> = {
 
 ```ts
 interface Repository<T> {
-  add(item: T): void;
-  getAll(): T[];
+    add(item: T): void;
+    getAll(): T[];
 }
 
 class MemoryRepository<T> implements Repository<T> {
-  private items: T[] = [];
+    private items: T[] = [];
 
-  add(item: T): void {
-    this.items.push(item);
-  }
+    add(item: T): void {
+        this.items.push(item);
+    }
 
-  getAll(): T[] {
-    return this.items;
-  }
+    getAll(): T[] {
+        return this.items;
+    }
 }
 
 const users = new MemoryRepository<{ id: number; name: string }>();
@@ -100,11 +100,11 @@ Use `{ new (): T }` when a function receives a class constructor and creates an 
 
 ```ts
 function createInstance<T>(className: { new (): T }): T {
-  return new className();
+    return new className();
 }
 
 class User {
-  name = "Ann";
+    name = "Ann";
 }
 
 const user = createInstance(User); // User
@@ -114,7 +114,7 @@ const user = createInstance(User); // User
 
 ```ts
 type ListProps<T> = {
-  items: T[];
-  render: (item: T) => string;
+    items: T[];
+    render: (item: T) => string;
 };
 ```

@@ -32,9 +32,9 @@ Template literals can span multiple lines.
 
 ```js
 const html = `
-  <section>
-    <h1>Profile</h1>
-  </section>
+    <section>
+        <h1>Profile</h1>
+    </section>
 `;
 ```
 

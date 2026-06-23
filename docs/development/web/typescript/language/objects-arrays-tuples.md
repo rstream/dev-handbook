@@ -6,9 +6,9 @@
 
 ```ts
 type User = {
-  id: number;
-  name: string;
-  email?: string;
+    id: number;
+    name: string;
+    email?: string;
 };
 ```
 
@@ -18,8 +18,8 @@ type User = {
 
 ```ts
 type User = {
-  readonly id: number;
-  name: string;
+    readonly id: number;
+    name: string;
 };
 ```
 
@@ -48,7 +48,7 @@ Use tuples when position has meaning.
 
 ```ts
 type Scores = {
-  [name: string]: number;
+    [name: string]: number;
 };
 ```
 

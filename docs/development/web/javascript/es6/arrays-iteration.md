@@ -21,7 +21,7 @@ Use `for...of` when you need values from an iterable.
 const colors = ['red', 'green', 'blue'];
 
 for (const color of colors) {
-  console.log(color);
+    console.log(color);
 }
 ```
 

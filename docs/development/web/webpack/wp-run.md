@@ -38,10 +38,10 @@ webpack serve
 You can set up shortcuts in `package.json`:
 ```json
 {
-  "scripts": {
-    "build": "webpack --mode development",
-    "prod": "webpack --mode production",
-    "dev": "webpack serve"
-  }
+    "scripts": {
+        "build": "webpack --mode development",
+        "prod": "webpack --mode production",
+        "dev": "webpack serve"
+    }
 }
 ```

@@ -68,13 +68,13 @@ console.log(info.atime);
 import { stat } from 'node:fs/promises';
 
 try {
-  const info = await stat('missing.txt');
-  console.log(info.isFile());
+    const info = await stat('missing.txt');
+    console.log(info.isFile());
 } catch (error) {
-  if (error.code === 'ENOENT') {
-    console.log('Path does not exist');
-  } else {
-    throw error;
-  }
+    if (error.code === 'ENOENT') {
+        console.log('Path does not exist');
+    } else {
+        throw error;
+    }
 }
 ```

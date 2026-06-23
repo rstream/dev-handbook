@@ -8,10 +8,10 @@ These options matter when `tsc` emits files.
 
 ```json
 {
-  "compilerOptions": {
-    "rootDir": "src",
-    "outDir": "dist"
-  }
+    "compilerOptions": {
+        "rootDir": "src",
+        "outDir": "dist"
+    }
 }
 ```
 
@@ -21,9 +21,9 @@ These options matter when `tsc` emits files.
 
 ```json
 {
-  "compilerOptions": {
-    "sourceMap": true
-  }
+    "compilerOptions": {
+        "sourceMap": true
+    }
 }
 ```
 
@@ -33,11 +33,11 @@ Source maps connect emitted JS back to `.ts` files in debugging tools.
 
 ```json
 {
-  "compilerOptions": {
-    "declaration": true,
-    "declarationMap": true,
-    "emitDeclarationOnly": false
-  }
+    "compilerOptions": {
+        "declaration": true,
+        "declarationMap": true,
+        "emitDeclarationOnly": false
+    }
 }
 ```
 
@@ -47,9 +47,9 @@ Use declarations for libraries. Apps usually do not need them.
 
 ```json
 {
-  "compilerOptions": {
-    "noEmit": true
-  }
+    "compilerOptions": {
+        "noEmit": true
+    }
 }
 ```
 

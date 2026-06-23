@@ -22,10 +22,10 @@ Paths inside a config are relative to the config file itself.
 
 ```json
 {
-  "include": ["src"],
-  "compilerOptions": {
-    "outDir": "dist"
-  }
+    "include": ["src"],
+    "compilerOptions": {
+        "outDir": "dist"
+    }
 }
 ```
 

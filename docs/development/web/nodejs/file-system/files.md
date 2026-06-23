@@ -88,12 +88,12 @@ Use `access()` to check whether a path can be accessed.
 import { access } from 'node:fs/promises';
 
 async function fileExists(filePath) {
-  try {
-    await access(filePath);
-    return true;
-  } catch {
-    return false;
-  }
+    try {
+        await access(filePath);
+        return true;
+    } catch {
+        return false;
+    }
 }
 
 console.log(await fileExists('notes.txt'));

@@ -8,12 +8,12 @@ Types can be imported and exported like values.
 
 ```ts
 export type User = {
-  id: number;
-  name: string;
+    id: number;
+    name: string;
 };
 
 export interface Config {
-  apiUrl: string;
+    apiUrl: string;
 }
 ```
 
@@ -37,8 +37,8 @@ export { createUser } from "./user";
 
 ```ts
 const settings = {
-  theme: "dark",
-  pageSize: 20
+    theme: "dark",
+    pageSize: 20
 };
 
 type Settings = typeof settings;

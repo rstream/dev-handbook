@@ -56,22 +56,22 @@ Setting up Kate project allows to define custom project level build/run tasks.
 Create a `.kateproject` file with the following content:
 ```json
 {
-  "name": "Kate project 3",
-  "files": ["*.cpp"],
-  "build": {
-    "directory": ".",
-    "targets": [
-      {
-        "name": "Build or run",
-        "build_cmd": "g++ -g -std=c++17 \"%f\" -o \"bin/%n\"",
-        "run_cmd": "./bin/kate3"
-      },
-      {
-        "name": "Build and run",
-        "build_cmd": "g++ -g -std=c++17 \"%f\" -o \"bin/%n\" && \"bin/%n\""
-      }
-    ]
-  }
+    "name": "Kate project 3",
+    "files": ["*.cpp"],
+    "build": {
+        "directory": ".",
+        "targets": [
+            {
+                "name": "Build or run",
+                "build_cmd": "g++ -g -std=c++17 \"%f\" -o \"bin/%n\"",
+                "run_cmd": "./bin/kate3"
+            },
+            {
+                "name": "Build and run",
+                "build_cmd": "g++ -g -std=c++17 \"%f\" -o \"bin/%n\" && \"bin/%n\""
+            }
+        ]
+    }
 }
 ```
 Notes:
@@ -85,17 +85,17 @@ When project requires additional headers (to include) and libraries (to link) - 
 
 ```json
 {
-  "name": "Kate project 3",
-  "files": ["*.cpp"],
-  "build": {
-    "directory": ".",
-    "targets": [
-      {
-        "name": "Build and run",
-        "build_cmd": "g++ -g -std=c++20 \"%f\" -o \"bin/%n\" -I/usr/include/qt6 -I/usr/include/qt6/QtWidgets -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -lQt6Widgets -lQt6Gui -lQt6Core && \"bin/%n\""
-      }
-    ]
-  }
+    "name": "Kate project 3",
+    "files": ["*.cpp"],
+    "build": {
+        "directory": ".",
+        "targets": [
+            {
+                "name": "Build and run",
+                "build_cmd": "g++ -g -std=c++20 \"%f\" -o \"bin/%n\" -I/usr/include/qt6 -I/usr/include/qt6/QtWidgets -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -lQt6Widgets -lQt6Gui -lQt6Core && \"bin/%n\""
+            }
+        ]
+    }
 }
 ```
 
@@ -109,17 +109,17 @@ Two ways to make IntelliSense work with external libraries.
 Create a `.clangd` file with the content like this, and put to the project dir:
 ```
 CompileFlags:
-  CompilationDatabase: .
-  Add: [
-    "-std=c++17",
-    "-I/usr/include/qt6",
-    "-I/usr/include/qt6/QtWidgets",
-    "-I/usr/include/qt6/QtGui",
-    "-I/usr/include/qt6/QtCore"
-  ]
+    CompilationDatabase: .
+    Add: [
+        "-std=c++17",
+        "-I/usr/include/qt6",
+        "-I/usr/include/qt6/QtWidgets",
+        "-I/usr/include/qt6/QtGui",
+        "-I/usr/include/qt6/QtCore"
+    ]
 
 Diagnostics:
-  UnusedIncludes: Strict
+    UnusedIncludes: Strict
 ```
 
 > Notes:

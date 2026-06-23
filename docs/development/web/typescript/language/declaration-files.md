@@ -42,7 +42,7 @@ that must already exist at runtime.
 
 ```ts
 declare module "old-library" {
-  export function format(value: string): string;
+    export function format(value: string): string;
 }
 ```
 
@@ -60,11 +60,11 @@ If the library has a default export:
 
 ```ts
 declare module "legacy-parser" {
-  export type ParseOptions = {
-    strict?: boolean;
-  };
+    export type ParseOptions = {
+        strict?: boolean;
+    };
 
-  export default function parse(input: string, options?: ParseOptions): unknown;
+    export default function parse(input: string, options?: ParseOptions): unknown;
 }
 ```
 
@@ -73,9 +73,9 @@ of using `any` everywhere:
 
 ```ts
 declare module "legacy-config" {
-  export type Config = Record<string, string | number | boolean>;
+    export type Config = Record<string, string | number | boolean>;
 
-  export function loadConfig(path: string): Config;
+    export function loadConfig(path: string): Config;
 }
 ```
 
@@ -83,7 +83,7 @@ Use `unknown` for values that callers must validate before using:
 
 ```ts
 declare module "legacy-json" {
-  export function parse(input: string): unknown;
+    export function parse(input: string): unknown;
 }
 ```
 
@@ -91,11 +91,11 @@ declare module "legacy-json" {
 
 ```ts
 declare global {
-  interface Window {
-    appConfig: {
-      apiUrl: string;
-    };
-  }
+    interface Window {
+        appConfig: {
+            apiUrl: string;
+        };
+    }
 }
 
 export {};
@@ -119,9 +119,9 @@ Example: a framework request object receives a `user` field from middleware.
 import type { User } from "../src/auth/user";
 
 declare module "some-server-framework" {
-  interface Request {
-    user?: User;
-  }
+    interface Request {
+        user?: User;
+    }
 }
 ```
 
@@ -132,7 +132,7 @@ field:
 import type { Request } from "some-server-framework";
 
 function getUserId(req: Request): string | undefined {
-  return req.user?.id;
+    return req.user?.id;
 }
 ```
 
@@ -146,11 +146,11 @@ Global augmentation extends global types such as `Window`, `Document`, or
 
 ```ts
 declare global {
-  interface Window {
-    analytics?: {
-      track(event: string, payload?: Record<string, unknown>): void;
-    };
-  }
+    interface Window {
+        analytics?: {
+            track(event: string, payload?: Record<string, unknown>): void;
+        };
+    }
 }
 
 export {};
@@ -160,7 +160,7 @@ Usage:
 
 ```ts
 window.analytics?.track("page_view", {
-  path: location.pathname
+    path: location.pathname
 });
 ```
 
@@ -173,18 +173,18 @@ For image URLs:
 
 ```ts
 declare module "*.svg" {
-  const src: string;
-  export default src;
+    const src: string;
+    export default src;
 }
 
 declare module "*.png" {
-  const src: string;
-  export default src;
+    const src: string;
+    export default src;
 }
 
 declare module "*.jpg" {
-  const src: string;
-  export default src;
+    const src: string;
+    export default src;
 }
 ```
 
@@ -203,10 +203,10 @@ depends on the bundler/plugin. For example:
 
 ```ts
 declare module "*.svg?react" {
-  import type { ComponentType, SVGProps } from "react";
+    import type { ComponentType, SVGProps } from "react";
 
-  const Component: ComponentType<SVGProps<SVGSVGElement>>;
-  export default Component;
+    const Component: ComponentType<SVGProps<SVGSVGElement>>;
+    export default Component;
 }
 ```
 
@@ -216,7 +216,7 @@ Usage:
 import Logo from "./logo.svg?react";
 
 export function Header() {
-  return <Logo aria-label="Application logo" />;
+    return <Logo aria-label="Application logo" />;
 }
 ```
 
@@ -227,8 +227,8 @@ names and values are generated class names.
 
 ```ts
 declare module "*.module.css" {
-  const classes: Record<string, string>;
-  export default classes;
+    const classes: Record<string, string>;
+    export default classes;
 }
 ```
 
@@ -238,7 +238,7 @@ Usage:
 import styles from "./Button.module.css";
 
 export function Button() {
-  return <button className={styles.primary}>Save</button>;
+    return <button className={styles.primary}>Save</button>;
 }
 ```
 
@@ -247,9 +247,9 @@ For stricter types, generate `.d.ts` files per CSS module:
 ```ts
 // Button.module.css.d.ts
 declare const classes: {
-  readonly root: string;
-  readonly primary: string;
-  readonly disabled: string;
+    readonly root: string;
+    readonly primary: string;
+    readonly disabled: string;
 };
 
 export default classes;
@@ -263,7 +263,7 @@ Make sure the `.d.ts` file is included by `tsconfig.json`.
 
 ```json
 {
-  "include": ["src", "types"]
+    "include": ["src", "types"]
 }
 ```
 

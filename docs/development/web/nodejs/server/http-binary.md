@@ -16,19 +16,19 @@ Use it for files, images, archives, and raw byte payloads.
 
 ```js
 function readBinaryBody(req) {
-  return new Promise((resolve, reject) => {
-    const chunks = [];
+    return new Promise((resolve, reject) => {
+        const chunks = [];
 
-    req.on('data', (chunk) => {
-      chunks.push(chunk);
+        req.on('data', (chunk) => {
+            chunks.push(chunk);
+        });
+
+        req.on('end', () => {
+            resolve(Buffer.concat(chunks));
+        });
+
+        req.on('error', reject);
     });
-
-    req.on('end', () => {
-      resolve(Buffer.concat(chunks));
-    });
-
-    req.on('error', reject);
-  });
 }
 ```
 
@@ -36,13 +36,13 @@ function readBinaryBody(req) {
 
 ```js
 if (req.method === 'POST' && url.pathname === '/upload') {
-  const data = await readBinaryBody(req);
+    const data = await readBinaryBody(req);
 
-  res.writeHead(200, { 'Content-Type': 'application/json' });
-  res.end(JSON.stringify({
-    bytes: data.length
-  }));
-  return;
+    res.writeHead(200, { 'Content-Type': 'application/json' });
+    res.end(JSON.stringify({
+        bytes: data.length
+    }));
+    return;
 }
 ```
 
@@ -56,14 +56,14 @@ curl -X POST http://localhost:3000/upload -H "Content-Type: application/octet-st
 
 ```js
 if (req.method === 'GET' && url.pathname === '/download') {
-  const data = Buffer.from('Hello as bytes');
+    const data = Buffer.from('Hello as bytes');
 
-  res.writeHead(200, {
-    'Content-Type': 'application/octet-stream',
-    'Content-Disposition': 'attachment; filename="hello.bin"'
-  });
-  res.end(data);
-  return;
+    res.writeHead(200, {
+        'Content-Type': 'application/octet-stream',
+        'Content-Disposition': 'attachment; filename="hello.bin"'
+    });
+    res.end(data);
+    return;
 }
 ```
 
@@ -75,9 +75,9 @@ Use `fs.createReadStream()` for real files, so Node.js does not need to load the
 import fs from 'node:fs';
 
 if (req.method === 'GET' && url.pathname === '/image') {
-  res.writeHead(200, { 'Content-Type': 'image/png' });
-  fs.createReadStream('./public/image.png').pipe(res);
-  return;
+    res.writeHead(200, { 'Content-Type': 'image/png' });
+    fs.createReadStream('./public/image.png').pipe(res);
+    return;
 }
 ```
 
@@ -88,54 +88,54 @@ import fs from 'node:fs';
 import http from 'node:http';
 
 function readBinaryBody(req) {
-  return new Promise((resolve, reject) => {
-    const chunks = [];
+    return new Promise((resolve, reject) => {
+        const chunks = [];
 
-    req.on('data', (chunk) => {
-      chunks.push(chunk);
+        req.on('data', (chunk) => {
+            chunks.push(chunk);
+        });
+
+        req.on('end', () => {
+            resolve(Buffer.concat(chunks));
+        });
+
+        req.on('error', reject);
     });
-
-    req.on('end', () => {
-      resolve(Buffer.concat(chunks));
-    });
-
-    req.on('error', reject);
-  });
 }
 
 const server = http.createServer(async (req, res) => {
-  const url = new URL(req.url, 'http://localhost');
+    const url = new URL(req.url, 'http://localhost');
 
-  if (req.method === 'POST' && url.pathname === '/upload') {
-    const data = await readBinaryBody(req);
+    if (req.method === 'POST' && url.pathname === '/upload') {
+        const data = await readBinaryBody(req);
 
-    res.writeHead(200, { 'Content-Type': 'application/json' });
-    res.end(JSON.stringify({ bytes: data.length }));
-    return;
-  }
+        res.writeHead(200, { 'Content-Type': 'application/json' });
+        res.end(JSON.stringify({ bytes: data.length }));
+        return;
+    }
 
-  if (req.method === 'GET' && url.pathname === '/download') {
-    const data = Buffer.from('Hello as bytes');
+    if (req.method === 'GET' && url.pathname === '/download') {
+        const data = Buffer.from('Hello as bytes');
 
-    res.writeHead(200, {
-      'Content-Type': 'application/octet-stream',
-      'Content-Disposition': 'attachment; filename="hello.bin"'
-    });
-    res.end(data);
-    return;
-  }
+        res.writeHead(200, {
+            'Content-Type': 'application/octet-stream',
+            'Content-Disposition': 'attachment; filename="hello.bin"'
+        });
+        res.end(data);
+        return;
+    }
 
-  if (req.method === 'GET' && url.pathname === '/image') {
-    res.writeHead(200, { 'Content-Type': 'image/png' });
-    fs.createReadStream('./public/image.png').pipe(res);
-    return;
-  }
+    if (req.method === 'GET' && url.pathname === '/image') {
+        res.writeHead(200, { 'Content-Type': 'image/png' });
+        fs.createReadStream('./public/image.png').pipe(res);
+        return;
+    }
 
-  res.writeHead(404, { 'Content-Type': 'text/plain' });
-  res.end('Not found');
+    res.writeHead(404, { 'Content-Type': 'text/plain' });
+    res.end('Not found');
 });
 
 server.listen(3000, () => {
-  console.log('Server is running at http://localhost:3000');
+    console.log('Server is running at http://localhost:3000');
 });
 ```

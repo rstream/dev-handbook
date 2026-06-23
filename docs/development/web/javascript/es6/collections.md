@@ -36,7 +36,7 @@ Iterate entries:
 
 ```js
 for (const [id, user] of usersById) {
-  console.log(id, user.name);
+    console.log(id, user.name);
 }
 ```
 

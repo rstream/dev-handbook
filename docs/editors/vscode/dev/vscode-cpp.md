@@ -167,24 +167,24 @@ To make VS Code understand Qt - add Qt library headers to **includePath**:
 
 ```json
 {
-  "configurations": [
-    {
-      "name": "Linux",
-      "includePath": [
-        "${workspaceFolder}/**",
-        "/usr/include/qt6",
-        "/usr/include/qt6/QtWidgets",
-        "/usr/include/qt6/QtGui",
-        "/usr/include/qt6/QtCore"
-      ],
-      "defines": [],
-      "compilerPath": "/usr/bin/clang",
-      "cStandard": "c17",
-      "cppStandard": "c++17",
-      "intelliSenseMode": "linux-gcc-x64"
-    }
-  ],
-  "version": 4
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/include/qt6",
+                "/usr/include/qt6/QtWidgets",
+                "/usr/include/qt6/QtGui",
+                "/usr/include/qt6/QtCore"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
 }
 ```
 

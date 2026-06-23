@@ -97,14 +97,14 @@ File system operations can fail.
 import { readFile } from 'node:fs/promises';
 
 try {
-  const text = await readFile('missing.txt', 'utf8');
-  console.log(text);
+    const text = await readFile('missing.txt', 'utf8');
+    console.log(text);
 } catch (error) {
-  if (error.code === 'ENOENT') {
-    console.log('File does not exist');
-  } else {
-    throw error;
-  }
+    if (error.code === 'ENOENT') {
+        console.log('File does not exist');
+    } else {
+        throw error;
+    }
 }
 ```
 

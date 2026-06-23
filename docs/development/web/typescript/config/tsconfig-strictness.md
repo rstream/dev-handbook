@@ -6,9 +6,9 @@
 
 ```json
 {
-  "compilerOptions": {
-    "strict": true
-  }
+    "compilerOptions": {
+        "strict": true
+    }
 }
 ```
 
@@ -16,8 +16,8 @@
 
 ```ts
 function greet(name: string | null) {
-  return name.toUpperCase();
-  // error: name can be null
+    return name.toUpperCase();
+    // error: name can be null
 }
 ```
 
@@ -25,7 +25,7 @@ Fix by narrowing:
 
 ```ts
 function greet(name: string | null) {
-  return name ? name.toUpperCase() : "Guest";
+    return name ? name.toUpperCase() : "Guest";
 }
 ```
 
@@ -33,11 +33,11 @@ function greet(name: string | null) {
 
 ```json
 {
-  "compilerOptions": {
-    "noUncheckedIndexedAccess": true,
-    "exactOptionalPropertyTypes": true,
-    "noImplicitOverride": true
-  }
+    "compilerOptions": {
+        "noUncheckedIndexedAccess": true,
+        "exactOptionalPropertyTypes": true,
+        "noImplicitOverride": true
+    }
 }
 ```
 

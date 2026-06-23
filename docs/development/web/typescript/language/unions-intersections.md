@@ -16,11 +16,11 @@ let status: Status = "idle";
 
 ```ts
 type User = {
-  id: number;
+    id: number;
 };
 
 type WithName = {
-  name: string;
+    name: string;
 };
 
 type NamedUser = User & WithName;
@@ -32,15 +32,15 @@ type NamedUser = User & WithName;
 
 ```ts
 type Result =
-  | { ok: true; value: string }
-  | { ok: false; error: string };
+    | { ok: true; value: string }
+    | { ok: false; error: string };
 
 function show(result: Result) {
-  if (result.ok) {
-    return result.value;
-  }
+    if (result.ok) {
+        return result.value;
+    }
 
-  return result.error;
+    return result.error;
 }
 ```
 
@@ -49,6 +49,6 @@ Use a literal field to choose the correct branch.
 This type means the same (first "|" is just a formatting trick):
 ```ts
 type Result =
-  { ok: true; value: string }
-  | { ok: false; error: string };
+    { ok: true; value: string }
+    | { ok: false; error: string };
 ```

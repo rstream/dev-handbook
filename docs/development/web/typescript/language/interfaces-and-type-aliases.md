@@ -8,8 +8,8 @@ Both describe shapes.
 
 ```ts
 type User = {
-  id: number;
-  name: string;
+    id: number;
+    name: string;
 };
 ```
 
@@ -28,9 +28,9 @@ Used for object shapes, classes, and APIs that may be extended.
 
 ```ts
 interface User {
-  id: number;
-  name: string;
-  greet(): string;
+    id: number;
+    name: string;
+    greet(): string;
 }
 ```
 
@@ -38,12 +38,12 @@ interface User {
 
 ```ts
 interface Scores {
-  [name: string]: number;
+    [name: string]: number;
 }
 
 const scores: Scores = {
-  alice: 10,
-  bob: 8,
+    alice: 10,
+    bob: 8,
 };
 ```
 
@@ -51,11 +51,11 @@ const scores: Scores = {
 
 ```ts
 interface FormatName {
-  (firstName: string, lastName: string): string;
+    (firstName: string, lastName: string): string;
 }
 
 const formatName: FormatName = (firstName, lastName) => {
-  return `${firstName} ${lastName}`;
+    return `${firstName} ${lastName}`;
 };
 ```
 
@@ -63,7 +63,7 @@ const formatName: FormatName = (firstName, lastName) => {
 
 ```ts
 interface Admin extends User {
-  permissions: string[];
+    permissions: string[];
 }
 ```
 
@@ -71,7 +71,7 @@ With type aliases:
 
 ```ts
 type Admin = User & {
-  permissions: string[];
+    permissions: string[];
 };
 ```
 
@@ -81,7 +81,7 @@ Interfaces with the same name merge.
 
 ```ts
 interface Window {
-  appVersion: string;
+    appVersion: string;
 }
 ```
 

@@ -23,7 +23,7 @@ Add annotations at boundaries: function params, public APIs, parsed data, shared
 
 ```ts
 function formatPrice(value: number): string {
-  return `$${value.toFixed(2)}`;
+    return `$${value.toFixed(2)}`;
 }
 ```
 

@@ -76,9 +76,9 @@ Example:
 
 ```json
 {
-  "dependencies": {
-    "express": "^5.1.0"
-  }
+    "dependencies": {
+        "express": "^5.1.0"
+    }
 }
 ```
 
@@ -92,10 +92,10 @@ Example:
 
 ```json
 {
-  "devDependencies": {
-    "eslint": "^9.0.0",
-    "vite": "^6.0.0"
-  }
+    "devDependencies": {
+        "eslint": "^9.0.0",
+        "vite": "^6.0.0"
+    }
 }
 ```
 
@@ -123,11 +123,11 @@ Example:
 
 ```json
 {
-  "scripts": {
-    "dev": "vite",
-    "test": "vitest",
-    "start": "node server.js"
-  }
+    "scripts": {
+        "dev": "vite",
+        "test": "vitest",
+        "start": "node server.js"
+    }
 }
 ```
 
@@ -152,7 +152,7 @@ Use `"module"` for ES modules:
 
 ```json
 {
-  "type": "module"
+    "type": "module"
 }
 ```
 

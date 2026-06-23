@@ -8,11 +8,11 @@
 
 ```json
 {
-  "extends": "./tsconfig.base.json",
-  "compilerOptions": {
-    "noEmit": true
-  },
-  "include": ["src"]
+    "extends": "./tsconfig.base.json",
+    "compilerOptions": {
+        "noEmit": true
+    },
+    "include": ["src"]
 }
 ```
 
@@ -22,19 +22,19 @@
 
 ```json
 {
-  "compilerOptions": {
-    "strict": true,
-    "target": "ES2022"
-  }
+    "compilerOptions": {
+        "strict": true,
+        "target": "ES2022"
+    }
 }
 ```
 
 ```json
 {
-  "extends": "./tsconfig.base.json",
-  "compilerOptions": {
-    "target": "ES2020"
-  }
+    "extends": "./tsconfig.base.json",
+    "compilerOptions": {
+        "target": "ES2020"
+    }
 }
 ```
 
@@ -46,8 +46,8 @@ Top-level `files`, `include`, `exclude`, and `references` are replaced, not merg
 
 ```json
 {
-  "extends": "./tsconfig.base.json",
-  "include": ["src"]
+    "extends": "./tsconfig.base.json",
+    "include": ["src"]
 }
 ```
 
@@ -59,9 +59,9 @@ Relative paths are resolved relative to the config where they are written.
 
 ```json
 {
-  "compilerOptions": {
-    "typeRoots": ["./types"]
-  }
+    "compilerOptions": {
+        "typeRoots": ["./types"]
+    }
 }
 ```
 

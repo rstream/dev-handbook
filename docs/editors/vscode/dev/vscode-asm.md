@@ -35,24 +35,24 @@ Use this config to make the extension produce `*.com` files.
 
 ```json
 {
-  "masmtasm.ASM.actions": {
-    "TASM-com": {
-      "baseBundle": "<built-in>/TASM.jsdos",
-      "before": [
-        "PATH %PATH%;C:\\TASM"
-      ],
-      "run": [
-        "TASM ${file}",
-        "TLINK /t ${filename}",
-        "${filename}"
-      ],
-      "debug": [
-        "TASM /zi ${file}",
-        "TLINK /t/v/3 ${filename}.obj",
-        "TD ${filename}.exe"
-      ]
-    }
-  },
-  "masmtasm.ASM.assembler": "TASM-com"
+    "masmtasm.ASM.actions": {
+        "TASM-com": {
+            "baseBundle": "<built-in>/TASM.jsdos",
+            "before": [
+                "PATH %PATH%;C:\\TASM"
+            ],
+            "run": [
+                "TASM ${file}",
+                "TLINK /t ${filename}",
+                "${filename}"
+            ],
+            "debug": [
+                "TASM /zi ${file}",
+                "TLINK /t/v/3 ${filename}.obj",
+                "TD ${filename}.exe"
+            ]
+        }
+    },
+    "masmtasm.ASM.assembler": "TASM-com"
 }
 ```
