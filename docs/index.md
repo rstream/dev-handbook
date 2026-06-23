@@ -49,6 +49,10 @@ Setup and tweaks of popular (my favorite) code editors.
 [Linux](operating-systems/linux/index.md) - Linux installation, setup, apps  
 [Windows](operating-systems/windows/index.md) - Windows apps and tricks
 
+## AI
+
+[Ollama](ai/ollama/index.md) - Ollama LLM runtime   
+
 <br>
 <b>...and other things you are not using so often to keep in your RAM :)</b>
 
