@@ -30,6 +30,20 @@ stream.on('end', () => {
 });
 ```
 
+### Set chunk size
+
+```js
+import fs from 'node:fs';
+
+const stream = fs.createReadStream('large-file.txt', {
+    encoding: 'utf8',
+    highWaterMark: 8192 // default is 65536
+});
+```
+
+`highWaterMark` is set in bytes, not chars.
+
+
 ## Write stream
 
 ```js
@@ -47,6 +61,7 @@ stream.end();
 ## Pipe streams
 
 Use `pipe()` to send data from a readable stream to a writable stream.
+> Note: `encoding` is not set - using `Buffer` chunks. This is a preferred format for copying files.
 
 ```js
 import fs from 'node:fs';

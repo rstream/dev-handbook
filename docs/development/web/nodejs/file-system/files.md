@@ -32,8 +32,7 @@ import { readFile } from 'node:fs/promises';
 
 const data = await readFile('image.png');
 
-console.log(data.length);
-// size in bytes
+console.log(data.length); // size in bytes
 ```
 
 ## Write file
