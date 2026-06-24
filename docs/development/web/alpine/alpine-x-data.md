@@ -4,7 +4,12 @@
 
 The `x-data` directive defines an Alpine component and its reactive state.
 Properties and methods declared in `x-data` are available to the element and
-its descendants:
+its descendants.
+
+The state can be declared inline, returned from a function, or provided by a
+reusable component registered with `Alpine.data`.
+
+## Inline x-data
 
 ```html
 <div x-data="{ count: 0 }">
@@ -13,8 +18,27 @@ its descendants:
 </div>
 ```
 
-The state can be declared inline or provided by a reusable component registered
-with `Alpine.data`:
+## x-data from a function
+
+```html
+<div x-data="counter()">
+    <button @click="increment()">Increment</button>
+    <span x-text="count"></span>
+</div>
+
+<script>
+    function counter() {
+        return {
+            count: 0,
+            increment() {
+                this.count++
+            },
+        }
+    }
+</script>
+```
+
+## x-data from Alpine.data
 
 ```html
 <div x-data="counter">
