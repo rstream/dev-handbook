@@ -24,6 +24,18 @@ Open settings `Alt + Ctrl + ,`, add a tab size key:
 }
 ```
 
+## Disable trailing comma
+
+Open settings `Alt + Ctrl + ,`, add a prettier setting:
+```json
+{
+    "prettier": {
+        "trailingComma": "none"
+    }
+}
+```
+
+
 ## Key bindings
 
 To edit key bindings - go to menu `Zed > Open Key Map`.
