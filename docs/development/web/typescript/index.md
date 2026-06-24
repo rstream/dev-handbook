@@ -6,6 +6,7 @@ TypeScript is JavaScript with static types. This section skips JavaScript basics
 
 ## Project setup
 
+[Packages](setup/packages.md) - working minimum for installing TypeScript in a project  
 [tsconfig basics](config/tsconfig-basics.md) - purpose of `tsconfig.json`, `tsc`, `noEmit`, `include`, `exclude`  
 [Config file scope](config/tsconfig-files-scope.md) - which files belong to a project and how TypeScript finds configs  
 [Extends and merging](config/tsconfig-extends-merge.md) - how `extends` works, what is replaced, what is inherited  
