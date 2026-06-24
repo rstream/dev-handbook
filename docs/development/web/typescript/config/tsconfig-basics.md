@@ -14,19 +14,28 @@ npx tsc --project tsconfig.app.json
 
 `--noEmit` checks types without writing JS output.
 
-## Minimal config
+## Basic config
 
 ```json
 {
   "compilerOptions": {
     "target": "ES2022",
-    "module": "ESNext",
-    "strict": true,
-    "noEmit": true
+    "module": "ES2020",
+    "rootDir": "./src",
+    "outDir": "./dist"
   },
   "include": ["src"]
 }
 ```
+
+Key fields:
+
+- `compilerOptions` - TypeScript compiler settings.
+- `target` - JavaScript language version emitted by the compiler.
+- `module` - JavaScript module format for emitted files.
+- `rootDir` - root folder used for building output paths.
+- `outDir` - folder where compiled files are written.
+- `include` - files to be compiled by TSC.
 
 ## Files included
 
