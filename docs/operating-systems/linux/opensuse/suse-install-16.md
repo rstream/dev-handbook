@@ -1,0 +1,91 @@
+# OpenSUSE - installation
+
+[← back](index.md)
+
+## Download and prepare media
+
+You can download openSUSE ISO from the official site:  
+https://get.opensuse.org/desktop/
+
+Use **Rufus** (https://rufus.ie/) to write ISO file on the flash drive:
+* Partition scheme = MBR
+* Target system = BIOS or UEFI
+* Other setting = default
+
+## Installation
+
+Boot from the installation disk and choose installation option (`Install Leap 16.0 (x86_674)`).  
+Unlike v15.6 - you will get into a Firefox-based installer.
+
+Choose regular installation (`Leap 16.0`) instead of micro (`openSUSE Leap Micro 6.2`).
+
+The installation UI have several sections on the left side:
+* Overview - overview of the current setup
+* Hostname - change the name of PC
+* Localization - language, keyboard & time zone
+* Network - set up network connection
+* Storage - set up disk partitions
+* Software - desktop selection and additional software
+* Authentication
+
+### Host name
+
+Set the checkbox "Use static hostname" and create a name for your PC.
+
+### Storage
+
+Installer will suggest a default disk layout (EFI, Btrfs root, 2Gb swap).
+
+To set custom disk layout:
+* **Details**: click `New partitions will be created fpr "/" and "swap"`.
+* Remove all existing planned partitions
+* Create new partitions
+
+#### Disk layout
+
+Partitions setting:
+* **EFI Boot Partition** (small boot partition)
+    * file system: `FAT`
+    * size: `500 Mb` (enough)
+    * mount: `/boot/efi`
+* **Operating System** (for the system)
+    * file system: `Ext4`
+    * size: `80 Gb`
+    * mount: `/`
+* **Swap** (special partition for Swap)
+    * file system: `Swap`
+    * size:
+      * auto (recommended for most cases) - will make a 1-2 Gb swap
+      * as RAM, like `16 Gb` (if using hybernation or running heavy RAM-consuming apps)
+    * mount: `swap`
+
+> Note: due to the existing issue in the Agama installer you cannot create partitions with custom mount points during the installation. Leave empty space and create those partitions later.
+
+These partitions can be created only after the installation:
+
+* **Data and ISV Applications** (fast partition for your work)
+    * file system: `Ext4`
+    * size: `128 Gb` (how much do you need for development?)
+    * mount: `/data`
+* **Data and ISV Applications** (big partition for media files and backups)
+    * file system: `XFS`
+    * size: `730 Gb` (the rest of space)
+    * mount: `/stuff`
+
+Notes:
+* Don't mount any partition as `/home` - let's keep home directory on the system partition for easy system backups
+* Ext4 is faster with small file - good for system and dev
+* XFS is better with large files - choose it for media
+
+### Software
+
+By default, no desktop is selected (you will get simple text-based UI).
+
+To select a desktop:
+* Click "Change selection"
+* Choose a desktop, like "KDE Applications and Plasma Desktop" (some other items would be auto-selected)
+
+### Final steps
+
+1. Check once again **Overview** section.
+2. Click `Install` at the to-right corner.
