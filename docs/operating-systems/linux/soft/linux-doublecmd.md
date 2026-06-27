@@ -8,21 +8,37 @@
 
 ### openSUSE
 
-On 15.6 it was available in standard repository:
-```sh
-sudo zypper install doublecmd-qt6
-```
+#### OPI
 
-On 16.0 it's no longer available, and you have to use [OPI](../opensuse/suse-opi.md):
+Use on openSUSE 16.0+
 ```sh
 opi doublecmd
 ```
 
-`doublecmd-gtk` is the usual package for GTK-based desktops. Some distributions also provide a Qt build such as `doublecmd-qt`.
+#### Manually
+
+Use on openSUSE 15.6-
+```sh
+# add the repository
+zypper addrepo https://download.opensuse.org/repositories/home:Alexx2000/openSUSE_Leap_15.5/home:Alexx2000.repo
+# refresh the repository
+zypper refresh
+# install the package
+zypper install doublecmd-qt6
+```
+
+## Configuration
+
+To restore the color theme, use this asset:
+[colors.json](assets/doublecmd/colors.json).
+
+Copy it to `~/.config/doublecmd/`.
 
 ## Run as root
 
-If you still need to start it as `root`, use:
+### Start Double Commander
+
+If you need to start it as `root`, use:
 
 ```sh
 kdesu doublecmd
@@ -30,7 +46,7 @@ kdesu doublecmd
 
 > Note: when started as `root`, `Double Commander` uses root's own config directory, not your normal user profile
 
-## Copy user settings to root
+## Copy settings from your user to root
 
 User settings are usually stored here:
 
@@ -51,7 +67,7 @@ sudo mkdir -p /root/.config
 sudo cp -a ~/.config/doublecmd /root/.config/
 ```
 
-If the root config already exists and you want to replace it with your user config:
+If the root config already exists, and you want to replace it with your user config:
 
 ```sh
 sudo rm -rf /root/.config/doublecmd
