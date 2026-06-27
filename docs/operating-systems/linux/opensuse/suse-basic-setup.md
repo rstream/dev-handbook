@@ -18,3 +18,14 @@ Make minimize/maximize/close buttons large and square:
 `Start > System > System Settings > Colors & Themes > Window Decorations`
 
 Choose "Plastik".
+
+## Codecs
+
+New recommended way to install codecs - using OPI (OBS Package Installer).
+
+```bash
+sudo zypper install opi
+opi codecs
+```
+
+This command will add Packman repository and install codecs from there.
