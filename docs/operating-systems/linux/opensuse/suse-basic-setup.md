@@ -29,3 +29,13 @@ opi codecs
 ```
 
 This command will add Packman repository and install codecs from there.
+
+## Terminal font
+
+To set up font size for Konsole:
+
+* Go to `Settings > Configure Konsole...`
+* In the `Profiles` section create a new profile
+* Mark it as default
+* Edit the new profile
+* On the `Appearance` section set the font size
