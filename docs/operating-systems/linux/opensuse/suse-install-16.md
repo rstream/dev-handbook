@@ -15,13 +15,13 @@ Use **Rufus** (https://rufus.ie/) to write ISO file on the flash drive:
 ## Installation
 
 Boot from the installation disk and choose installation option (`Install Leap 16.0 (x86_674)`).  
-Unlike v15.6 - you will get into a Firefox-based installer.
+Unlike v15.6 - you will get into the Agama installer (Firefox-based).
 
 Choose regular installation (`Leap 16.0`) instead of micro (`openSUSE Leap Micro 6.2`).
 
-The installation UI have several sections on the left side:
+The installation UI has several sections on the left side:
 * Overview - overview of the current setup
-* Hostname - change the name of PC
+* Hostname - change the name of the PC
 * Localization - language, keyboard & time zone
 * Network - set up network connection
 * Storage - set up disk partitions
@@ -36,12 +36,16 @@ Set the checkbox "Use static hostname" and create a name for your PC.
 
 Installer will suggest a default disk layout (EFI, Btrfs root, 2Gb swap).
 
-To set custom disk layout:
-* **Details**: click `New partitions will be created fpr "/" and "swap"`.
+To set up a custom disk layout:
+* **Details**: click `New partitions will be created for "/" and "swap"`.
 * Remove all existing planned partitions
 * Create new partitions
 
+> Note: due to the existing issue with the Agama installer you cannot create partitions with custom mount points during the installation (you can create only `/boot/efi`, `/`, `swap` and `/home`). Leave empty space and create those partitions later.
+
 #### Disk layout
+
+> Note: you don't have to create EFI partition - it would be created automatically once you create `/`.
 
 Partitions setting:
 * **EFI Boot Partition** (small boot partition)
@@ -59,8 +63,6 @@ Partitions setting:
       * as RAM, like `16 Gb` (if using hybernation or running heavy RAM-consuming apps)
     * mount: `swap`
 
-> Note: due to the existing issue in the Agama installer you cannot create partitions with custom mount points during the installation. Leave empty space and create those partitions later.
-
 These partitions can be created only after the installation:
 
 * **Data and ISV Applications** (fast partition for your work)
@@ -77,6 +79,10 @@ Notes:
 * Ext4 is faster with small file - good for system and dev
 * XFS is better with large files - choose it for media
 
+#### Encryption
+
+If this is a laptop for travels - it's a good idea to enable disk encryption. On modern laptops with hardware AES support it will not reduce the performance.
+
 ### Software
 
 By default, no desktop is selected (you will get simple text-based UI).
@@ -84,6 +90,18 @@ By default, no desktop is selected (you will get simple text-based UI).
 To select a desktop:
 * Click "Change selection"
 * Choose a desktop, like "KDE Applications and Plasma Desktop" (some other items would be auto-selected)
+
+### Authentication
+
+#### First user
+
+To create a user click **Define a user now** and enter username, login and password.
+
+> Note: this user would be added to the `wheel` group: for all `sudo` operations you will have to enter this user's password (not root password).
+
+#### Root user
+
+Also, you can define a password for root user: click `edit` in the **Root user** section and define a password.
 
 ### Final steps
 
