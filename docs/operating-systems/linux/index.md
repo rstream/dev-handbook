@@ -24,6 +24,7 @@ I'm an openSUSE user, so most information is related to this OS (like usage of `
 ## Software on Linux
 
 [Double Commander](soft/linux-doublecmd.md) - Double Commander file manager  
+[Chrome](soft/linux-chrome.md) - Google Chrome browser  
 
 ## Development tools
 
