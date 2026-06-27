@@ -8,8 +8,14 @@
 
 ### openSUSE
 
+On 15.6 it was available in standard repository:
 ```sh
 sudo zypper install doublecmd-qt6
+```
+
+On 16.0 it's no longer available, and you have to use [OPI](../opensuse/suse-opi.md):
+```sh
+opi doublecmd
 ```
 
 `doublecmd-gtk` is the usual package for GTK-based desktops. Some distributions also provide a Qt build such as `doublecmd-qt`.
