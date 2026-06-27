@@ -21,10 +21,9 @@ Choose "Plastik".
 
 ## Codecs
 
-New recommended way to install codecs - using OPI (OBS Package Installer).
+New recommended way to install codecs - using [OPI](suse-opi.md) (OBS Package Installer).
 
 ```bash
-sudo zypper install opi
 opi codecs
 ```
 
