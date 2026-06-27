@@ -107,3 +107,21 @@ Also, you can define a password for root user: click `edit` in the **Root user**
 
 1. Check once again **Overview** section.
 2. Click `Install` at the to-right corner.
+
+## Post-install actions
+
+### Create a partition for personal data
+
+In openSUSE 16 you have to do it manually after the installation.
+
+Use [Cockpit](suse-cockpit.md) to create new partition:
+
+Enter Cockpit:
+```
+https://localhost:9090
+```
+* Navigate to the `Storage` section
+* Select you disk drive
+* Click three dots to the right of the `Free space` > `Create partition`
+* Set file system type, size, mount point
+* Enable encryption (`LUKS2` is recommended). set "Store passphrase" so the partition would be mounted at login without need to enter the passphrase
