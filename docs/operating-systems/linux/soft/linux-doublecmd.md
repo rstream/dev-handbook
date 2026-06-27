@@ -29,10 +29,39 @@ zypper install doublecmd-qt6
 
 ## Configuration
 
-To restore the color theme, use this asset:
+### Configuration file
+
+Configuration file is located at `~/.config/doublecmd/doublecmd.xml`.
+
+To restore my configuration, use this asset:
+[doublecmd.xml](assets/doublecmd/doublecmd.xml).
+
+
+### Color theme
+
+Color theme is located at `~/.config/doublecmd/colors.json`.
+
+To restore my color theme, use this asset:
 [colors.json](assets/doublecmd/colors.json).
 
-Copy it to `~/.config/doublecmd/`.
+### Enable natural sorting (file panels):
+
+Navigate to: `Configuration > Options > File View`  
+Sort Method = `Natural sorting: special characters sort`  
+Sort directories = `sort by name and show first`
+
+### Space move selection down
+
+Edit `~/.config/doublecmd/doublecmd.xml` and add this line:
+```
+<SpaceMovesDown>True</SpaceMovesDown>
+```
+to the `<Miscellaneous>` section.
+
+### Rename files: don’t touch extension
+
+Navigate to: `Configuration > Options > File Operations`  
+[x] select file name without extension when renaming
 
 ## Run as root
 
