@@ -28,6 +28,7 @@ I'm an openSUSE user, so most information is related to this OS (like usage of `
 [Telegram](soft/linux-telegram.md) - Telegram messenger  
 [Viber](soft/linux-viber.md) - Viber messenger  
 [qBittorrent](soft/linux-qbittorrent.md) - qBittorrent torrent client  
+[Webcam software](soft/linux-webcam.md) - software for webcam usage  
 
 ## Development tools
 
