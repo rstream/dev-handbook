@@ -30,6 +30,7 @@ I'm an openSUSE user, so most information is related to this OS (like usage of `
 
 ## Development tools
 
+[Git](dev/linux-git.md) - install Git for Linux  
 [C++ compilers](dev/linux-cpp.md) - install C++ compilers for Linux  
 [Java dev tools](dev/linux-java.md) - install JDK for Linux  
 [Codex](dev/linux-codex.md) - install Codex for Linux  
