@@ -27,6 +27,7 @@ I'm an openSUSE user, so most information is related to this OS (like usage of `
 [Chrome](soft/linux-chrome.md) - Google Chrome browser  
 [Telegram](soft/linux-telegram.md) - Telegram messenger  
 [Viber](soft/linux-viber.md) - Viber messenger  
+[qBittorrent](soft/linux-qbittorrent.md) - qBittorrent torrent client  
 
 ## Development tools
 
