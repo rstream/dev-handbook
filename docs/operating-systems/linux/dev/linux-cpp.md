@@ -13,27 +13,45 @@ Check for the available versions:
 ```sh
 zypper info gcc??
 ```
-Install the latest GCC/G++ from the official repo (let's say it's **v15**):
 
+Install the latest GCC/G++ from the official repo:
 ```sh
-sudo zypper install gcc15
-sudo zypper install gcc15-c++
+sudo zypper install gcc gcc-c++
 ```
+
+On openSUSE 16 there's an issue: on fresh system installation the `cpp15` library version is `15.3` but GCC/G++ has only `15.2` on board.
+
+> Solution: choose **"downgrade to 15.2"** during the installation.
 
 ### Create symlinks
 
-To use short commands `gcc` and `g++` (instead of `gcc-15`/`g++-15`) - create symlinks for the latest versions.
+There's a chance that `gcc`/`g++` commands are not available or pointing to the wrong (older) versions. In this case you need to create symlinks to the new installed versions of GCC / G++.
+How to check:
+```bash
+ls -l "$(which gcc)"
+ls -l "$(which g++)"
+```
 
-Good way to create a synlink (via `update-alternatives`):
+If outputs are pointing to the new versions (let's say - `15`) - you are good:
+```
+lrwxrwxrwx. 1 root root 6 Mar 12  2025 /usr/bin/gcc -> gcc-15
+lrwxrwxrwx. 1 root root 6 Mar 12  2025 /usr/bin/g++ -> g++-15
+```
+
+If `gcc`/`g++` are not available or pointing to the older versions - you need to create symlinks.
+
+#### update-alternatives
+
+Good way to create a symlink (via `update-alternatives`):
 ```sh
-sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-14 100
+sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-15 100
 ```
 
 Command description:
 
 * `/usr/bin/g++` - path to "common" binary
 * `g++` - group name (for switching between versions)
-* `/usr/bin/g++-14` - path to real binary
+* `/usr/bin/g++-15` - path to real binary
 * `100` - priority
 
 To check all versions:  
@@ -42,11 +60,13 @@ To check all versions:
 sudo update-alternatives --display g++
 ```
 
-Raw way for symlink creation:
+#### Manual way
+
+Manual way for symlink creation:
 
 ```sh
-sudo ln -s /usr/bin/gcc-14 /usr/bin/gcc
-sudo ln -s /usr/bin/g++-14 /usr/bin/g++
+sudo ln -s /usr/bin/gcc-15 /usr/bin/gcc
+sudo ln -s /usr/bin/g++-15 /usr/bin/g++
 ```
 
 ## Clang
@@ -56,9 +76,9 @@ Also it is required for [Kate](../../../editors/kate/index.md) to work with C++.
 
 To install run:
 ```sh
-sudo zypper install clang
-sudo zypper install lldb
+sudo zypper install clang lldb
 ```
+
 This would install:
 * `clang` - the compiler itself
 * `clangd` - LSP server
