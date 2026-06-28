@@ -30,6 +30,7 @@ I'm an openSUSE user, so most information is related to this OS (like usage of `
 [qBittorrent](soft/linux-qbittorrent.md) - qBittorrent torrent client  
 [Webcam software](soft/linux-webcam.md) - software for webcam usage  
 [Gimp](soft/linux-gimp.md) - Gimp image editor  
+[Midnight Commander](soft/linux-mc.md) - Midnight Commander console file manager  
 
 ## Development tools
 
