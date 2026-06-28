@@ -28,7 +28,7 @@ settings.
 Set the name and email that Git will write to new commits:
 
 ```bash
-git config --global user.name "Your Name"
+git config --global user.name "John Doe"
 git config --global user.email "your_email@example.com"
 ```
 
@@ -53,16 +53,19 @@ git config --global init.defaultBranch main
 
 ## Default editor
 
-For Visual Studio Code:
-
+Nano:
 ```bash
-git config --global core.editor "code --wait"
-```
+git config --global core.editor "nano" 
+````
 
-For Vim:
-
+Vim:
 ```bash
 git config --global core.editor "vim"
+```
+
+Visual Studio Code:
+```bash
+git config --global core.editor "code --wait"
 ```
 
 ## Line endings
