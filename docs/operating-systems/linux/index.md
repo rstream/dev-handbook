@@ -35,4 +35,5 @@ I'm an openSUSE user, so most information is related to this OS (like usage of `
 [Codex](dev/linux-codex.md) - install Codex for Linux  
 [Qt 6](dev/linux-qt.md) - install Qt for Linux  
 [PHP](dev/linux-php.md) - install PHP for Linux  
-[SQL](dev/linux-sql.md) - install SQL for Linux
+[SQL](dev/linux-sql.md) - install SQL for Linux  
+[Node.js](dev/linux-node.md) - Install Node.js for Linux  
