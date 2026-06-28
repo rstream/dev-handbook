@@ -25,7 +25,8 @@ I'm an openSUSE user, so most information is related to this OS (like usage of `
 
 [Double Commander](soft/linux-doublecmd.md) - Double Commander file manager  
 [Chrome](soft/linux-chrome.md) - Google Chrome browser  
-[Telegram](soft/linux-telegram.md) - Telegram messenger    
+[Telegram](soft/linux-telegram.md) - Telegram messenger  
+[Viber](soft/linux-viber.md) - Viber messenger  
 
 ## Development tools
 

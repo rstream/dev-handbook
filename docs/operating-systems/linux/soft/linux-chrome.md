@@ -4,7 +4,7 @@
 
 ## Install Chrome
 
-### Using OPI
+### Using [OPI](../opensuse/suse-opi.md)
 
 ```bash
 opi chrome
