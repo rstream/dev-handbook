@@ -65,3 +65,9 @@ To bind `Ctrl + S` (and unbind default key) create new binding via UI or add the
     }
 ]
 ```
+
+## "Open folder with..."
+
+To add Zed to the `Open folder with...` context menu of the file explorer:  
+* edit its `.desktop` file: `~/.local/share/applications/dev.zed.Zed.desktop`
+* add `inode/directory` to the `MimeType` (semicolon separated)
