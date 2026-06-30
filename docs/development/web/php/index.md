@@ -35,6 +35,7 @@
 
 ### Requests
 
+[\$_SERVER](requests/php-req-server.md) - request method, path, query string, and headers  
 [\$_GET](requests/php-req-get.md) - GET request parameters  
 [\$_POST](requests/php-req-post.md) - POST request parameters
 
