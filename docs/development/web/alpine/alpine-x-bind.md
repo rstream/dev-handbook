@@ -9,6 +9,8 @@ The `x-bind` directive sets an HTML attribute from an Alpine expression:
     Submit
 </button>
 ```
+For boolean attributes such as `disabled`, `checked`, and `required`, Alpine
+adds or removes the attribute according to the expression's value.
 
 The shorthand syntax is `:`:
 
@@ -25,5 +27,11 @@ It is commonly used to bind classes:
 ></div>
 ```
 
-For boolean attributes such as `disabled`, `checked`, and `required`, Alpine
-adds or removes the attribute according to the expression's value.
+or to put inline styles:
+
+```html
+<div
+    x-data="{ elemWidth: 30 }"
+    :style="{ width: elemWidth + '%' }"
+></div>
+```
