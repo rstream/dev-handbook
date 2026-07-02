@@ -9,6 +9,7 @@
 [x-text and x-html](alpine-content.md) - render text or HTML  
 [x-bind](alpine-x-bind.md) - bind attributes and classes  
 [x-model](alpine-x-model.md) - bind form controls  
+[x-ref](alpine-x-ref.md) - access DOM elements directly  
 [x-show and x-if](alpine-conditional-rendering.md) - conditionally display content  
 [x-for](alpine-x-for.md) - render lists  
 
