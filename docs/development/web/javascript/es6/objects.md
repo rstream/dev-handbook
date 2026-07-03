@@ -11,6 +11,8 @@ ES6 added shorter object syntax and easier ways to extract values.
 - [Computed property names](#computed-property-names) - dynamic keys
 - [Destructuring](#destructuring) - extract object and array values
 - [`Object.assign()`](#objectassign) - copy and merge object properties
+- [`Object.entries()`](#objectentries) - convert an object to key-value pairs
+- [`Object.fromEntries()`](#objectfromentries) - convert key-value pairs to an object
 
 ## Property shorthand
 
@@ -78,3 +80,54 @@ const admin = Object.assign({}, user, { role: 'admin' });
 ```
 
 Later properties override earlier ones.
+
+## Object.entries
+
+`Object.entries()` returns an array of `[key, value]` pairs.
+
+```js
+const user = {
+    name: 'Alice',
+    role: 'admin'
+};
+
+const entries = Object.entries(user);
+// [['name', 'Alice'], ['role', 'admin']]
+```
+
+It is useful when you need to iterate over both keys and values.
+
+```js
+for (const [key, value] of Object.entries(user)) {
+    console.log(`${key}: ${value}`);
+}
+```
+
+## Object.fromEntries
+
+`Object.fromEntries()` creates an object from key-value pairs.
+
+```js
+const entries = [
+    ['name', 'Alice'],
+    ['role', 'admin']
+];
+
+const user = Object.fromEntries(entries);
+// { name: 'Alice', role: 'admin' }
+```
+
+It works well with transformations.
+
+```js
+const prices = {
+    apple: 1,
+    banana: 2
+};
+
+const doubled = Object.fromEntries(
+    Object.entries(prices).map(([name, price]) => [name, price * 2])
+);
+
+// { apple: 2, banana: 4 }
+```
