@@ -1,4 +1,4 @@
-# Streamed text
+# AJAX: streamed response
 
 [← back](../index.md)
 
