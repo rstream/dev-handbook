@@ -8,8 +8,10 @@ Download default version of the `gemma4` model
 ```bash
 ollama pull gemma4
 ```
-* Note: to check which size is default - visit Ollama library:  
-https://ollama.com/library/gemma4
+
+Notes:
+* see the list of available models: https://ollama.com/library
+* check which size is default: https://ollama.com/library/gemma4
 
 Download `gemma4` in a specific size (`12B`):
 ```bash
