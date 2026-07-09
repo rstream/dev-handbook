@@ -11,6 +11,7 @@
 
 [HTTP server](server/http-server.md) - basic `http.createServer()` usage  
 [Text and JSON](server/http-text-json.md) - simple GET/POST requests with text and JSON  
+[Status codes](server/http-status-codes.md) - HTTP response status codes  
 [AJAX: streamed response](server/http-streamed-response.md) - response streamed reading  
 [AJAX: streamed request](server/http-streamed-request.md) - request streamed sending  
 [Binary data](server/http-binary.md) - receive and return binary data    
