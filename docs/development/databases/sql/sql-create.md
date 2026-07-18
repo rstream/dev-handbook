@@ -33,3 +33,25 @@ CREATE TABLE users (
 	reg_date TIMESTAMP DEFAULT NOW()
 );
 ```
+
+## Check if a table exists
+
+Use `information_schema.tables`:
+
+```sql
+SELECT table_name
+FROM information_schema.tables
+WHERE table_schema = 'public'
+	AND table_name = 'products';
+```
+
+If the query returns a row, the table exists.
+
+In PostgreSQL, you can also use `to_regclass()`:
+
+```sql
+SELECT to_regclass('public.products');
+```
+
+If the result is `public.products`, the table exists.
+If the result is `null`, the table does not exist.
