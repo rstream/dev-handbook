@@ -4,5 +4,11 @@
 
 Modern and fast rust-based code editor.
 
-[Installation](zed-install.md) - install Zed editor  
-[General setup](zed-general.md) - basic setup  
+## Installation and setup
+
+[Installation](setup/zed-install.md) - install Zed editor  
+[General setup](setup/zed-general.md) - basic setup  
+
+## Development usage
+
+[PHP development](dev/zed-php.md) - Set up editor for PHP development  

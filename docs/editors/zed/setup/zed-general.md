@@ -1,6 +1,6 @@
 # General
 
-[← back](index.md)
+[← back](../index.md)
 
 General setup for Zed.
 
