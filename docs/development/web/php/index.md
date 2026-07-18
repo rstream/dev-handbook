@@ -51,3 +51,4 @@
 [Simple query](db/php-psql-query.md) - simple query to PostgreSQL  
 [Query parameters](db/php-psql-params.md) - prepared statements with `execute()` and `bindParam()`  
 [Query results](db/php-psql-results.md) - `fetchAll()`, `fetch()`, `fetchColumn()`, and `rowCount()`  
+[Create database](db/php-psql-create-db.md) - check and create PostgreSQL database  
