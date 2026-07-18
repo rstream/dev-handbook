@@ -15,7 +15,8 @@
 
 ## Operations
 
-[Create](sql-create.md) - create a Table  
+[Create (database)](sql-create-db.md) - create Database  
+[Create (table)](sql-create.md) - create a Table  
 [Change](sql-change.md) - change a Table (add/update/delete lines)  
 [Alter](sql-alter.md) - change Tables (layout)  
 [Select](sql-select.md) - query data from a Table  
