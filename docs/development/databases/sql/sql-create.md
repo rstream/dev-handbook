@@ -15,6 +15,23 @@ CREATE TABLE products (
 );
 ```
 
+## Create table only if it does not exist
+
+Use `IF NOT EXISTS` when the script can be run more than once.
+
+```sql
+CREATE TABLE IF NOT EXISTS products (
+	id SERIAL PRIMARY KEY,
+	name TEXT NOT NULL,
+	description TEXT,
+	price NUMERIC(10,2) NOT NULL,
+	quantity INT NOT NULL,
+	added_on TIMESTAMP DEFAULT NOW()
+);
+```
+
+If the table already exists, PostgreSQL skips creation instead of returning an error.
+
 ## Table with joins
 
 ```sql
