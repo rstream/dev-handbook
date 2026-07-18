@@ -25,6 +25,7 @@
 [Arrays](common/php-arrays.md) - lists, associative arrays, and template data  
 [Value checks](common/php-value-checks.md) - `isset()`, `empty()`, `is_*()` checks  
 [Random values](common/php-random.md) - `random_int()`, `random_bytes()`, tokens  
+[Password hashes](common/php-password-hashes.md) - create and verify password hashes  
 [Debugging helpers](common/php-debugging.md) - `var_dump()`, `print_r()`, `error_log()`
 
 ### Templates
