@@ -52,6 +52,7 @@ Setup and tweaks of popular (my favorite) code editors.
 ## AI
 
 [Ollama](ai/ollama/index.md) - Ollama LLM runtime   
+[ChatGPT](ai/chatgpt/index.md) - ChatGPT desktop app
 
 <br>
 <b>...and other things you are not using so often to keep in your RAM :)</b>
