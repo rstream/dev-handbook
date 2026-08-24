@@ -14,8 +14,9 @@ In a `QHBoxLayout`, stretch factors and spacer items distribute horizontal space
 
 ## Summary
 
-- [Empty space controls](#empty-space-controls)
-- [How widget size is determined](#how-widget-size-is-determined)
+- [Empty space controls for layouts](#empty-space-controls-for-layouts)
+- [Widget size hints and constraints](#widget-size-hints-and-constraints)
+- [Widget size policy](#widget-size-policy)
 - [Space allocation between widgets](#space-allocation-between-widgets)
 - [Space allocation between child layouts](#space-allocation-between-child-layouts)
 - [Changing stretch factors](#changing-stretch-factors)
@@ -74,24 +75,81 @@ layout->addWidget(secondButton);
 layout->addStretch();    // expanding empty item after the buttons
 ```
 
-## How widget size is determined
+## Widget size hints and constraints
 
-The layout considers several properties of every widget:
+Before allocating space, the layout considers the widget's size hints and explicit constraints:
 
 * `minimumSize` and `minimumSizeHint()` limit how small it should become.
 * `sizeHint()` provides its preferred size.
 * `maximumSize` limits how large it can become.
-* `QSizePolicy` tells the layout whether the widget can shrink or expand horizontally and vertically.
-* A stretch factor determines its share of space relative to sibling items.
 
-For example, make a text editor expand while a button stays near its preferred size:
+These values are constraints and recommendations, not relative proportions. Stretch factors are applied together with them when the layout allocates the available area.
+
+## Widget size policy
+
+`QWidget::setSizePolicy()` tells a layout whether a widget can shrink or expand in each direction:
 
 ```cpp
-editor->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
+widget->setSizePolicy(horizontalPolicy, verticalPolicy);
+```
+
+* `horizontalPolicy` controls how the widget uses width.
+* `verticalPolicy` controls how the widget uses height.
+
+For example, allow an editor to grow horizontally while keeping its preferred height:
+
+```cpp
+editor->setSizePolicy(
+    QSizePolicy::Expanding, // horizontal: may grow and prefers extra width
+    QSizePolicy::Fixed      // vertical: keep the height from sizeHint()
+);
+```
+
+The main policies are:
+
+| Policy | Behavior relative to `sizeHint()` |
+|---|---|
+| `QSizePolicy::Fixed` | Does not grow or shrink |
+| `QSizePolicy::Minimum` | Uses `sizeHint()` as a minimum, but can grow |
+| `QSizePolicy::Maximum` | Can shrink, but does not grow beyond `sizeHint()` |
+| `QSizePolicy::Preferred` | Can shrink or grow; `sizeHint()` is the preferred size |
+| `QSizePolicy::Expanding` | Can shrink or grow and should receive available extra space |
+| `QSizePolicy::MinimumExpanding` | Uses `sizeHint()` as a minimum and should receive extra space |
+| `QSizePolicy::Ignored` | Can shrink or grow; the layout ignores `sizeHint()` |
+
+Explicit `minimumSize` and `maximumSize` constraints still apply. For example, an `Expanding` widget cannot grow past its `maximumSize`.
+
+### Direction depends on the layout
+
+For a `QHBoxLayout`, the horizontal policy affects allocation along the row. The vertical policy controls whether the widget fills or keeps its preferred size across the row.
+
+For a `QVBoxLayout`, the vertical policy affects allocation along the column. The horizontal policy controls its size across the column.
+
+```cpp
+// Expands in a horizontal layout, but keeps its preferred height
+editor->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
+
+// Keeps its preferred size in both directions
 button->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
 ```
 
-Size policy and stretch solve different parts of the problem: the policy describes what a widget is allowed or expected to do, while stretch describes its relative share in a particular layout.
+### Size policy and stretch factor
+
+Size policy and stretch factor have different roles:
+
+* Size policy describes whether a widget may shrink or grow and whether it prefers extra space.
+* Stretch factor describes the widget's relative share of stretchable space among sibling items in one layout.
+* Minimum and maximum constraints limit the result of both mechanisms.
+
+```cpp
+editor->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
+preview->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
+
+layout->addWidget(editor, 2);  // two relative shares
+layout->addWidget(preview, 1); // one relative share
+```
+
+When their constraints allow it, `editor` receives approximately twice as much stretchable space as `preview`. If no item has a positive stretch factor, the layout relies primarily on size policies and size hints.
 
 ## Space allocation between widgets
 
