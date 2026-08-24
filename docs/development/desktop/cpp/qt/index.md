@@ -9,7 +9,8 @@
 
 ## Development
 
-[Qt Widgets](qt-widgets.md) - creation and usage of Qt widgets (labels, inputs, checkboxes, buttons)  
-[Menu and Statusbar](qt-widgets/qmenubar.md) - window menu and status bar  
-[Simple dialogs](qt-messagebox.md) - simple message boxes: alerts, confirmations, warnings, errors  
-[Custom dialogs](qt-widgets/qdialog.md) - custom dialog windows
+* [Qt Widgets](qt-widgets.md) - creation and usage of Qt widgets (labels, inputs, checkboxes, buttons)
+* [Qt Layouts](qt-layouts.md) - arranging widgets and distributing available space
+* [Menu and Statusbar](qt-widgets/qmenubar.md) - window menu and status bar
+* [Simple dialogs](qt-messagebox.md) - simple message boxes: alerts, confirmations, warnings, errors
+* [Custom dialogs](qt-widgets/qdialog.md) - custom dialog windows

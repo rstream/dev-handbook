@@ -11,7 +11,7 @@ Qt Widgets are building blocks for desktop user interfaces. Most pages below sho
 - [Text editing widgets](#text-editing-widgets)
 - [Selectors](#selectors)
 - [Dialogs](#dialogs)
-- [Layout widgets](#layout-widgets)
+- [Container widgets](#container-widgets)
 
 ## Static widgets
 
@@ -39,6 +39,6 @@ Qt Widgets are building blocks for desktop user interfaces. Most pages below sho
 
 * [QDialog](qt-widgets/qdialog.md) - custom modal or modeless dialog window
 
-## Layout widgets
+## Container widgets
 
 * [QTabWidget](qt-widgets/qtabwidget.md) - tabbed pages in one content area
