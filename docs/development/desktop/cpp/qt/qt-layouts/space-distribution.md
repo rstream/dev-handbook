@@ -1,4 +1,4 @@
-# Space allocation, margins, and spacing
+# Space allocation, margins/paddings, and spacing
 
 [← back](../qt-layouts.md)
 
@@ -23,20 +23,20 @@ In a `QHBoxLayout`, stretch factors and spacer items distribute horizontal space
 - [Alignment](#alignment)
 - [Common patterns](#common-patterns)
 
-## Empty space controls
+## Empty space controls for Layouts
 
 Do not confuse margins, spacing, and explicit spacer items:
 
-| Mechanism | Where the empty space appears | Scope |
-|---|---|---|
-| `setContentsMargins()` | Between the layout boundary and its outermost items | All four edges |
-| `setSpacing()` | Between neighboring items managed by the layout | Every neighboring pair |
-| `addSpacing()` | At the exact position where it was added | One fixed-size spacer |
-| `addStretch()` | At the exact position where it was added | One expanding spacer |
+| Mechanism | Where the empty space appears                                        | Scope |
+|---|----------------------------------------------------------------------|---|
+| `setContentsMargins()` | Layout paddings: between the layout boundary and its outermost items | All four edges |
+| `setSpacing()` | Between neighboring items managed by the layout                      | Every neighboring pair |
+| `addSpacing()` | At the exact position where it was added                             | One fixed-size spacer |
+| `addStretch()` | At the exact position where it was added                             | One expanding spacer |
 
 ### Contents margins
 
-Contents margins are the empty area between the layout's boundary and its managed items. For a top-level layout, these are internal margins along the inside edge of the container widget. They are not external margins outside the widget.
+Contents margins are the empty area between the layout's boundary and its managed items. For a top-level layout, these are internal **paddings** along the inside edge of the container widget. They are not external margins outside the widget.
 
 ```cpp
 layout->setContentsMargins(12, 8, 12, 8);

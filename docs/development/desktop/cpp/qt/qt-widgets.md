@@ -41,4 +41,5 @@ Qt Widgets are building blocks for desktop user interfaces. Most pages below sho
 
 ## Container widgets
 
+* [QGroupBox](qt-widgets/qgroupbox.md) - titled visual group for related controls
 * [QTabWidget](qt-widgets/qtabwidget.md) - tabbed pages in one content area

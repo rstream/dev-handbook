@@ -16,7 +16,7 @@ Qt layouts arrange widgets inside a container and update their geometry when the
 
 ## Space allocation
 
-[Space allocation, margins, and spacing](qt-layouts/space-distribution.md) explains how a layout allocates available space to widgets and nested layouts, and distinguishes allocated area from margins, gaps, and spacer items.
+[Space allocation, margins/paddings, and spacing](qt-layouts/space-distribution.md) explains how a layout allocates available space to widgets and nested layouts, and distinguishes allocated area from margins, gaps, and spacer items.
 
 ## Basic rules
 
