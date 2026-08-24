@@ -36,6 +36,12 @@ label->setText("Updated text");
 label->clear();
 ```
 
+If you are using `setWordWrap` (multiline label) - define size policy to make sure widget will not take more vertical space than it needs:
+```cpp
+label->setSizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
+```
+Read more about [Size policies](../qt-layouts/space-distribution.md).
+
 ## Rich text
 
 `QLabel` can render simple rich text automatically when the text looks like HTML.
