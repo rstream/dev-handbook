@@ -86,6 +86,13 @@ SELECT AVG(price) AS avg_price
 FROM products;
 ```
 
+Round average price:
+
+```sql
+SELECT ROUND(AVG(price), 2) AS avg_price
+FROM products;
+```
+
 Calculate average line quantity for each order:
 
 ```sql
