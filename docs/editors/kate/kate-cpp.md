@@ -31,12 +31,25 @@ After this `Build` menu will appear.
 
 ## 3. Create a Build Target
 
-* In the **Target Settings** (at the bottom, below your code), create a new **Set of Targets** and add a new **Target** (give it any name), like this:
-`g++ -g -std=c++17 "%f" -o "bin/%n" && "bin/%n"`
-* then choose it (make highlighted)
-* then select from the main menu `Build > Build Selected Target` (or `Build > Build and Run Selected Target` - these commands would actually do the same since we put `&& "bin/%n"` at the end of the build command)
+### Build Command includes also Run
 
-> result: you source code would be compiled and executed
+* At the bottom choose `Build > Target Settings`
+* Click `Create a new Set of Targets` button, than click `Add new Target` (give it any name)
+* Enter build command (to the `Working Directory / Command` column), like this: `g++ -g -std=c++17 "%f" -o "bin/%n" && "bin/%n"`
+* then choose it (make highlighted)
+* `Build > Build Selected Target` - will do build & run
+
+> Note: you can also choose `Build > Build and Run Selected Target` - these commands would actually do the same since we put `&& "bin/%n"` at the end of the build command
+
+### Separate Build and Run commands
+
+* click `Add new Target` (give it any name)
+* Enter build command (to the `Working Directory / Command` column), like this: `g++ -g -std=c++17 "%f" -o "bin/my-app"`
+* Enter run command (to the `Run Command` column), like this: `bin/my-app`
+* `Build > Build Selected Target` - will only do build
+* `Build > Build and Run Selected Target` - will do build & run
+
+> Note: in this case you have to specify the name of file to run, so it's not convenient for global usage (separate build/run is better to use in `.kateproject`)
 
 notes regarding the example above:
 * **gcc (g++)** is used, so make sure it is installed (in proper version)
@@ -45,7 +58,7 @@ notes regarding the example above:
 
 ## 4. Create a keyboard shortcut
 
-To make a shorcut for `Build Selected Target` navigate to `Settings > Configure keyboard shortcuts` and find `Build and Run Selected Target`  
+To make a shortcut for `Build Selected Target` navigate to `Settings > Configure keyboard shortcuts` and find `Build and Run Selected Target`  
 If you want to assign `F5` (as in VS Code) - be aware this shortcut would be removed from **reload** action.
 
 ## 5. Kate project settings
@@ -57,7 +70,13 @@ Create a `.kateproject` file with the following content:
 ```json
 {
     "name": "Kate project 3",
-    "files": ["*.cpp"],
+    "files": [
+        {
+            "directory": ".",
+            "recursive": 1,
+            "hidden": true
+        }
+    ],
     "build": {
         "directory": ".",
         "targets": [
@@ -86,7 +105,13 @@ When project requires additional headers (to include) and libraries (to link) - 
 ```json
 {
     "name": "Kate project 3",
-    "files": ["*.cpp"],
+    "files": [
+        {
+            "directory": ".",
+            "recursive": 1,
+            "hidden": true
+        }
+    ],
     "build": {
         "directory": ".",
         "targets": [
