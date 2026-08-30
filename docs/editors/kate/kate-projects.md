@@ -82,6 +82,39 @@ If the project becomes too noisy, exclude folders with `exclude_patterns`:
 
 `exclude_patterns` uses regular expressions relative to the project root.
 
+## 5. Example for C++ project
+
+Here's an example for C++ project which includes Build block with 2 build Targets:
+* Build & run selected target (build command will also run the executable file)
+* Build or run selected target (build command will build, run command will run the executable file)
+
+```json
+{
+  "name": "C++ project",
+  "files": [
+    {
+      "directory": ".",
+      "recursive": 1,
+      "hidden": true
+    }
+  ],
+  "build": {
+    "directory": ".",
+    "targets": [
+      {
+        "name": "build and run (libs)",
+        "build_cmd": "g++ \"%f\" libs/lib.cpp -o \"./bin/%n\" && \"./bin/%n\""
+      },
+      {
+        "name": "build or run (libs)",
+        "build_cmd": "g++ \"%f\" libs/lib.cpp -o \"./bin/app\"",
+        "run_cmd": "./bin/app"
+      }
+    ]
+  }
+}
+```
+
 ## Notes
 
 * The file must be named exactly `.kateproject`.
