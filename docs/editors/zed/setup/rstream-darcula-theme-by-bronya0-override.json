@@ -1,0 +1,16 @@
+{
+  "theme_overrides": {
+    "Jetbrains Darcula Theme By Bronya0": {
+      "elevated_surface.background": "#313436FF",
+      "surface.background": "#313436FF",
+      "tab_bar.background": "#313436FF",
+      "tab.inactive_background": "#313436FF",
+      "toolbar.background": "#2E2E2EFF",
+      "panel.background": "#2E2E2EFF",
+      "editor.background": "#242424FF",
+      "editor.gutter.background": "#242424FF",
+      "panel.overlay_background": "#313436FF",
+      "editor.highlighted_line.background": "#313436FF"
+    }
+  }
+}

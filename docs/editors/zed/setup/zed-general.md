@@ -11,9 +11,25 @@ General setup for Zed.
 
 ## Set custom color theme
 
+### Select custom theme
+
 * Open Extensions: `Ctrl + Shift + X`.  
 * Install the theme you like, e.g. `Jetbrains Darcula theme`.  
 * Select the new theme: `theme selector: toggle` in Command Palette.
+
+### Customize theme
+
+To customize an existing theme you can use Zed Theme Builder:  
+https://zed.dev/theme-builder
+
+Find any existing theme, like this:
+```
+~/.local/share/zed/extensions/installed/jetbrains-darcula-theme-by-bronya0/themes/jetbrains-darcula-theme-by-bronya0.json
+```
+Import it to the Theme Builder and customize it.  
+Then export the diff (override) and put it to the Zed `setting.json`.
+
+My diff for the `darcula-theme-by-bronya0` you can [view here](./rstream-darcula-theme-by-bronya0-override.json).
 
 ## Set Tab size
 
