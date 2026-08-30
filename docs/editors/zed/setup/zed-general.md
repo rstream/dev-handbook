@@ -71,3 +71,16 @@ To bind `Ctrl + S` (and unbind default key) create new binding via UI or add the
 To add Zed to the `Open folder with...` context menu of the file explorer:  
 * edit its `.desktop` file: `~/.local/share/applications/dev.zed.Zed.desktop`
 * add `inode/directory` to the `MimeType` (semicolon separated)
+
+## Turn off font ligatures
+
+To disable transformation of "->", "=>", "!=" into special symbols - change the editor font from ".ZedMono" to something different (like "Droid Sans Mono" - used in VS Code).
+
+Go to `Settings > Appearance > UI Font` and in the `Buffer Font` section set `Font Family` to "Droid Sans Mono".
+
+Or add to `settings.json`:
+```json
+{
+  "buffer_font_family": "Droid Sans Mono"
+}
+```
