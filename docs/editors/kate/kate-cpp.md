@@ -147,7 +147,7 @@ Diagnostics:
     UnusedIncludes: Strict
 ```
 
-> Notes:
+Notes:
 * important to set C++ version 17 or higher
 
 ### 2) compile_commands.json
@@ -155,16 +155,16 @@ Create a `compile_commands.json` file with the content like this, and put to the
 
 ```json
 [
-	{
-		"directory": "/data/DevU/C/16 Kate/3 kate-qt1",
-		"command": "g++ -g -std=c++17 -I/usr/include/qt6 -I/usr/include/qt6/QtWidgets -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -o bin/kate-c-1 kate-c-1.cpp -lQt6Widgets -lQt6Gui -lQt6Core",
-		"file": "./*.cpp"
-	}
+  {
+    "directory": "/data/DevU/C/16 Kate/3 kate-qt1",
+    "command": "g++ -g -std=c++17 -I/usr/include/qt6 -I/usr/include/qt6/QtWidgets -I/usr/include/qt6/QtGui -I/usr/include/qt6/QtCore -o bin/kate-c-1 kate-c-1.cpp -lQt6Widgets -lQt6Gui -lQt6Core",
+    "file": "./*.cpp"
+  }
 ]
 
 ```
 
-> Notes:
+Notes:
 * have to specify absolute path to the project folder
 * according to manuals "file" should point to a single file, but masks like "./\*" or "./\*.cpp" still work fine
 
