@@ -6,12 +6,17 @@ Qt Widgets are building blocks for desktop user interfaces. Most pages below sho
 
 ## Summary
 
+- [Common widget properties](#common-widget-properties)
 - [Static widgets](#static-widgets)
 - [Checkboxes/radio buttons](#checkboxesradio-buttons)
 - [Text editing widgets](#text-editing-widgets)
 - [Selectors](#selectors)
 - [Dialogs](#dialogs)
 - [Container widgets](#container-widgets)
+
+## Common widget properties
+
+* [Widget fonts and QFont](qt-widgets/qfont.md) - fonts shared by all `QWidget`-based controls
 
 ## Static widgets
 

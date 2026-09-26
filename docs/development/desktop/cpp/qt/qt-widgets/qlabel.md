@@ -5,6 +5,7 @@
 `QLabel` displays read-only text or an image. Use it for captions, field labels, status text, and short messages inside a form.
 
 ```cpp
+#include <QFont>
 #include <QLabel>
 ```
 
@@ -12,6 +13,7 @@
 
 - [Basic usage](#basic-usage)
 - [Common operations](#common-operations)
+- [Font](#font)
 - [Rich text](#rich-text)
 - [Notes](#notes)
 
@@ -41,6 +43,19 @@ If you are using `setWordWrap` (multiline label) - define size policy to make su
 label->setSizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
 ```
 Read more about [Size policies](../qt-layouts/space-distribution.md).
+
+## Font
+
+`setFont()` is inherited from `QWidget` and is not specific to `QLabel`:
+
+```cpp
+QFont font = label->font();
+font.setPointSize(14);
+font.setBold(true);
+label->setFont(font);
+```
+
+See [Widget fonts and QFont](qfont.md) for font properties, size units, inheritance, and application-wide fonts.
 
 ## Rich text
 
