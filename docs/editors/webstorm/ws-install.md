@@ -53,3 +53,11 @@ Create a start menu entry:
 
 Copy this [desktop file](assets/webstorm.desktop) to:  
 `~/.local/share/applications/webstorm.desktop`
+
+### Enable auto update
+
+But default current user does not have access to `/opt/webstorm`, thus Webstorm cannot update itself and its plugins.  
+You need to change th owner of th folder:
+```sh
+sudo chown -R "$USER":"$(id -gn)" /opt/webstorm
+```
