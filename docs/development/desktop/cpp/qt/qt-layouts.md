@@ -6,13 +6,18 @@ Qt layouts arrange widgets inside a container and update their geometry when the
 
 ## Summary
 
-- [Box layouts](#box-layouts)
+- [Layout types](#layout-types)
 - [Space allocation](#space-allocation)
 - [Basic rules](#basic-rules)
 
-## Box layouts
+## Layout types
 
-[QHBoxLayout and QVBoxLayout](qt-layouts/box-layouts.md) arrange items in a horizontal row or a vertical column. Box layouts can contain widgets, empty space, and other layouts.
+| Layout | Arrangement |
+|---|---|
+| [QHBoxLayout and QVBoxLayout](qt-layouts/box-layouts.md) | A horizontal row or a vertical column |
+| [QGridLayout](qt-layouts/grid-layout.md) | A grid of rows and columns, with items spanning multiple cells |
+
+Layouts can contain widgets and other layouts.
 
 ## Space allocation
 

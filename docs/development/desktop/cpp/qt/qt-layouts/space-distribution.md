@@ -12,6 +12,8 @@ A box layout first satisfies item size constraints and then distributes the avai
 
 In a `QHBoxLayout`, stretch factors and spacer items distribute horizontal space. In a `QVBoxLayout`, they distribute vertical space. Size policies still apply independently in both directions.
 
+The examples below use box layouts. For row and column stretch factors and separate horizontal/vertical spacing in a grid, see [QGridLayout](grid-layout.md).
+
 ## Summary
 
 - [Empty space controls for layouts](#empty-space-controls-for-layouts)
