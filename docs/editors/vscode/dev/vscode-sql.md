@@ -9,6 +9,11 @@
 * Hints for tables and columns
 * Connection to DB
 
+Note: if installation via VS Code UI fails, try to do it from console:
+```shell
+code --install-extension mtxr.sqltools
+```
+
 ## SQLTools PostgreSQL/Cockroach Driver
 
 DB driver, works with SQLTools.  
