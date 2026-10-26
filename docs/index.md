@@ -54,6 +54,10 @@ Setup and tweaks of popular (my favorite) code editors.
 [Ollama](ai/ollama/index.md) - Ollama LLM runtime   
 [ChatGPT](ai/chatgpt/index.md) - ChatGPT desktop app
 
+## Other software
+
+[VirtualBox](other-soft/virtualbox/index.md) - Oracle VirtualBox
+
 <br>
 <b>...and other things you are not using so often to keep in your RAM :)</b>
 
