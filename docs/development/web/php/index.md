@@ -40,6 +40,10 @@
 [\$_GET](requests/php-req-get.md) - GET request parameters  
 [\$_POST](requests/php-req-post.md) - POST request parameters
 
+### Responses
+
+[HTTP response codes](responses/php-response-codes.md) - set status codes, return errors, and redirect
+
 ## Filesystem
 
 [Paths](filesystem/php-paths.md) - working with file paths  

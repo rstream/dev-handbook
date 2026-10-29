@@ -129,6 +129,8 @@ http_response_code(404);
 echo 'Not found';
 ```
 
+See [HTTP response codes](../responses/php-response-codes.md) for setting the status and choosing common codes such as `403`, `404`, and `405`.
+
 ## Notes
 
 - `REQUEST_METHOD` is usually the first value to check when handling forms or API routes
