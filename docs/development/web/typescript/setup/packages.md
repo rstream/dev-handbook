@@ -12,3 +12,8 @@ npm install -D typescript @types/node
 - `@types/node` provides types for Node.js APIs used by config files, build scripts, and CLI tooling.
 
 Browser APIs such as `document`, `window`, and DOM events are typed by TypeScript itself when the project includes DOM libs in `tsconfig.json`.
+
+Other node libraries may require their own type declarations to be installed:
+```sh
+npm install -D @types/node-static
+```
