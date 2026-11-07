@@ -2,8 +2,9 @@
 
 [← back](../../../index.md)
 
-## ES6
+## ES6+
 
+[ES version history](es-version-history.md) - ES version and included features  
 [Variables and scope](es6/variables-scope.md) - `let`, `const`, and block scope  
 [Functions](es6/functions.md) - arrow functions, default values, rest parameters  
 [Strings](es6/strings.md) - template literals and useful string methods  
