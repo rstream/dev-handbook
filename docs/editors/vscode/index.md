@@ -20,3 +20,4 @@ Probably one of the most popular code editors.
 [PHP development](dev/vscode-php.md) - Set up editor for PHP development  
 [SQL](dev/vscode-sql.md) - Extension for working with SQL databases  
 [Assembler](dev/vscode-asm.md) - Extension for running Assembler programs on DOSBox  
+[Alpine.js](dev/vscode-alpine.md) - Extension for Alpine.js framework  
