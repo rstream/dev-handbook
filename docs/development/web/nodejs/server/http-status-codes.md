@@ -29,19 +29,19 @@ Most simple API servers use mainly `2xx`, `4xx`, and `5xx`.
 
 ## Common status codes
 
-| Code | Meaning | When to use |
-| --- | --- | --- |
-| `200 OK` | Request succeeded | Return data for a successful `GET` request |
-| `201 Created` | New resource was created | Successful `POST` that creates data |
+| Code | Meaning | When to use                                         |
+| --- | --- |-----------------------------------------------------|
+| `200 OK` | Request succeeded | Return data for a successful `GET` request          |
+| `201 Created` | New resource was created | Successful `POST` that creates data                 |
 | `204 No Content` | Request succeeded, no body | Successful `DELETE` or update without response data |
-| `301 Moved Permanently` | Permanent redirect | URL was changed permanently |
-| `302 Found` | Temporary redirect | Send client to another URL temporarily |
-| `400 Bad Request` | Invalid request | Missing fields or invalid JSON |
-| `401 Unauthorized` | Authentication required | User is not logged in |
-| `403 Forbidden` | Access denied | User is known but has no permission |
-| `404 Not Found` | Resource not found | Unknown URL or missing item |
-| `405 Method Not Allowed` | Wrong HTTP method | Path exists, but method is not supported |
-| `500 Internal Server Error` | Server failed | Unexpected error in server code |
+| `301 Moved Permanently` | Permanent redirect | URL was changed permanently                         |
+| `302 Found` | Temporary redirect | Send client to another URL temporarily              |
+| `400 Bad Request` | Invalid request | Missing fields, unknown command or invalid JSON     |
+| `401 Unauthorized` | Authentication required | User is not logged in                               |
+| `403 Forbidden` | Access denied | User is known but has no permission                 |
+| `404 Not Found` | Resource not found | Unknown URL or missing item                         |
+| `405 Method Not Allowed` | Wrong HTTP method | Path exists, but method is not supported            |
+| `500 Internal Server Error` | Server failed | Unexpected error in server code                     |
 
 ## Set status code
 
