@@ -9,6 +9,7 @@ It is useful for simple local servers, demos, and small projects without Express
 
 - [Install](#install) - add `node-static` to the project
 - [Folder structure](#folder-structure) - keep browser files in `public`
+- [Disable cache](#disable-cache) - make browsers request static files again
 - [Static files with GET and POST endpoints](#static-files-with-get-and-post-endpoints) - serve files and handle two API routes
 - [Run server](#run-server) - start the server with Node.js
 
@@ -34,6 +35,21 @@ project/
 
 Files from `./public` will be available in the browser.
 For example, `./public/index.html` will be served as `/index.html`.
+
+## Disable cache
+
+By default, `node-static` sends `Cache-Control` with a one-hour lifetime. For local development, disable this default and send `no-store` so that the browser does not store static-file responses:
+
+```js
+const files = new staticServer.Server('./public', {
+    cache: false,
+    headers: {
+        'Cache-Control': 'no-store',
+    },
+});
+```
+
+`cache: false` prevents `node-static` from setting its default cache duration, while `no-store` prevents the browser from saving subsequent responses. Files changed in `public` are served on the next request; restarting the server is not required. A response cached before this setting was enabled may need one hard reload or cleared site data.
 
 ## Static files with GET and POST endpoints
 
